@@ -380,6 +380,7 @@
       expand.classList.add('open');
       card.classList.add('active-card');
       chevron.classList.add('rotate-chevron');
+      setTimeout(()=>{card.scrollIntoView({behavior:'smooth',block:'start'})},100);
     }
   };
 
