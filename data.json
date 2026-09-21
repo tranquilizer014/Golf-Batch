@@ -7,7 +7,8 @@
   "courseTests": "https://drive.google.com/drive/folders/1LCLm5B5NE_RyoEDL18aFPxB3idRDlOwO",
   "socials": [
     { "platform": "Reddit", "url": "https://www.reddit.com/u/tranquilizer014" },
-    { "platform": "Telegram", "url": "https://t.me/tranquilizer014" }
+    { "platform": "Telegram", "url": "https://t.me/tranquilizer014" },
+    { "platform": "All Work", "url": "https://tranquilizer014.github.io/Tranquilizer_work/" }
   ],
   "subjects": [
     { "name": "Biology", "completed": true, "lectures": [
