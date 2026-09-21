@@ -257,6 +257,10 @@
       <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
       Course Tests
     </a>
+    <button class="quick-link" id="shareBtn">
+      <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+      Share
+    </button>
   </div>
 
   <div class="stats-bar" id="statsBar" style="display:none">
@@ -303,6 +307,12 @@
   function dismissTg(){localStorage.setItem('tgGateDismissed','1');tgOverlay.classList.add('hidden')}
   document.getElementById('tgBtn').addEventListener('click',()=>{setTimeout(dismissTg,500)});
   document.getElementById('tgSkip').addEventListener('click',dismissTg);
+
+  // Share button
+  document.getElementById('shareBtn').addEventListener('click',function(){
+    if(navigator.share){navigator.share({title:document.title,url:location.href}).catch(()=>{})}
+    else{navigator.clipboard.writeText(location.href).then(()=>{document.getElementById('shareBtn').querySelector('svg').nextSibling.textContent='Copied!';setTimeout(()=>{document.getElementById('shareBtn').querySelector('svg').nextSibling.textContent='Share'},1500)})}
+  });
 
   // Progress (user's watched lectures)
   function getProgress(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}}catch(e){return{}}}
