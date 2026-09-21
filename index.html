@@ -46,14 +46,19 @@
     .widget-header{display:flex;align-items:center;gap:0.9rem;margin-bottom:1rem;border-bottom:1.5px solid var(--border-accent);padding-bottom:1.1rem;flex-wrap:wrap}
     .home-link{display:flex;align-items:center;gap:0.45rem;text-decoration:none;background:var(--header-bg);border-radius:50px;padding:0.4rem 1rem 0.4rem 0.7rem;transition:background 0.2s,transform 0.15s;flex-shrink:0;border:1px solid var(--card-border)}
     .home-link:hover{background:var(--header-hover-bg);transform:translateY(-1px)}
-    .home-link svg{width:24px;height:24px;fill:var(--text-secondary)}
-    .home-text{font-weight:600;color:var(--text-secondary);font-size:1rem}
+    .home-link svg{width:20px;height:20px;fill:var(--text-secondary)}
+    .home-text{font-weight:600;color:var(--text-secondary);font-size:0.9rem}
     .header-title{font-size:1.5rem;font-weight:700;color:var(--text-primary);letter-spacing:-0.02em;flex:1;line-height:1.2}
     .theme-toggle{background:var(--toggle-bg);border:1.5px solid var(--card-border);border-radius:50%;width:40px;height:40px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;flex-shrink:0}
     .theme-toggle:hover{border-color:var(--section-accent);background:var(--pill-bg)}
     .theme-toggle svg{width:20px;height:20px;fill:none;stroke:var(--text-primary);stroke-width:2}
     .dark .sun-icon{display:block}.dark .moon-icon{display:none}
     .sun-icon{display:none}.moon-icon{display:block}
+
+    .info-notice{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:0.85rem 1.1rem;margin-bottom:1.2rem;font-size:0.82rem;color:var(--text-secondary);line-height:1.6;display:flex;flex-direction:column;gap:0.3rem}
+    .info-notice strong{color:var(--text-primary)}
+    .info-notice .vpn-link{color:var(--section-accent);font-weight:600;text-decoration:underline}
+    .info-notice .last-updated{font-size:0.72rem;opacity:0.6;margin-top:0.2rem}
 
     .quick-links{display:flex;gap:8px;margin-bottom:1.2rem;flex-wrap:wrap}
     .quick-link{display:inline-flex;align-items:center;gap:6px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:0.55rem 1.1rem;font-weight:600;color:var(--text-primary);font-size:0.88rem;transition:all 0.2s;text-decoration:none}
@@ -110,11 +115,22 @@
     .sub-card .icon-circle{width:32px;height:32px;border-radius:8px;font-size:0.7rem}
     .sub-card .card-title{font-size:0.85rem;font-weight:500}
 
+    .watch-btn{background:none;border:none;cursor:pointer;padding:2px;flex-shrink:0;display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;transition:background 0.15s}
+    .watch-btn:hover{background:rgba(42,123,172,0.12)}
+    .watch-svg{width:22px;height:22px;transition:stroke 0.2s;stroke:var(--card-border);fill:none;stroke-width:2}
+    .check-path{opacity:0;transition:opacity 0.2s}
+    .sub-card.watched .watch-svg{stroke:var(--green)}
+    .sub-card.watched .check-path{opacity:1}
+    .sub-card.watched .card-title{text-decoration:line-through;text-decoration-color:rgba(0,0,0,0.3)}
+    .dark .sub-card.watched .card-title{text-decoration-color:rgba(255,255,255,0.2)}
+    .sub-card.watched{opacity:0.5}
+
     .open-btn{display:inline-flex;align-items:center;gap:4px;background:var(--yt-bg);color:var(--yt-text)!important;border-radius:50px;padding:0.3rem 0.8rem 0.3rem 0.6rem;font-size:0.75rem;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:background 0.18s,transform 0.15s,box-shadow 0.18s;letter-spacing:0.02em}
     .open-btn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2}
     .open-btn:hover{background:var(--yt-hover-bg);transform:scale(1.06);box-shadow:0 3px 8px rgba(0,0,0,0.2)}
 
     .coming-soon{background:var(--pill-bg);border:1px dashed var(--card-border);border-radius:10px;padding:0.7rem 1rem;text-align:center;font-size:0.82rem;color:var(--pill-text);font-weight:500;margin-top:4px}
+    .all-uploaded{background:var(--green-bg);border:1px solid var(--green);border-radius:10px;padding:0.7rem 1rem;text-align:center;font-size:0.82rem;color:var(--green);font-weight:600;margin-top:4px}
 
     .footer-section{text-align:center;margin-top:2rem;padding-top:1.4rem;border-top:1.5px solid var(--border-accent)}
     .footer-links{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:0.8rem}
@@ -178,14 +194,19 @@
 <div class="widget" id="app">
   <div class="widget-header">
     <a class="home-link" id="homeLink" href="#" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 4 5 4 9v4c0 5 6 9 8 9s8-4 8-9V9c0-4-4-7-8-7zm0 2c3 0 6 2 6 5v4c0 3-4 7-6 7s-6-4-6-7V9c0-3 3-5 6-5z"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></svg>
-      <span class="home-text">Home</span>
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <span class="home-text">All work Combined</span>
     </a>
     <div class="header-title" id="courseTitle">Loading...</div>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
       <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
       <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
     </button>
+  </div>
+
+  <div class="info-notice" id="infoNotice">
+    <div><strong>Internet required</strong> to access lecture links. If you are unable to access videos, use a VPN. <a class="vpn-link" href="https://protonvpn.com/" target="_blank" rel="noopener">Proton VPN</a> is a free option.</div>
+    <div class="last-updated" id="lastUpdated"></div>
   </div>
 
   <div class="quick-links" id="quickLinks" style="display:none">
@@ -205,9 +226,9 @@
       <span class="overall-prog-label" id="overallProgLabel">0 / 0 watched</span>
     </div>
     <div class="stats-chips">
-      <span class="stat-chip" id="completedChip">✅ 0 completed</span>
-      <span class="stat-chip" id="ongoingChip">⏳ 0 ongoing</span>
-      <span class="stat-chip" id="totalLecChip">📚 0 lectures</span>
+      <span class="stat-chip" id="completedChip">0 completed</span>
+      <span class="stat-chip" id="ongoingChip">0 ongoing</span>
+      <span class="stat-chip" id="totalLecChip">0 lectures</span>
     </div>
   </div>
 
@@ -226,40 +247,43 @@
   const DATA_URL='data.json';
   const STORAGE_KEY='golfBatchProgress';
   const html=document.documentElement;
-  const app=document.getElementById('app');
-  const themeToggle=document.getElementById('themeToggle');
   const subjectsContainer=document.getElementById('subjectsContainer');
 
   // Theme
   const saved=localStorage.getItem('theme')||'light';
   html.classList.toggle('dark',saved==='dark');
+  const themeToggle=document.getElementById('themeToggle');
   function updateThemeIcon(){themeToggle.innerHTML=html.classList.contains('dark')
     ?'<svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
     :'<svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>';}
   updateThemeIcon();
-  themeToggle.addEventListener('click',()=>{
-    html.classList.toggle('dark');
-    localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light');
-    updateThemeIcon();
-  });
+  themeToggle.addEventListener('click',()=>{html.classList.toggle('dark');localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light');updateThemeIcon()});
 
-  // Progress
+  // Telegram gate
+  const tgOverlay=document.getElementById('tgOverlay');
+  if(!localStorage.getItem('tgGateDismissed')){tgOverlay.classList.remove('hidden')}
+  else{tgOverlay.classList.add('hidden')}
+  function dismissTg(){localStorage.setItem('tgGateDismissed','1');tgOverlay.classList.add('hidden')}
+  document.getElementById('tgBtn').addEventListener('click',()=>{setTimeout(dismissTg,500)});
+  document.getElementById('tgSkip').addEventListener('click',dismissTg);
+
+  // Progress (user's watched lectures)
   function getProgress(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}}catch(e){return{}}}
   function saveProgress(key,val){const p=getProgress();p[key]=val;localStorage.setItem(STORAGE_KEY,JSON.stringify(p))}
   function isWatched(key){return getProgress()[key]===true}
 
   const iconClasses=['icon-1','icon-2','icon-3','icon-4','icon-5','icon-6','icon-7','icon-8'];
-  const subjectEmojis=['📐','📖','🧠','🌍','⚡','🔬','📝','💬'];
+  const subjectEmojis=['\uD83D\uDCD0','\uD83D\uDCD6','\uD83E\uDDE0','\uD83C\uDF0D','\uD83C\uDFDB\uFE0F','\uD83D\uDD25','\uD83C\uDF0A','\uD83C\uDFDE\uFE0F','\uD83D\uDCB0','\uD83C\uDF7D\uFE0F','\uD83D\uDCDD','\uD83D\uDCDA','\u270D\uFE0F','\uD83D\uDCDD','\uD83D\uDCAA','\uD83D\uDCCB','\u26A1','\uD83C\uDFDB\uFE0F','\uD83D\uDCCA'];
 
   function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
 
   function render(data){
     document.getElementById('courseTitle').textContent=esc(data.courseName||'Golf Batch');
     document.title=esc(data.courseName||'Golf Batch');
-
-    // Home link
     if(data.homeUrl){document.getElementById('homeLink').href=data.homeUrl}
-    else{document.getElementById('homeLink').style.display='none'}
+
+    // Last updated
+    if(data.lastUpdated){document.getElementById('lastUpdated').textContent='Last updated: '+esc(data.lastUpdated)}
 
     // Quick links
     const ql=document.getElementById('quickLinks');
@@ -274,7 +298,7 @@
     const subjects=data.subjects||[];
     let totalLec=0,completedSubj=0,ongoingSubj=0;
     subjects.forEach(s=>{totalLec+=(s.lectures||[]).length;if(s.completed)completedSubj++;else ongoingSubj++});
-    const watchedCount=Object.keys(getProgress()).filter(k=>getProgress()[k]===true&&k.startsWith('lec-')).length;
+    const watchedCount=Object.keys(getProgress()).filter(k=>k.startsWith('lec-')&&getProgress()[k]===true).length;
 
     document.getElementById('statsBar').style.display='flex';
     const pct=totalLec>0?Math.round(watchedCount/totalLec*100):0;
@@ -289,7 +313,7 @@
       return;
     }
 
-    let html='';
+    let h='';
     subjects.forEach((sub,si)=>{
       const ico=iconClasses[si%iconClasses.length];
       const emoji=subjectEmojis[si%subjectEmojis.length];
@@ -298,50 +322,68 @@
       const subPct=lectures.length>0?Math.round(subWatched/lectures.length*100):0;
       const completed=sub.completed;
 
-      html+='<div class="subject-group">'+esc(emoji)+' '+esc(sub.name);
-      if(completed){html+='<span class="done-badge">Done</span>'}
-      else{html+='<span class="ongoing-badge">Ongoing</span>'}
-      html+='</div>';
+      h+='<div class="subject-group">'+emoji+' '+esc(sub.name);
+      if(completed){h+='<span class="done-badge">Done</span>'}
+      else{h+='<span class="ongoing-badge">Ongoing</span>'}
+      h+='</div>';
 
-      html+='<div class="cards-stack">';
-      html+='<div class="card '+(completed?'subject-complete':'')+'" data-si="'+si+'">';
-      html+='<div class="card-link expand-toggle" onclick="window._toggleSubject('+si+')">';
-      html+='<div class="card-left">';
-      html+='<div class="icon-circle '+ico+'">'+emoji+'</div>';
-      html+='<span class="card-title">'+esc(sub.name)+'</span>';
-      html+='</div><div class="subject-right">';
-      html+='<span class="subject-count-pill">'+subWatched+'/'+lectures.length+'</span>';
-      html+='<div class="chevron-btn chevron-icon" id="chevron-'+si+'"><svg class="chevron-icon-svg" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>Expand</div>';
-      html+='</div></div><div class="subj-prog-bar"><div class="subj-prog-fill" id="prog-'+si+'" style="width:'+subPct+'%"></div></div></div>';
+      h+='<div class="cards-stack">';
+      h+='<div class="card '+(completed?'subject-complete':'')+'" data-si="'+si+'">';
+      h+='<div class="card-link expand-toggle" onclick="window._toggleSubject('+si+')">';
+      h+='<div class="card-left">';
+      h+='<div class="icon-circle '+ico+'">'+emoji+'</div>';
+      h+='<span class="card-title">'+esc(sub.name)+'</span>';
+      h+='</div><div class="subject-right">';
+      h+='<span class="subject-count-pill">'+subWatched+'/'+lectures.length+'</span>';
+      h+='<div class="chevron-btn chevron-icon" id="chevron-'+si+'"><svg class="chevron-icon-svg" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>Expand</div>';
+      h+='</div></div><div class="subj-prog-bar"><div class="subj-prog-fill" id="prog-'+si+'" style="width:'+subPct+'%"></div></div></div>';
 
-      html+='<div class="expand-content" id="expand-'+si+'"><div class="expand-inner">';
+      h+='<div class="expand-content" id="expand-'+si+'"><div class="expand-inner">';
       lectures.forEach((lec,j)=>{
         const wk=isWatched('lec-'+si+'-'+j);
-        html+='<div class="sub-card '+(wk?'watched':'')+'" id="row-'+si+'-'+j+'">';
-        html+='<div class="card-link">';
-        html+='<div class="card-left">';
-        html+='<div class="icon-circle '+ico+'" style="font-size:0.65rem">'+(j+1)+'</div>';
-        html+='<span class="card-title">'+esc(lec.title)+'</span>';
-        html+='</div>';
-        html+='<a class="open-btn" href="'+esc(lec.link)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open</a>';
-        html+='</div></div>';
+        h+='<div class="sub-card '+(wk?'watched':'')+'" id="row-'+si+'-'+j+'">';
+        h+='<div class="card-link">';
+        h+='<button class="watch-btn" onclick="event.stopPropagation();window._toggleWatch('+si+','+j+')" title="Mark as watched">';
+        h+='<svg class="watch-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path class="check-path" d="M8 12l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        h+='</button>';
+        h+='<div class="card-left">';
+        h+='<div class="icon-circle '+ico+'" style="font-size:0.65rem">'+(j+1)+'</div>';
+        h+='<span class="card-title">'+esc(lec.title)+'</span>';
+        h+='</div>';
+        h+='<a class="open-btn" href="'+esc(lec.link)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open</a>';
+        h+='</div></div>';
       });
-      if(!completed){
-        html+='<div class="coming-soon">\uD83D\uDCCC Adding more lectures soon...</div>';
+      if(lectures.length===0){
+        h+='<div class="coming-soon">Coming soon...</div>';
+      }else if(!completed){
+        h+='<div class="coming-soon">\uD83D\uDCCC Adding more lectures soon</div>';
+      }else{
+        h+='<div class="all-uploaded">\u2705 All lectures uploaded</div>';
       }
-      html+='</div></div></div></div>';
+      h+='</div></div></div></div>';
     });
-    subjectsContainer.innerHTML=html;
+    subjectsContainer.innerHTML=h;
   }
 
   window._toggleSubject=function(si){
     const card=document.querySelector('.card[data-si="'+si+'"]');
     const expand=document.getElementById('expand-'+si);
     const chevron=document.getElementById('chevron-'+si);
-    const isOpen=expand.classList.contains('open');
     expand.classList.toggle('open');
     card.classList.toggle('active-card');
     chevron.classList.toggle('rotate-chevron');
+  };
+
+  window._toggleWatch=function(si,j){
+    const key='lec-'+si+'-'+j;
+    const val=!isWatched(key);
+    saveProgress(key,val);
+    const row=document.getElementById('row-'+si+'-'+j);
+    if(row){row.classList.toggle('watched',val)}
+    // Update count pill and progress
+    const data=JSON.parse(document.getElementById('jsonPreview')?.textContent||'{}');
+    render(data);
+    renderFooter(data);
   };
 
   // Footer
@@ -352,31 +394,25 @@
     const socials=data.socials||[];
     if(socials.length===0){fs.style.display='none';return}
     fs.style.display='block';
-    const icons={Reddit:'\uD83D\uDD11',Telegram:'\u2708\uFE0F','All Work':'\uD83C\uDFD7\uFE0F'};
-    fl.innerHTML=socials.map(s=>'<a class="footer-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+(icons[s.platform]||'\uD83D\uDD17')+' '+esc(s.platform)+'</a>').join('');
-    fm.textContent='v'+esc(data.version||'1.0')+' \u2022 Last updated: '+esc(data.lastUpdated||'');
+    const redditSvg='<svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>';
+    const telegramSvg='<svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>';
+    const icons={'Reddit':redditSvg,'Telegram':telegramSvg};
+    fl.innerHTML=socials.map(s=>{
+      const svg=icons[s.platform]||'';
+      return '<a class="footer-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+svg+esc(s.platform)+'</a>';
+    }).join('');
+    fm.textContent='v'+esc(data.version||'1.0')+' \u2022 '+esc(data.lastUpdated||'');
   }
 
-  // Telegram gate
-  const tgOverlay=document.getElementById('tgOverlay');
-  const tgBtn=document.getElementById('tgBtn');
-  const tgSkip=document.getElementById('tgSkip');
-  if(!localStorage.getItem('tgGateDismissed')){
-    tgOverlay.classList.remove('hidden');
-  }else{tgOverlay.classList.add('hidden')}
-  function dismissTg(){localStorage.setItem('tgGateDismissed','1');tgOverlay.classList.add('hidden')}
-  tgBtn.addEventListener('click',()=>{setTimeout(dismissTg,500)});
-  tgSkip.addEventListener('click',dismissTg);
-
-  // Visitor counter (CountAPI - read only)
+  // Visitor counter
   fetch('https://api.countapi.xyz/get/tranquilizer014/golf-batch')
     .then(r=>r.json())
     .then(d=>{if(d.value!=null)document.getElementById('visitorCount').textContent=d.value})
     .catch(()=>{document.getElementById('visitorCount').style.display='none'});
 
-  // Fetch
+  // Fetch & render
   fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('Data file not found');return r.json()})
-    .then(d=>{render(d);renderFooter(d)})
+    .then(d=>{render(d);renderFooter(d);window._lastData=d})
     .catch(e=>{subjectsContainer.innerHTML='<div class="error-box"><strong>Could not load course data</strong><br>'+esc(e.message)+'</div>'});
 })();
 </script>

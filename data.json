@@ -7,33 +7,27 @@
   "courseTests": "https://drive.google.com/drive/folders/1LCLm5B5NE_RyoEDL18aFPxB3idRDlOwO",
   "socials": [
     { "platform": "Reddit", "url": "https://www.reddit.com/u/tranquilizer014" },
-    { "platform": "Telegram", "url": "https://t.me/tranquilizer014" },
-    { "platform": "All Work", "url": "https://tranquilizer014.github.io/Tranquilizer_work/" }
+    { "platform": "Telegram", "url": "https://t.me/tranquilizer014" }
   ],
   "subjects": [
-    {
-      "name": "Maths",
-      "completed": true,
-      "lectures": [
-        { "title": "Percentage Class 1", "link": "https://example.com/1" },
-        { "title": "Percentage Class 2", "link": "https://example.com/2" },
-        { "title": "Profit and Loss Class 1", "link": "https://example.com/3" }
-      ]
-    },
-    {
-      "name": "English",
-      "completed": false,
-      "lectures": [
-        { "title": "Grammar Basics", "link": "https://example.com/4" },
-        { "title": "Reading Comprehension", "link": "https://example.com/5" }
-      ]
-    },
-    {
-      "name": "GK",
-      "completed": false,
-      "lectures": [
-        { "title": "Current Affairs Jan", "link": "https://example.com/6" }
-      ]
-    }
+    { "name": "Biology", "completed": false, "lectures": [] },
+    { "name": "Chemistry", "completed": false, "lectures": [] },
+    { "name": "Physics", "completed": false, "lectures": [] },
+    { "name": "Ancient History", "completed": false, "lectures": [] },
+    { "name": "Medieval History", "completed": false, "lectures": [] },
+    { "name": "Modern History", "completed": false, "lectures": [] },
+    { "name": "Physical Geography", "completed": false, "lectures": [] },
+    { "name": "Indian Geography", "completed": false, "lectures": [] },
+    { "name": "Economics", "completed": false, "lectures": [] },
+    { "name": "English Breakfast", "completed": false, "lectures": [] },
+    { "name": "English Grammar", "completed": false, "lectures": [] },
+    { "name": "English Vocabulary", "completed": false, "lectures": [] },
+    { "name": "English Practice", "completed": false, "lectures": [] },
+    { "name": "GFORM Explanation", "completed": false, "lectures": [] },
+    { "name": "GS Muster Class", "completed": false, "lectures": [] },
+    { "name": "One Pager", "completed": false, "lectures": [] },
+    { "name": "Operation Surprise", "completed": false, "lectures": [] },
+    { "name": "Polity", "completed": false, "lectures": [] },
+    { "name": "Test Discussion", "completed": false, "lectures": [] }
   ]
 }
