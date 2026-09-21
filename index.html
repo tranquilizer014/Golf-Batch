@@ -310,8 +310,18 @@
 
   // Share button
   document.getElementById('shareBtn').addEventListener('click',function(){
-    if(navigator.share){navigator.share({title:document.title,url:location.href}).catch(()=>{})}
-    else{navigator.clipboard.writeText(location.href).then(()=>{document.getElementById('shareBtn').querySelector('svg').nextSibling.textContent='Copied!';setTimeout(()=>{document.getElementById('shareBtn').querySelector('svg').nextSibling.textContent='Share'},1500)})}
+    const html='<!DOCTYPE html>'+document.documentElement.outerHTML;
+    const file=new File([html],document.title+'.html',{type:'text/html'});
+    if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
+      navigator.share({title:document.title,files:[file]}).catch(()=>{})
+    }else{
+      const blob=new Blob([html],{type:'text/html'});
+      const a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download=document.title+'.html';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
   });
 
   // Progress (user's watched lectures)
