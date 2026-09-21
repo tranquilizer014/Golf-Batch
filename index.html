@@ -134,6 +134,8 @@
 
     .mark-all-btn{font-size:0.68rem;font-weight:600;cursor:pointer;background:var(--pill-bg);color:var(--pill-text);border:1px solid var(--card-border);border-radius:50px;padding:0.22rem 0.7rem;transition:background 0.15s,border-color 0.15s,color 0.15s;white-space:nowrap;flex-shrink:0}
     .mark-all-btn:hover{background:var(--green);color:#fff;border-color:var(--green)}
+    .mark-all-btn.unwatch{font-size:0.68rem;font-weight:600;cursor:pointer;background:var(--pill-bg);color:var(--pill-text);border:1px solid var(--card-border);border-radius:50px;padding:0.22rem 0.7rem;transition:background 0.15s,border-color 0.15s,color 0.15s;white-space:nowrap;flex-shrink:0}
+    .mark-all-btn.unwatch:hover{background:var(--orange);color:#fff;border-color:var(--orange)}
 
     .footer-section{text-align:center;margin-top:2rem;padding-top:1.4rem;border-top:1.5px solid var(--border-accent)}
     .footer-links{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:0.8rem}
@@ -331,7 +333,8 @@
       h+='<div class="icon-circle '+ico+'">'+emoji+'</div>';
       h+='<span class="card-title">'+esc(sub.name)+'</span>';
       h+='</div><div class="subject-right">';
-      h+='<button class="mark-all-btn" onclick="event.stopPropagation();window._markSubjectWatched('+si+')" title="Mark all lectures as watched">Mark all watched</button>';
+      h+='<button class="mark-all-btn" onclick="event.stopPropagation();window._markSubjectWatched('+si+')" title="Mark all lectures as watched">Watched</button>';
+      h+='<button class="mark-all-btn unwatch" onclick="event.stopPropagation();window._markSubjectUnwatched('+si+')" title="Mark all lectures as unwatched">Unwatch</button>';
       h+='<span class="subject-count-pill">'+subWatched+'/'+lectures.length+'</span>';
       h+='<div class="chevron-btn chevron-icon" id="chevron-'+si+'"><svg class="chevron-icon-svg" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>Expand</div>';
       h+='</div></div><div class="subj-prog-bar"><div class="subj-prog-fill" id="prog-'+si+'" style="width:'+subPct+'%"></div></div></div>';
@@ -364,12 +367,20 @@
   }
 
   window._toggleSubject=function(si){
-    const card=document.querySelector('.card[data-si="'+si+'"]');
     const expand=document.getElementById('expand-'+si);
     const chevron=document.getElementById('chevron-'+si);
-    expand.classList.toggle('open');
-    card.classList.toggle('active-card');
-    chevron.classList.toggle('rotate-chevron');
+    const isOpen=expand.classList.contains('open');
+    // Close all others first
+    document.querySelectorAll('.expand-content.open').forEach(el=>el.classList.remove('open'));
+    document.querySelectorAll('.card.active-card').forEach(el=>el.classList.remove('active-card'));
+    document.querySelectorAll('.chevron-btn.rotate-chevron').forEach(el=>el.classList.remove('rotate-chevron'));
+    // Toggle clicked one
+    if(!isOpen){
+      const card=document.querySelector('.card[data-si="'+si+'"]');
+      expand.classList.add('open');
+      card.classList.add('active-card');
+      chevron.classList.add('rotate-chevron');
+    }
   };
 
   window._toggleWatch=function(si,j){
@@ -385,6 +396,14 @@
     if(!window._lastData)return;
     const lectures=(window._lastData.subjects||[])[si]?.lectures||[];
     lectures.forEach((_,j)=>saveProgress('lec-'+si+'-'+j,true));
+    render(window._lastData);
+    renderFooter(window._lastData);
+  };
+
+  window._markSubjectUnwatched=function(si){
+    if(!window._lastData)return;
+    const lectures=(window._lastData.subjects||[])[si]?.lectures||[];
+    lectures.forEach((_,j)=>saveProgress('lec-'+si+'-'+j,false));
     render(window._lastData);
     renderFooter(window._lastData);
   };
