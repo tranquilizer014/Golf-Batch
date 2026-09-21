@@ -10,7 +10,21 @@
     { "platform": "Telegram", "url": "https://t.me/tranquilizer014" }
   ],
   "subjects": [
-    { "name": "Biology", "completed": false, "lectures": [] },
+    { "name": "Biology", "completed": false, "lectures": [
+      { "title": "Cell Basics", "link": "https://streamtape.com/v/Od2j10g3zgTZJ7e/1._Cell_Basics.mp4" },
+      { "title": "Cell Final Class", "link": "https://streamtape.com/v/VmkJrPkA03uKrRw/2._Cell_Final_Class.mp4" },
+      { "title": "Tissue", "link": "https://streamtape.com/v/0dOeqQleeZtbJjL/3._Tissue.mp4" },
+      { "title": "Diseases", "link": "https://streamtape.com/v/KJrD7Z3bkvF0QOd/4._Diseases.mp4" },
+      { "title": "Digestion", "link": "https://streamtape.com/v/ZkxrBk8Lm7FqezJ/5._Digestion.mp4" },
+      { "title": "Excretion", "link": "https://streamtape.com/v/jAmaMaww3pCQVx/6._Excretion.mp4" },
+      { "title": "Heart - Blood - Respiration", "link": "https://streamtape.com/v/DaBv2K98e3uLdr/7._Heart_-_Blood_-_Respiration.mp4" },
+      { "title": "Reproduction", "link": "https://streamtape.com/v/w6Q4gRQoxyFJve3/8._Reproduction.mp4" },
+      { "title": "Reproduction Class 2", "link": "https://streamtape.com/v/xXZlAojVvatkpeZ/9._Reproduction_Class_2.mp4" },
+      { "title": "Ecological Classification Of Plants", "link": "https://streamtape.com/v/O13v0xz9PQhZVea/10._Ecological_Classification_Of_Plants.mp4" },
+      { "title": "Hormones", "link": "https://streamtape.com/v/rxW7mZDQd6fbQav/11._Hormones.mp4" },
+      { "title": "Diversity In Living Organisms", "link": "https://streamtape.com/v/7pAmJyrwjrIA6mw/12._Diversity_In_Living_Organisms.mp4" },
+      { "title": "Kingdoms", "link": "https://streamtape.com/v/8X6JpdxdMgcoPGb/13._Kingdoms.mp4" }
+    ] },
     { "name": "Chemistry", "completed": false, "lectures": [] },
     { "name": "Physics", "completed": false, "lectures": [] },
     { "name": "Ancient History", "completed": false, "lectures": [] },
@@ -25,7 +39,14 @@
     { "name": "English Practice", "completed": false, "lectures": [] },
     { "name": "GFORM Explanation", "completed": false, "lectures": [] },
     { "name": "GS Muster Class", "completed": false, "lectures": [] },
-    { "name": "One Pager", "completed": false, "lectures": [] },
+    { "name": "One Pager", "completed": false, "lectures": [
+      { "title": "CBI", "link": "https://streamtape.com/v/yxB48ApM2pS1bPk/1.CBI.mp4" },
+      { "title": "Fertility Rate + Family Survey", "link": "https://streamtape.com/v/llRRPbD9VLu70dk/2._Fertility_Rate_%2B_Family_Survey.mp4" },
+      { "title": "Protein Deficiency", "link": "https://streamtape.com/v/0rP609o3oMcb9JL/3._Protein_Deficiency.mp4" },
+      { "title": "UNSC", "link": "https://streamtape.com/v/4AZgqGOYa3T2DR/4._UNSC.mp4" },
+      { "title": "Parliamentary Committees", "link": "https://streamtape.com/v/3doZ6K11pphdd4M/5._Parliamentary_Committees.mp4" },
+      { "title": "Attorney General Advocate General", "link": "https://streamtape.com/v/BjPxwRjD0dTyeRx/6._Attorney_general_Advocate_general.mp4" }
+    ] },
     { "name": "Operation Surprise", "completed": false, "lectures": [] },
     { "name": "Polity", "completed": false, "lectures": [] },
     { "name": "Test Discussion", "completed": false, "lectures": [] }
