@@ -131,6 +131,20 @@
     .visitor-counter{position:fixed;bottom:16px;left:16px;font-size:0.7rem;font-weight:600;color:var(--text-secondary);opacity:0.6;background:var(--card-bg);border:1px solid var(--card-border);border-radius:8px;padding:4px 10px;z-index:50;transition:opacity 0.2s}
     .visitor-counter:hover{opacity:1}
 
+    .tg-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity 0.3s}
+    .tg-overlay.hidden{opacity:0;pointer-events:none}
+    .tg-modal{background:var(--card-bg);border:1px solid var(--card-border);border-radius:20px;padding:2.5rem 2rem;max-width:380px;width:90%;text-align:center;box-shadow:0 20px 60px -10px rgba(0,0,0,0.4);transform:scale(1);transition:transform 0.3s}
+    .tg-overlay.hidden .tg-modal{transform:scale(0.9)}
+    .tg-icon{width:64px;height:64px;margin:0 auto 1.2rem;background:linear-gradient(135deg,#0088cc,#00a8e4);border-radius:50%;display:flex;align-items:center;justify-content:center}
+    .tg-icon svg{width:36px;height:36px;fill:#fff}
+    .tg-title{font-size:1.3rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem}
+    .tg-desc{font-size:0.88rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:1.5}
+    .tg-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#0088cc,#00a8e4);color:#fff;border:none;border-radius:50px;padding:0.75rem 2rem;font-size:1rem;font-weight:700;font-family:inherit;cursor:pointer;transition:transform 0.15s,box-shadow 0.15s;text-decoration:none}
+    .tg-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px -4px rgba(0,136,204,0.4)}
+    .tg-btn svg{width:20px;height:20px;fill:#fff}
+    .tg-skip{display:block;margin-top:1rem;font-size:0.78rem;color:var(--text-secondary);cursor:pointer;background:none;border:none;font-family:inherit;opacity:0.6;transition:opacity 0.2s}
+    .tg-skip:hover{opacity:1}
+
     .loading{text-align:center;padding:4rem 1rem;color:var(--text-secondary);font-size:1rem}
     .error-box{text-align:center;padding:2rem;background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;color:var(--orange)}
     .empty-state{text-align:center;padding:2rem;color:var(--text-secondary);font-size:0.9rem}
@@ -146,6 +160,20 @@
   </style>
 </head>
 <body>
+<div class="tg-overlay" id="tgOverlay">
+  <div class="tg-modal">
+    <div class="tg-icon">
+      <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+    </div>
+    <div class="tg-title">Join the Channel!</div>
+    <div class="tg-desc">Get updates on new lectures, materials, and course content directly on Telegram.</div>
+    <a class="tg-btn" id="tgBtn" href="https://t.me/tranquilizer014" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      Join Telegram
+    </a>
+    <button class="tg-skip" id="tgSkip">Skip — just show me the content</button>
+  </div>
+</div>
 <div class="visitor-counter" id="visitorCount">...</div>
 <div class="widget" id="app">
   <div class="widget-header">
@@ -328,6 +356,17 @@
     fl.innerHTML=socials.map(s=>'<a class="footer-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+(icons[s.platform]||'\uD83D\uDD17')+' '+esc(s.platform)+'</a>').join('');
     fm.textContent='v'+esc(data.version||'1.0')+' \u2022 Last updated: '+esc(data.lastUpdated||'');
   }
+
+  // Telegram gate
+  const tgOverlay=document.getElementById('tgOverlay');
+  const tgBtn=document.getElementById('tgBtn');
+  const tgSkip=document.getElementById('tgSkip');
+  if(!localStorage.getItem('tgGateDismissed')){
+    tgOverlay.classList.remove('hidden');
+  }else{tgOverlay.classList.add('hidden')}
+  function dismissTg(){localStorage.setItem('tgGateDismissed','1');tgOverlay.classList.add('hidden')}
+  tgBtn.addEventListener('click',()=>{setTimeout(dismissTg,500)});
+  tgSkip.addEventListener('click',dismissTg);
 
   // Visitor counter (CountAPI - read only)
   fetch('https://api.countapi.xyz/get/tranquilizer014/golf-batch')
