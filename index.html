@@ -171,12 +171,40 @@
     .empty-state{text-align:center;padding:2rem;color:var(--text-secondary);font-size:0.9rem}
 
     @media(max-width:600px){
-      .widget{padding:1.1rem;border-radius:16px}
-      .header-title{font-size:1.1rem}.card-title{font-size:0.88rem}
-      .sub-card .card-title{font-size:0.78rem}
-      .open-btn{font-size:0.68rem;padding:0.25rem 0.6rem 0.25rem 0.5rem}
-      .expand-inner{padding:0.3rem 0.3rem 0.7rem}
-      .icon-circle{width:38px;height:38px}
+      .widget{padding:1rem;border-radius:14px;margin:0 8px}
+      .widget-header{gap:0.5rem;padding-bottom:0.8rem}
+      .home-link{padding:0.3rem 0.7rem 0.3rem 0.5rem;font-size:0.78rem}
+      .home-link svg{width:16px;height:16px}
+      .home-text{font-size:0.78rem}
+      .header-title{font-size:1rem}
+      .theme-toggle{width:34px;height:34px}
+      .theme-toggle svg{width:16px;height:16px}
+      .info-notice{padding:0.7rem 0.9rem;font-size:0.78rem}
+      .quick-links{gap:6px}
+      .quick-link{padding:0.45rem 0.8rem;font-size:0.8rem;border-radius:10px}
+      .quick-link svg{width:14px;height:14px}
+      .stats-bar{padding:0.7rem 0.9rem}
+      .overall-prog-label{font-size:0.7rem}
+      .subject-group{font-size:0.65rem;margin:1rem 0 0.4rem}
+      .card-link{padding:0.7rem 0.9rem;gap:0.5rem}
+      .icon-circle{width:36px;height:36px;border-radius:9px;font-size:1.1rem}
+      .card-title{font-size:0.85rem}
+      .subject-right{gap:4px}
+      .subject-count-pill{font-size:0.65rem;padding:0.15rem 0.5rem}
+      .chevron-btn{font-size:0.68rem;padding:0.2rem 0.6rem 0.2rem 0.4rem}
+      .chevron-icon-svg{width:12px;height:12px}
+      .mark-all-btn{font-size:0.6rem;padding:0.15rem 0.5rem}
+      .expand-inner{padding:0.2rem 0.2rem 0.6rem}
+      .sub-card .card-link{padding:0.4rem 0.6rem}
+      .sub-card .icon-circle{width:28px;height:28px;border-radius:7px;font-size:0.6rem}
+      .sub-card .card-title{font-size:0.75rem}
+      .watch-btn{width:24px;height:24px}
+      .watch-svg{width:18px;height:18px}
+      .open-btn{font-size:0.65rem;padding:0.2rem 0.5rem 0.2rem 0.4rem}
+      .open-btn svg{width:11px;height:11px}
+      .footer-link{font-size:0.75rem;padding:0.35rem 0.8rem 0.35rem 0.6rem}
+      .footer-link svg{width:14px;height:14px}
+      .visitor-counter{bottom:10px;left:10px;font-size:0.65rem;padding:3px 8px}
     }
   </style>
 </head>
@@ -195,7 +223,7 @@
     <button class="tg-skip" id="tgSkip">Skip — just show me the content</button>
   </div>
 </div>
-<div class="visitor-counter"><span data-vc="true" data-vc-page="golf-batch"></span></div>
+<div class="visitor-counter" id="visitorCount">0</div>
 <div class="widget" id="app">
   <div class="widget-header">
     <a class="home-link" id="homeLink" href="#" target="_blank" rel="noopener">
@@ -428,8 +456,14 @@
     fm.textContent='v'+esc(data.version||'1.0')+' \u2022 '+esc(data.lastUpdated||'');
   }
 
-  // Visitor counter (Vercount)
-  // loads automatically via script tag below
+  // Visitor counter (localStorage)
+  (function(){
+    const el=document.getElementById('visitorCount');
+    let count=parseInt(localStorage.getItem('golfBatchVisits')||'0',10);
+    count++;
+    localStorage.setItem('golfBatchVisits',count);
+    el.textContent=count;
+  })();
 
   // Fetch & render
   fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('Data file not found');return r.json()})
@@ -437,6 +471,5 @@
     .catch(e=>{subjectsContainer.innerHTML='<div class="error-box"><strong>Could not load course data</strong><br>'+esc(e.message)+'</div>'});
 })();
 </script>
-<script async src="https://vercount.one/js"></script>
 </body>
 </html>
