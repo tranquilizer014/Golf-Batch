@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Batch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#f4f7fb;--card-bg:#ffffff;--card-hover-bg:#edf4fd;
+      --card-border:#dce7f3;--card-hover-border:#7fafd4;
+      --text-primary:#0d3550;--text-secondary:#2673a0;
+      --header-bg:#e3eef8;--header-hover-bg:#cfe0f0;
+      --subcard-bg:#f8fbff;--subcard-hover-bg:#eaf3fc;
+      --subcard-border:#dce7f3;--subcard-hover-border:#7fafd4;
+      --shadow:rgba(13,53,80,0.10);--shadow-hover:rgba(13,53,80,0.18);
+      --border-accent:#a8c8e0;--section-accent:#2a7bac;
+      --footer-text:#0d3550;--yt-bg:#2a7bac;--yt-text:#ffffff;
+      --yt-hover-bg:#1a5a85;--widget-border:#c0d8ec;
+      --toggle-bg:#ffffff;--pill-bg:#e8f2fb;--pill-text:#1b5e8a;
+      --green:#22c55e;--green-bg:#d9f0e5;--orange:#c05020;--orange-bg:#ffe8da;
+    }
+    .dark {
+      --bg:#111926;--card-bg:#1c2738;--card-hover-bg:#243347;
+      --card-border:#2e3f55;--card-hover-border:#4a7499;
+      --text-primary:#cce0f0;--text-secondary:#89bcd8;
+      --header-bg:#1c2c3e;--header-hover-bg:#253850;
+      --subcard-bg:#1c2738;--subcard-hover-bg:#243347;
+      --subcard-border:#2e3f55;--subcard-hover-border:#4a7499;
+      --shadow:rgba(0,0,0,0.35);--shadow-hover:rgba(0,0,0,0.5);
+      --border-accent:#3a5570;--section-accent:#4d9cc5;
+      --footer-text:#cce0f0;--yt-bg:#1e4d6e;--yt-text:#cce0f0;
+      --yt-hover-bg:#4d9cc5;--widget-border:#2e3f55;
+      --toggle-bg:#1c2738;--pill-bg:#1c2c3e;--pill-text:#89bcd8;
+      --green:#22c55e;--green-bg:#1a3a2a;--orange:#ff8a65;--orange-bg:#3a2010;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);font-family:'Inter','Segoe UI',Roboto,system-ui,sans-serif;transition:background 0.3s;color:var(--text-primary)}
+    a{color:var(--section-accent);text-decoration:none}
+    a:hover{color:var(--yt-hover-bg)}
+
+    .widget{max-width:860px;margin:0 auto;background:var(--bg);border:1px solid var(--widget-border);border-radius:24px;padding:1.8rem 1.8rem 2rem;box-shadow:0 8px 32px -8px var(--shadow);transition:background 0.3s,border-color 0.3s}
+
+    .widget-header{display:flex;align-items:center;gap:0.9rem;margin-bottom:1rem;border-bottom:1.5px solid var(--border-accent);padding-bottom:1.1rem;flex-wrap:wrap}
+    .home-link{display:flex;align-items:center;gap:0.45rem;text-decoration:none;background:var(--header-bg);border-radius:50px;padding:0.4rem 1rem 0.4rem 0.7rem;transition:background 0.2s,transform 0.15s;flex-shrink:0;border:1px solid var(--card-border)}
+    .home-link:hover{background:var(--header-hover-bg);transform:translateY(-1px)}
+    .home-link svg{width:24px;height:24px;fill:var(--text-secondary)}
+    .home-text{font-weight:600;color:var(--text-secondary);font-size:1rem}
+    .header-title{font-size:1.5rem;font-weight:700;color:var(--text-primary);letter-spacing:-0.02em;flex:1;line-height:1.2}
+    .theme-toggle{background:var(--toggle-bg);border:1.5px solid var(--card-border);border-radius:50%;width:40px;height:40px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;flex-shrink:0}
+    .theme-toggle:hover{border-color:var(--section-accent);background:var(--pill-bg)}
+    .theme-toggle svg{width:20px;height:20px;fill:none;stroke:var(--text-primary);stroke-width:2}
+    .dark .sun-icon{display:block}.dark .moon-icon{display:none}
+    .sun-icon{display:none}.moon-icon{display:block}
+
+    .quick-links{display:flex;gap:8px;margin-bottom:1.2rem;flex-wrap:wrap}
+    .quick-link{display:inline-flex;align-items:center;gap:6px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:0.55rem 1.1rem;font-weight:600;color:var(--text-primary);font-size:0.88rem;transition:all 0.2s;text-decoration:none}
+    .quick-link:hover{background:var(--card-hover-bg);border-color:var(--card-hover-border);transform:translateY(-1px);box-shadow:0 4px 12px -4px var(--shadow-hover)}
+    .quick-link svg{width:18px;height:18px;stroke:var(--section-accent);fill:none;stroke-width:2}
+
+    .stats-bar{margin-bottom:1.2rem;background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:0.85rem 1.1rem;display:flex;flex-direction:column;gap:0.6rem}
+    .overall-prog-wrap{display:flex;align-items:center;gap:0.75rem}
+    .overall-prog-track{flex:1;height:7px;background:var(--card-border);border-radius:99px;overflow:hidden}
+    .overall-prog-fill{height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,#2a7bac 0%,#22c55e 100%);transition:width 0.5s ease}
+    .overall-prog-label{font-size:0.78rem;font-weight:700;color:var(--text-secondary);white-space:nowrap;flex-shrink:0}
+    .stats-chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+    .stat-chip{font-size:0.72rem;font-weight:600;background:var(--pill-bg);color:var(--pill-text);border:1px solid var(--card-border);border-radius:50px;padding:0.22rem 0.7rem;white-space:nowrap}
+
+    .subject-group{margin:1.4rem 0 0.5rem;font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--section-accent);display:flex;align-items:center;gap:0.5rem}
+    .subject-group::after{content:"";flex:1;height:1px;background:var(--border-accent);opacity:0.5}
+    .subject-group:first-of-type{margin-top:0}
+    .done-badge{font-size:0.65rem;background:var(--green);color:#fff;border-radius:50px;padding:0.1rem 0.5rem;font-weight:700}
+    .ongoing-badge{font-size:0.65rem;background:var(--orange);color:#fff;border-radius:50px;padding:0.1rem 0.5rem;font-weight:700}
+
+    .cards-stack{display:flex;flex-direction:column;gap:0;margin-bottom:4px}
+
+    .card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;transition:all 0.2s ease;overflow:hidden}
+    .card:hover{border-color:var(--card-hover-border);box-shadow:0 4px 14px -4px var(--shadow-hover)}
+    .card.active-card{border-color:var(--section-accent);box-shadow:0 0 0 2px rgba(42,123,172,0.15)}
+    .card.subject-complete .subject-count-pill{background:var(--green);color:#fff;border-color:var(--green)}
+
+    .card-link{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:0.9rem 1.1rem;color:inherit;gap:0.8rem;width:100%}
+    .expand-toggle{cursor:pointer;user-select:none}
+    .card-left{display:flex;align-items:center;gap:0.8rem;flex:1;min-width:0}
+    .icon-circle{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.3rem}
+    .card-title{font-size:0.97rem;font-weight:600;color:var(--text-primary);line-height:1.3}
+
+    .subject-right{display:flex;align-items:center;gap:6px;flex-shrink:0}
+    .subject-count-pill{font-size:0.72rem;font-weight:700;color:var(--pill-text);background:var(--pill-bg);border-radius:50px;padding:0.2rem 0.6rem;border:1px solid var(--card-border);white-space:nowrap;transition:background 0.3s,color 0.3s,border-color 0.3s}
+    .chevron-btn{display:flex;align-items:center;gap:4px;font-size:0.76rem;font-weight:600;color:var(--pill-text);background:var(--pill-bg);border-radius:50px;padding:0.28rem 0.8rem 0.28rem 0.55rem;border:1px solid var(--card-border);transition:background 0.2s,border-color 0.2s,color 0.2s;white-space:nowrap;flex-shrink:0;cursor:pointer}
+    .card:hover .chevron-btn{background:var(--header-hover-bg);border-color:var(--card-hover-border)}
+    .card.active-card .chevron-btn{background:var(--section-accent);color:#fff;border-color:transparent}
+    .chevron-icon-svg{width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;transition:transform 0.3s}
+    .rotate-chevron .chevron-icon-svg{transform:rotate(180deg)}
+
+    .subj-prog-bar{height:3px;background:var(--card-border);overflow:hidden;display:none}
+    .card.active-card .subj-prog-bar{display:block}
+    .subj-prog-fill{height:100%;width:0%;background:linear-gradient(90deg,#2a7bac,#22c55e);transition:width 0.4s ease}
+
+    .expand-content{max-height:0;overflow:hidden;transition:max-height 0.5s cubic-bezier(0.4,0,0.2,1)}
+    .expand-content.open{max-height:30000px}
+    .expand-inner{padding:0.5rem 0.6rem 0.9rem;display:flex;flex-direction:column;gap:3px}
+
+    .sub-card{background:var(--subcard-bg);border:1px solid var(--subcard-border);border-radius:10px;transition:background 0.15s,border-color 0.15s,transform 0.15s;overflow:hidden}
+    .sub-card:hover{background:var(--subcard-hover-bg);border-color:var(--subcard-hover-border);transform:translateX(3px)}
+    .sub-card .card-link{padding:0.5rem 0.75rem}
+    .sub-card .card-left{gap:0.6rem}
+    .sub-card .icon-circle{width:32px;height:32px;border-radius:8px;font-size:0.7rem}
+    .sub-card .card-title{font-size:0.85rem;font-weight:500}
+
+    .open-btn{display:inline-flex;align-items:center;gap:4px;background:var(--yt-bg);color:var(--yt-text)!important;border-radius:50px;padding:0.3rem 0.8rem 0.3rem 0.6rem;font-size:0.75rem;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:background 0.18s,transform 0.15s,box-shadow 0.18s;letter-spacing:0.02em}
+    .open-btn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2}
+    .open-btn:hover{background:var(--yt-hover-bg);transform:scale(1.06);box-shadow:0 3px 8px rgba(0,0,0,0.2)}
+
+    .coming-soon{background:var(--pill-bg);border:1px dashed var(--card-border);border-radius:10px;padding:0.7rem 1rem;text-align:center;font-size:0.82rem;color:var(--pill-text);font-weight:500;margin-top:4px}
+
+    .footer-section{text-align:center;margin-top:2rem;padding-top:1.4rem;border-top:1.5px solid var(--border-accent)}
+    .footer-links{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:0.8rem}
+    .footer-link{display:inline-flex;align-items:center;gap:6px;text-decoration:none;background:var(--header-bg);border:1px solid var(--card-border);border-radius:50px;padding:0.45rem 1.1rem 0.45rem 0.7rem;font-weight:600;color:var(--footer-text);font-size:0.82rem;transition:background 0.2s,transform 0.15s}
+    .footer-link:hover{background:var(--header-hover-bg);transform:translateY(-2px)}
+    .footer-link svg{width:16px;height:16px;fill:var(--text-secondary)}
+    .footer-meta{font-size:0.72rem;color:var(--text-secondary);opacity:0.7}
+
+    .icon-1{background:#ddeefa;color:#1460a0}.icon-2{background:#d9f0e5;color:#1a7558}
+    .icon-3{background:#f0e3f7;color:#7240a8}.icon-4{background:#ffe8da;color:#c05020}
+    .icon-5{background:#fff3d0;color:#9e7a1a}.icon-6{background:#daeaf7;color:#1a5a80}
+    .icon-7{background:#e0f0ec;color:#286055}.icon-8{background:#f0dff0;color:#7a4a90}
+
+    .visitor-counter{position:fixed;bottom:16px;left:16px;font-size:0.7rem;font-weight:600;color:var(--text-secondary);opacity:0.6;background:var(--card-bg);border:1px solid var(--card-border);border-radius:8px;padding:4px 10px;z-index:50;transition:opacity 0.2s}
+    .visitor-counter:hover{opacity:1}
+
+    .loading{text-align:center;padding:4rem 1rem;color:var(--text-secondary);font-size:1rem}
+    .error-box{text-align:center;padding:2rem;background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;color:var(--orange)}
+    .empty-state{text-align:center;padding:2rem;color:var(--text-secondary);font-size:0.9rem}
+
+    @media(max-width:600px){
+      .widget{padding:1.1rem;border-radius:16px}
+      .header-title{font-size:1.1rem}.card-title{font-size:0.88rem}
+      .sub-card .card-title{font-size:0.78rem}
+      .open-btn{font-size:0.68rem;padding:0.25rem 0.6rem 0.25rem 0.5rem}
+      .expand-inner{padding:0.3rem 0.3rem 0.7rem}
+      .icon-circle{width:38px;height:38px}
+    }
+  </style>
+</head>
+<body>
+<div class="visitor-counter" id="visitorCount">...</div>
+<div class="widget" id="app">
+  <div class="widget-header">
+    <a class="home-link" id="homeLink" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 4 5 4 9v4c0 5 6 9 8 9s8-4 8-9V9c0-4-4-7-8-7zm0 2c3 0 6 2 6 5v4c0 3-4 7-6 7s-6-4-6-7V9c0-3 3-5 6-5z"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></svg>
+      <span class="home-text">Home</span>
+    </a>
+    <div class="header-title" id="courseTitle">Loading...</div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    </button>
+  </div>
+
+  <div class="quick-links" id="quickLinks" style="display:none">
+    <a class="quick-link" id="pdfLink" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Course PDFs
+    </a>
+    <a class="quick-link" id="testLink" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      Course Tests
+    </a>
+  </div>
+
+  <div class="stats-bar" id="statsBar" style="display:none">
+    <div class="overall-prog-wrap">
+      <div class="overall-prog-track"><div class="overall-prog-fill" id="overallProgFill"></div></div>
+      <span class="overall-prog-label" id="overallProgLabel">0 / 0 watched</span>
+    </div>
+    <div class="stats-chips">
+      <span class="stat-chip" id="completedChip">✅ 0 completed</span>
+      <span class="stat-chip" id="ongoingChip">⏳ 0 ongoing</span>
+      <span class="stat-chip" id="totalLecChip">📚 0 lectures</span>
+    </div>
+  </div>
+
+  <div id="subjectsContainer">
+    <div class="loading">Fetching course data...</div>
+  </div>
+
+  <div class="footer-section" id="footerSection" style="display:none">
+    <div class="footer-links" id="footerLinks"></div>
+    <div class="footer-meta" id="footerMeta"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const DATA_URL='data.json';
+  const STORAGE_KEY='golfBatchProgress';
+  const html=document.documentElement;
+  const app=document.getElementById('app');
+  const themeToggle=document.getElementById('themeToggle');
+  const subjectsContainer=document.getElementById('subjectsContainer');
+
+  // Theme
+  const saved=localStorage.getItem('theme')||'light';
+  html.classList.toggle('dark',saved==='dark');
+  function updateThemeIcon(){themeToggle.innerHTML=html.classList.contains('dark')
+    ?'<svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+    :'<svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>';}
+  updateThemeIcon();
+  themeToggle.addEventListener('click',()=>{
+    html.classList.toggle('dark');
+    localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light');
+    updateThemeIcon();
+  });
+
+  // Progress
+  function getProgress(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}}catch(e){return{}}}
+  function saveProgress(key,val){const p=getProgress();p[key]=val;localStorage.setItem(STORAGE_KEY,JSON.stringify(p))}
+  function isWatched(key){return getProgress()[key]===true}
+
+  const iconClasses=['icon-1','icon-2','icon-3','icon-4','icon-5','icon-6','icon-7','icon-8'];
+  const subjectEmojis=['📐','📖','🧠','🌍','⚡','🔬','📝','💬'];
+
+  function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
+
+  function render(data){
+    document.getElementById('courseTitle').textContent=esc(data.courseName||'Golf Batch');
+    document.title=esc(data.courseName||'Golf Batch');
+
+    // Home link
+    if(data.homeUrl){document.getElementById('homeLink').href=data.homeUrl}
+    else{document.getElementById('homeLink').style.display='none'}
+
+    // Quick links
+    const ql=document.getElementById('quickLinks');
+    if(data.coursePdfs||data.courseTests){ql.style.display='flex';
+      if(data.coursePdfs){document.getElementById('pdfLink').href=data.coursePdfs}
+      else{document.getElementById('pdfLink').style.display='none'}
+      if(data.courseTests){document.getElementById('testLink').href=data.courseTests}
+      else{document.getElementById('testLink').style.display='none'}
+    }
+
+    // Stats
+    const subjects=data.subjects||[];
+    let totalLec=0,completedSubj=0,ongoingSubj=0;
+    subjects.forEach(s=>{totalLec+=(s.lectures||[]).length;if(s.completed)completedSubj++;else ongoingSubj++});
+    const watchedCount=Object.keys(getProgress()).filter(k=>getProgress()[k]===true&&k.startsWith('lec-')).length;
+
+    document.getElementById('statsBar').style.display='flex';
+    const pct=totalLec>0?Math.round(watchedCount/totalLec*100):0;
+    document.getElementById('overallProgFill').style.width=pct+'%';
+    document.getElementById('overallProgLabel').textContent=watchedCount+' / '+totalLec+' watched';
+    document.getElementById('completedChip').textContent='\u2705 '+completedSubj+' completed';
+    document.getElementById('ongoingChip').textContent='\u23F3 '+ongoingSubj+' ongoing';
+    document.getElementById('totalLecChip').textContent='\uD83D\uDCDA '+totalLec+' lectures';
+
+    if(subjects.length===0){
+      subjectsContainer.innerHTML='<div class="empty-state">No subjects found. Add data in builder.html</div>';
+      return;
+    }
+
+    let html='';
+    subjects.forEach((sub,si)=>{
+      const ico=iconClasses[si%iconClasses.length];
+      const emoji=subjectEmojis[si%subjectEmojis.length];
+      const lectures=sub.lectures||[];
+      const subWatched=lectures.filter((_,j)=>isWatched('lec-'+si+'-'+j)).length;
+      const subPct=lectures.length>0?Math.round(subWatched/lectures.length*100):0;
+      const completed=sub.completed;
+
+      html+='<div class="subject-group">'+esc(emoji)+' '+esc(sub.name);
+      if(completed){html+='<span class="done-badge">Done</span>'}
+      else{html+='<span class="ongoing-badge">Ongoing</span>'}
+      html+='</div>';
+
+      html+='<div class="cards-stack">';
+      html+='<div class="card '+(completed?'subject-complete':'')+'" data-si="'+si+'">';
+      html+='<div class="card-link expand-toggle" onclick="window._toggleSubject('+si+')">';
+      html+='<div class="card-left">';
+      html+='<div class="icon-circle '+ico+'">'+emoji+'</div>';
+      html+='<span class="card-title">'+esc(sub.name)+'</span>';
+      html+='</div><div class="subject-right">';
+      html+='<span class="subject-count-pill">'+subWatched+'/'+lectures.length+'</span>';
+      html+='<div class="chevron-btn chevron-icon" id="chevron-'+si+'"><svg class="chevron-icon-svg" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>Expand</div>';
+      html+='</div></div><div class="subj-prog-bar"><div class="subj-prog-fill" id="prog-'+si+'" style="width:'+subPct+'%"></div></div></div>';
+
+      html+='<div class="expand-content" id="expand-'+si+'"><div class="expand-inner">';
+      lectures.forEach((lec,j)=>{
+        const wk=isWatched('lec-'+si+'-'+j);
+        html+='<div class="sub-card '+(wk?'watched':'')+'" id="row-'+si+'-'+j+'">';
+        html+='<div class="card-link">';
+        html+='<div class="card-left">';
+        html+='<div class="icon-circle '+ico+'" style="font-size:0.65rem">'+(j+1)+'</div>';
+        html+='<span class="card-title">'+esc(lec.title)+'</span>';
+        html+='</div>';
+        html+='<a class="open-btn" href="'+esc(lec.link)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open</a>';
+        html+='</div></div>';
+      });
+      if(!completed){
+        html+='<div class="coming-soon">\uD83D\uDCCC Adding more lectures soon...</div>';
+      }
+      html+='</div></div></div></div>';
+    });
+    subjectsContainer.innerHTML=html;
+  }
+
+  window._toggleSubject=function(si){
+    const card=document.querySelector('.card[data-si="'+si+'"]');
+    const expand=document.getElementById('expand-'+si);
+    const chevron=document.getElementById('chevron-'+si);
+    const isOpen=expand.classList.contains('open');
+    expand.classList.toggle('open');
+    card.classList.toggle('active-card');
+    chevron.classList.toggle('rotate-chevron');
+  };
+
+  // Footer
+  function renderFooter(data){
+    const fs=document.getElementById('footerSection');
+    const fl=document.getElementById('footerLinks');
+    const fm=document.getElementById('footerMeta');
+    const socials=data.socials||[];
+    if(socials.length===0){fs.style.display='none';return}
+    fs.style.display='block';
+    const icons={Reddit:'\uD83D\uDD11',Telegram:'\u2708\uFE0F','All Work':'\uD83C\uDFD7\uFE0F'};
+    fl.innerHTML=socials.map(s=>'<a class="footer-link" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+(icons[s.platform]||'\uD83D\uDD17')+' '+esc(s.platform)+'</a>').join('');
+    fm.textContent='v'+esc(data.version||'1.0')+' \u2022 Last updated: '+esc(data.lastUpdated||'');
+  }
+
+  // Visitor counter (CountAPI - read only)
+  fetch('https://api.countapi.xyz/get/tranquilizer014/golf-batch')
+    .then(r=>r.json())
+    .then(d=>{if(d.value!=null)document.getElementById('visitorCount').textContent=d.value})
+    .catch(()=>{document.getElementById('visitorCount').style.display='none'});
+
+  // Fetch
+  fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('Data file not found');return r.json()})
+    .then(d=>{render(d);renderFooter(d)})
+    .catch(e=>{subjectsContainer.innerHTML='<div class="error-box"><strong>Could not load course data</strong><br>'+esc(e.message)+'</div>'});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "courseName": "Golf Batch",
+  "version": "1.0.0",
+  "lastUpdated": "Sep 2026",
+  "homeUrl": "https://tranquilizer014.github.io/Tranquilizer_work/",
+  "coursePdfs": "https://u.pcloud.link/publink/show?code=kZUrrRJZaVBbTQRFcE7LKXwTs6H0lQAT1e9y",
+  "courseTests": "https://drive.google.com/drive/folders/1LCLm5B5NE_RyoEDL18aFPxB3idRDlOwO",
+  "socials": [
+    { "platform": "Reddit", "url": "https://www.reddit.com/u/tranquilizer014" },
+    { "platform": "Telegram", "url": "https://t.me/tranquilizer014" },
+    { "platform": "All Work", "url": "https://tranquilizer014.github.io/Tranquilizer_work/" }
+  ],
+  "subjects": [
+    {
+      "name": "Maths",
+      "completed": true,
+      "lectures": [
+        { "title": "Percentage Class 1", "link": "https://example.com/1" },
+        { "title": "Percentage Class 2", "link": "https://example.com/2" },
+        { "title": "Profit and Loss Class 1", "link": "https://example.com/3" }
+      ]
+    },
+    {
+      "name": "English",
+      "completed": false,
+      "lectures": [
+        { "title": "Grammar Basics", "link": "https://example.com/4" },
+        { "title": "Reading Comprehension", "link": "https://example.com/5" }
+      ]
+    },
+    {
+      "name": "GK",
+      "completed": false,
+      "lectures": [
+        { "title": "Current Affairs Jan", "link": "https://example.com/6" }
+      ]
+    }
+  ]
+}

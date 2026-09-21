@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#f4f7fb;--card-bg:#ffffff;--card-hover-bg:#edf4fd;
+      --card-border:#dce7f3;--card-hover-border:#7fafd4;
+      --text-primary:#0d3550;--text-secondary:#2673a0;
+      --header-bg:#e3eef8;--header-hover-bg:#cfe0f0;
+      --subcard-bg:#f8fbff;--subcard-hover-bg:#eaf3fc;
+      --subcard-border:#dce7f3;--subcard-hover-border:#7fafd4;
+      --shadow:rgba(13,53,80,0.10);--shadow-hover:rgba(13,53,80,0.18);
+      --border-accent:#a8c8e0;--section-accent:#2a7bac;
+      --footer-text:#0d3550;--widget-border:#c0d8ec;
+      --toggle-bg:#ffffff;--pill-bg:#e8f2fb;--pill-text:#1b5e8a;
+      --green:#22c55e;--green-bg:#d9f0e5;--danger:#e74c3c;
+    }
+    .dark {
+      --bg:#111926;--card-bg:#1c2738;--card-hover-bg:#243347;
+      --card-border:#2e3f55;--card-hover-border:#4a7499;
+      --text-primary:#cce0f0;--text-secondary:#89bcd8;
+      --header-bg:#1c2c3e;--header-hover-bg:#253850;
+      --subcard-bg:#1c2738;--subcard-hover-bg:#243347;
+      --subcard-border:#2e3f55;--subcard-hover-border:#4a7499;
+      --shadow:rgba(0,0,0,0.35);--shadow-hover:rgba(0,0,0,0.5);
+      --border-accent:#3a5570;--section-accent:#4d9cc5;
+      --footer-text:#cce0f0;--widget-border:#2e3f55;
+      --toggle-bg:#1c2738;--pill-bg:#1c2c3e;--pill-text:#89bcd8;
+      --green:#22c55e;--green-bg:#1a3a2a;--danger:#ff6b6b;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);font-family:'Inter','Segoe UI',Roboto,system-ui,sans-serif;transition:background 0.3s;color:var(--text-primary)}
+
+    .widget{max-width:860px;margin:0 auto;background:var(--bg);border:1px solid var(--widget-border);border-radius:24px;padding:1.8rem 1.8rem 2rem;box-shadow:0 8px 32px -8px var(--shadow);transition:background 0.3s,border-color 0.3s}
+
+    .widget-header{display:flex;align-items:center;gap:0.9rem;margin-bottom:1.5rem;border-bottom:1.5px solid var(--border-accent);padding-bottom:1.1rem;flex-wrap:wrap}
+    .header-title{font-size:1.5rem;font-weight:700;color:var(--text-primary);letter-spacing:-0.02em;flex:1;line-height:1.2}
+    .header-actions{display:flex;gap:8px;align-items:center;flex-shrink:0}
+    .theme-toggle{background:var(--toggle-bg);border:1.5px solid var(--card-border);border-radius:50%;width:40px;height:40px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+    .theme-toggle:hover{border-color:var(--section-accent);background:var(--pill-bg)}
+    .theme-toggle svg{width:20px;height:20px;fill:none;stroke:var(--text-primary);stroke-width:2}
+    .dark .sun-icon{display:block}.dark .moon-icon{display:none}
+    .sun-icon{display:none}.moon-icon{display:block}
+
+    .btn{padding:8px 16px;border:none;border-radius:50px;cursor:pointer;font-size:0.8rem;font-weight:600;font-family:inherit;transition:all 0.15s}
+    .btn:active{transform:scale(0.97)}
+    .btn-accent{background:var(--section-accent);color:#fff}.btn-accent:hover{background:var(--yt-hover-bg,#1a5a85)}
+    .btn-outline{background:var(--pill-bg);color:var(--pill-text);border:1px solid var(--card-border)}.btn-outline:hover{border-color:var(--section-accent);color:var(--section-accent)}
+    .btn-danger{background:transparent;color:var(--danger);border:1px solid var(--danger)}.btn-danger:hover{background:var(--danger);color:#fff}
+
+    .form-section{margin-bottom:1.5rem}
+    .form-section-title{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--section-accent);margin-bottom:0.7rem;display:flex;align-items:center;gap:0.5rem}
+    .form-section-title::after{content:"";flex:1;height:1px;background:var(--border-accent);opacity:0.5}
+    .form-group{margin-bottom:1rem}
+    .form-group label{display:block;font-weight:600;margin-bottom:0.4rem;font-size:0.88rem;color:var(--text-primary)}
+    .form-input{width:100%;padding:0.6rem 0.9rem;border:1px solid var(--card-border);border-radius:10px;font-size:0.9rem;font-family:inherit;background:var(--card-bg);color:var(--text-primary);transition:border-color 0.2s}
+    .form-input:focus{outline:none;border-color:var(--section-accent)}
+    .form-row{display:flex;gap:10px}.form-row .form-group{flex:1}
+
+    .subject-card{background:var(--card-bg);border:1px solid var(--card-border);border-left:4px solid var(--section-accent);border-radius:14px;padding:1.2rem;margin-bottom:1rem;transition:all 0.2s}
+    .subject-card:hover{border-color:var(--card-hover-border);box-shadow:0 4px 14px -4px var(--shadow-hover)}
+    .subject-header{display:flex;gap:10px;margin-bottom:0.8rem;align-items:center;flex-wrap:wrap}
+    .subject-header .form-input{flex:1;min-width:150px}
+    .subject-header .btn-danger{flex-shrink:0}
+
+    .completed-toggle{display:flex;align-items:center;gap:8px;padding:0.4rem 0;font-size:0.85rem;color:var(--text-secondary)}
+    .completed-toggle input[type=checkbox]{width:18px;height:18px;accent-color:var(--section-accent);cursor:pointer}
+    .completed-toggle label{cursor:pointer;font-weight:500}
+
+    .lectures-section{margin-top:0.5rem}
+    .lecture-row{display:flex;gap:8px;margin-bottom:6px;align-items:center}
+    .lecture-row .form-input:first-child{flex:2}
+    .lecture-row .form-input:nth-child(2){flex:3}
+    .lecture-row .btn-danger{flex-shrink:0;padding:6px 10px;font-size:0.75rem}
+
+    .social-row{display:flex;gap:8px;margin-bottom:6px;align-items:center}
+    .social-row .form-input:first-child{flex:1}
+    .social-row .form-input:nth-child(2){flex:3}
+    .social-row .btn-danger{flex-shrink:0;padding:6px 10px;font-size:0.75rem}
+
+    .preview-section{margin-top:2rem}
+    .preview-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.8rem;flex-wrap:wrap;gap:8px}
+    .preview-header h3{font-size:1rem;font-weight:700;color:var(--text-primary)}
+    .preview-actions{display:flex;gap:6px}
+    .preview-box{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:1.2rem;max-height:400px;overflow-y:auto}
+    .preview-box pre{font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;color:var(--text-secondary);white-space:pre-wrap;word-break:break-all}
+
+    .toast{position:fixed;bottom:24px;right:24px;background:var(--section-accent);color:#fff;padding:12px 24px;border-radius:10px;font-weight:600;font-size:0.88rem;opacity:0;transform:translateY(10px);transition:all 0.3s;pointer-events:none;z-index:999}
+    .toast.show{opacity:1;transform:translateY(0)}
+    .file-input-hidden{display:none}
+
+    @media(max-width:600px){
+      .widget{padding:1.1rem;border-radius:16px}
+      .header-title{font-size:1.1rem}
+      .form-row{flex-direction:column}.form-row .form-group{width:100%}
+      .lecture-row{flex-direction:column}.lecture-row .form-input{width:100%}
+      .social-row{flex-direction:column}.social-row .form-input{width:100%}
+    }
+  </style>
+</head>
+<body>
+<div class="widget">
+  <div class="widget-header">
+    <div class="header-title">Course Builder</div>
+    <div class="header-actions">
+      <button class="btn btn-outline" onclick="importJson()">Import JSON</button>
+      <button class="btn btn-danger" onclick="clearAll()">New</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+    </div>
+  </div>
+  <input type="file" class="file-input-hidden" id="fileInput" accept=".json" onchange="handleImport(event)">
+
+  <!-- Course Info -->
+  <div class="form-section">
+    <div class="form-section-title">Course Info</div>
+    <div class="form-row">
+      <div class="form-group"><label>Course Name</label><input class="form-input" id="courseName" placeholder="e.g. Golf Batch" oninput="updatePreview()"></div>
+      <div class="form-group"><label>Version</label><input class="form-input" id="version" placeholder="e.g. 1.0.0" oninput="updatePreview()"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Last Updated</label><input class="form-input" id="lastUpdated" placeholder="e.g. Sep 2026" oninput="updatePreview()"></div>
+      <div class="form-group"><label>Home URL</label><input class="form-input" id="homeUrl" placeholder="https://..." oninput="updatePreview()"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Course PDFs Link</label><input class="form-input" id="coursePdfs" placeholder="https://..." oninput="updatePreview()"></div>
+      <div class="form-group"><label>Course Tests Link</label><input class="form-input" id="courseTests" placeholder="https://..." oninput="updatePreview()"></div>
+    </div>
+  </div>
+
+  <!-- Socials -->
+  <div class="form-section">
+    <div class="form-section-title">Footer Socials</div>
+    <div id="socialsContainer"></div>
+    <button class="btn btn-outline" onclick="addSocial()">+ Add Social Link</button>
+  </div>
+
+  <!-- Subjects -->
+  <div class="form-section">
+    <div class="form-section-title">Subjects & Lectures</div>
+    <div id="subjectsContainer"></div>
+    <button class="btn btn-accent" onclick="addSubject()">+ Add Subject</button>
+  </div>
+
+  <!-- Preview -->
+  <div class="preview-section">
+    <div class="preview-header">
+      <h3>Preview (data.json)</h3>
+      <div class="preview-actions">
+        <button class="btn btn-outline" onclick="copyJson()">Copy</button>
+        <button class="btn btn-accent" onclick="downloadJson()">Download</button>
+      </div>
+    </div>
+    <div class="preview-box"><pre id="jsonPreview">Add data to see preview...</pre></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  const html=document.documentElement;
+  const themeToggle=document.getElementById('themeToggle');
+  const STORAGE_KEY='courseBuilderData';
+  let subjectCount=0,socialCount=0;
+
+  // Theme
+  const saved=localStorage.getItem('theme')||'light';
+  html.classList.toggle('dark',saved==='dark');
+  function updateThemeIcon(){themeToggle.innerHTML=html.classList.contains('dark')
+    ?'<svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+    :'<svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>';}
+  updateThemeIcon();
+  themeToggle.addEventListener('click',()=>{html.classList.toggle('dark');localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light');updateThemeIcon()});
+
+  function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
+
+  function addSocial(platform,url){
+    socialCount++;
+    const id=socialCount;
+    const row=document.createElement('div');
+    row.className='social-row';
+    row.id='social-'+id;
+    row.innerHTML='<input class="form-input" placeholder="Platform (Reddit, Telegram...)" oninput="updatePreview()" value="'+esc(platform||'')+'">'
+      +'<input class="form-input" placeholder="URL (https://...)" oninput="updatePreview()" value="'+esc(url||'')+'">'
+      +'<button class="btn btn-danger" onclick="document.getElementById(\'social-'+id+'\').remove();updatePreview()">✕</button>';
+    document.getElementById('socialsContainer').appendChild(row);
+  }
+
+  function addSubject(name,lectures,completed){
+    subjectCount++;
+    const id=subjectCount;
+    const div=document.createElement('div');
+    div.className='subject-card';
+    div.id='subject-'+id;
+    div.innerHTML='<div class="subject-header">'
+      +'<input class="form-input" placeholder="Subject name" oninput="updatePreview()" value="'+esc(name||'')+'">'
+      +'<button class="btn btn-danger" onclick="document.getElementById(\'subject-'+id+'\').remove();updatePreview()">Remove</button>'
+      +'</div>'
+      +'<div class="completed-toggle"><input type="checkbox" id="completed-'+id+'" '+(completed?'checked':'')+' onchange="updatePreview()"><label for="completed-'+id+'">Mark as completed</label></div>'
+      +'<div class="lectures-section" id="lectures-'+id+'"></div>'
+      +'<button class="btn btn-outline" style="margin-top:6px;font-size:0.75rem" onclick="addLecture('+id+')">+ Add Lecture</button>';
+    document.getElementById('subjectsContainer').appendChild(div);
+    if(lectures&&lectures.length>0){lectures.forEach(l=>addLecture(id,l.title,l.link))}
+  }
+
+  function addLecture(subjectId,title,link){
+    const container=document.getElementById('lectures-'+subjectId);
+    const row=document.createElement('div');
+    row.className='lecture-row';
+    row.innerHTML='<input class="form-input" placeholder="Lecture title" oninput="updatePreview()" value="'+esc(title||'')+'">'
+      +'<input class="form-input" placeholder="Link (https://...)" oninput="updatePreview()" value="'+esc(link||'')+'">'
+      +'<button class="btn btn-danger" onclick="this.parentElement.remove();updatePreview()">✕</button>';
+    container.appendChild(row);
+  }
+
+  function buildData(){
+    const data={courseName:'',version:'',lastUpdated:'',homeUrl:'',coursePdfs:'',courseTests:'',socials:[],subjects:[]};
+    data.courseName=document.getElementById('courseName').value;
+    data.version=document.getElementById('version').value;
+    data.lastUpdated=document.getElementById('lastUpdated').value;
+    data.homeUrl=document.getElementById('homeUrl').value;
+    data.coursePdfs=document.getElementById('coursePdfs').value;
+    data.courseTests=document.getElementById('courseTests').value;
+    document.querySelectorAll('.social-row').forEach(row=>{
+      const inputs=row.querySelectorAll('.form-input');
+      const platform=inputs[0].value,url=inputs[1].value;
+      if(platform||url)data.socials.push({platform,url});
+    });
+    document.querySelectorAll('.subject-card').forEach(card=>{
+      const name=card.querySelector('.subject-header .form-input').value;
+      const completed=card.querySelector('input[type=checkbox]').checked;
+      const lectures=[];
+      card.querySelectorAll('.lecture-row').forEach(row=>{
+        const inputs=row.querySelectorAll('.form-input');
+        const title=inputs[0].value,link=inputs[1].value;
+        if(title||link)lectures.push({title,link});
+      });
+      if(name||lectures.length>0)data.subjects.push({name,completed,lectures});
+    });
+    return data;
+  }
+
+  function saveToStorage(){localStorage.setItem(STORAGE_KEY,JSON.stringify(buildData()))}
+  function updatePreview(){const d=buildData();document.getElementById('jsonPreview').textContent=JSON.stringify(d,null,2);saveToStorage()}
+
+  function loadFromStorage(){
+    const raw=localStorage.getItem(STORAGE_KEY);
+    if(!raw)return false;
+    try{
+      const data=JSON.parse(raw);
+      document.getElementById('courseName').value=data.courseName||'';
+      document.getElementById('version').value=data.version||'';
+      document.getElementById('lastUpdated').value=data.lastUpdated||'';
+      document.getElementById('homeUrl').value=data.homeUrl||'';
+      document.getElementById('coursePdfs').value=data.coursePdfs||'';
+      document.getElementById('courseTests').value=data.courseTests||'';
+      (data.socials||[]).forEach(s=>addSocial(s.platform,s.url));
+      (data.subjects||[]).forEach(sub=>addSubject(sub.name,sub.lectures,sub.completed));
+      return true;
+    }catch(e){return false}
+  }
+
+  function clearAll(){
+    if(!confirm('Start fresh? This will clear all unsaved changes.'))return;
+    localStorage.removeItem(STORAGE_KEY);
+    document.getElementById('courseName').value='';
+    document.getElementById('version').value='';
+    document.getElementById('lastUpdated').value='';
+    document.getElementById('homeUrl').value='';
+    document.getElementById('coursePdfs').value='';
+    document.getElementById('courseTests').value='';
+    document.getElementById('socialsContainer').innerHTML='';
+    document.getElementById('subjectsContainer').innerHTML='';
+    document.getElementById('fileInput').value='';
+    subjectCount=0;socialCount=0;
+    updatePreview();showToast('Started fresh');
+  }
+
+  function importJson(){document.getElementById('fileInput').click()}
+  function handleImport(e){
+    const file=e.target.files[0];if(!file)return;
+    const reader=new FileReader();
+    reader.onload=function(ev){
+      try{
+        const data=JSON.parse(ev.target.result);
+        document.getElementById('courseName').value=data.courseName||'';
+        document.getElementById('version').value=data.version||'';
+        document.getElementById('lastUpdated').value=data.lastUpdated||'';
+        document.getElementById('homeUrl').value=data.homeUrl||'';
+        document.getElementById('coursePdfs').value=data.coursePdfs||'';
+        document.getElementById('courseTests').value=data.courseTests||'';
+        document.getElementById('socialsContainer').innerHTML='';
+        document.getElementById('subjectsContainer').innerHTML='';
+        subjectCount=0;socialCount=0;
+        (data.socials||[]).forEach(s=>addSocial(s.platform,s.url));
+        (data.subjects||[]).forEach(sub=>addSubject(sub.name,sub.lectures,sub.completed));
+        saveToStorage();showToast('Imported successfully');
+      }catch(err){showToast('Invalid JSON file')}
+    };
+    reader.readAsText(file);e.target.value='';
+  }
+
+  function copyJson(){navigator.clipboard.writeText(JSON.stringify(buildData(),null,2)).then(()=>showToast('Copied!'))}
+  function downloadJson(){
+    const blob=new Blob([JSON.stringify(buildData(),null,2)],{type:'application/json'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');a.href=url;a.download='data.json';a.click();
+    URL.revokeObjectURL(url);showToast('Downloaded data.json');
+  }
+
+  function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000)}
+
+  loadFromStorage();updatePreview();
+</script>
+</body>
+</html>
