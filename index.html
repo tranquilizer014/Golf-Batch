@@ -132,6 +132,9 @@
     .coming-soon{background:var(--pill-bg);border:1px dashed var(--card-border);border-radius:10px;padding:0.7rem 1rem;text-align:center;font-size:0.82rem;color:var(--pill-text);font-weight:500;margin-top:4px}
     .all-uploaded{background:var(--green-bg);border:1px solid var(--green);border-radius:10px;padding:0.7rem 1rem;text-align:center;font-size:0.82rem;color:var(--green);font-weight:600;margin-top:4px}
 
+    .mark-all-btn{font-size:0.68rem;font-weight:600;cursor:pointer;background:var(--pill-bg);color:var(--pill-text);border:1px solid var(--card-border);border-radius:50px;padding:0.22rem 0.7rem;transition:background 0.15s,border-color 0.15s,color 0.15s;white-space:nowrap;flex-shrink:0}
+    .mark-all-btn:hover{background:var(--green);color:#fff;border-color:var(--green)}
+
     .footer-section{text-align:center;margin-top:2rem;padding-top:1.4rem;border-top:1.5px solid var(--border-accent)}
     .footer-links{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:0.8rem}
     .footer-link{display:inline-flex;align-items:center;gap:6px;text-decoration:none;background:var(--header-bg);border:1px solid var(--card-border);border-radius:50px;padding:0.45rem 1.1rem 0.45rem 0.7rem;font-weight:600;color:var(--footer-text);font-size:0.82rem;transition:background 0.2s,transform 0.15s}
@@ -226,8 +229,6 @@
       <span class="overall-prog-label" id="overallProgLabel">0 / 0 watched</span>
     </div>
     <div class="stats-chips">
-      <span class="stat-chip" id="completedChip">0 completed</span>
-      <span class="stat-chip" id="ongoingChip">0 ongoing</span>
       <span class="stat-chip" id="totalLecChip">0 lectures</span>
     </div>
   </div>
@@ -304,8 +305,6 @@
     const pct=totalLec>0?Math.round(watchedCount/totalLec*100):0;
     document.getElementById('overallProgFill').style.width=pct+'%';
     document.getElementById('overallProgLabel').textContent=watchedCount+' / '+totalLec+' watched';
-    document.getElementById('completedChip').textContent='\u2705 '+completedSubj+' completed';
-    document.getElementById('ongoingChip').textContent='\u23F3 '+ongoingSubj+' ongoing';
     document.getElementById('totalLecChip').textContent='\uD83D\uDCDA '+totalLec+' lectures';
 
     if(subjects.length===0){
@@ -332,6 +331,7 @@
       h+='<div class="icon-circle '+ico+'">'+emoji+'</div>';
       h+='<span class="card-title">'+esc(sub.name)+'</span>';
       h+='</div><div class="subject-right">';
+      h+='<button class="mark-all-btn" onclick="event.stopPropagation();window._markSubjectWatched('+si+')" title="Mark all lectures as watched">Mark all watched</button>';
       h+='<span class="subject-count-pill">'+subWatched+'/'+lectures.length+'</span>';
       h+='<div class="chevron-btn chevron-icon" id="chevron-'+si+'"><svg class="chevron-icon-svg" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>Expand</div>';
       h+='</div></div><div class="subj-prog-bar"><div class="subj-prog-fill" id="prog-'+si+'" style="width:'+subPct+'%"></div></div></div>';
@@ -378,8 +378,15 @@
     saveProgress(key,val);
     const row=document.getElementById('row-'+si+'-'+j);
     if(row){row.classList.toggle('watched',val)}
-    // Update count pill and progress
     if(window._lastData){render(window._lastData);renderFooter(window._lastData)}
+  };
+
+  window._markSubjectWatched=function(si){
+    if(!window._lastData)return;
+    const lectures=(window._lastData.subjects||[])[si]?.lectures||[];
+    lectures.forEach((_,j)=>saveProgress('lec-'+si+'-'+j,true));
+    render(window._lastData);
+    renderFooter(window._lastData);
   };
 
   // Footer

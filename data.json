@@ -25,6 +25,7 @@
       { "title": "Diversity In Living Organisms", "link": "https://streamtape.com/v/7pAmJyrwjrIA6mw/12._Diversity_In_Living_Organisms.mp4" },
       { "title": "Kingdoms", "link": "https://streamtape.com/v/8X6JpdxdMgcoPGb/13._Kingdoms.mp4" }
     ] },
+    { "name": "Maths", "completed": false, "lectures": [] },
     { "name": "Chemistry", "completed": false, "lectures": [] },
     { "name": "Physics", "completed": false, "lectures": [] },
     { "name": "Ancient History", "completed": false, "lectures": [] },
