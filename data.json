@@ -10,7 +10,7 @@
     { "platform": "Telegram", "url": "https://t.me/tranquilizer014" }
   ],
   "subjects": [
-    { "name": "Biology", "completed": false, "lectures": [
+    { "name": "Biology", "completed": true, "lectures": [
       { "title": "Cell Basics", "link": "https://streamtape.com/v/Od2j10g3zgTZJ7e/1._Cell_Basics.mp4" },
       { "title": "Cell Final Class", "link": "https://streamtape.com/v/VmkJrPkA03uKrRw/2._Cell_Final_Class.mp4" },
       { "title": "Tissue", "link": "https://streamtape.com/v/0dOeqQleeZtbJjL/3._Tissue.mp4" },
@@ -39,7 +39,7 @@
     { "name": "English Practice", "completed": false, "lectures": [] },
     { "name": "GFORM Explanation", "completed": false, "lectures": [] },
     { "name": "GS Muster Class", "completed": false, "lectures": [] },
-    { "name": "One Pager", "completed": false, "lectures": [
+    { "name": "One Pager", "completed": true, "lectures": [
       { "title": "CBI", "link": "https://streamtape.com/v/yxB48ApM2pS1bPk/1.CBI.mp4" },
       { "title": "Fertility Rate + Family Survey", "link": "https://streamtape.com/v/llRRPbD9VLu70dk/2._Fertility_Rate_%2B_Family_Survey.mp4" },
       { "title": "Protein Deficiency", "link": "https://streamtape.com/v/0rP609o3oMcb9JL/3._Protein_Deficiency.mp4" },

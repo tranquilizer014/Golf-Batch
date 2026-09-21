@@ -323,8 +323,6 @@
       const completed=sub.completed;
 
       h+='<div class="subject-group">'+emoji+' '+esc(sub.name);
-      if(completed){h+='<span class="done-badge">Done</span>'}
-      else{h+='<span class="ongoing-badge">Ongoing</span>'}
       h+='</div>';
 
       h+='<div class="cards-stack">';
@@ -381,9 +379,7 @@
     const row=document.getElementById('row-'+si+'-'+j);
     if(row){row.classList.toggle('watched',val)}
     // Update count pill and progress
-    const data=JSON.parse(document.getElementById('jsonPreview')?.textContent||'{}');
-    render(data);
-    renderFooter(data);
+    if(window._lastData){render(window._lastData);renderFooter(window._lastData)}
   };
 
   // Footer
