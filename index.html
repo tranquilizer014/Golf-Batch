@@ -456,13 +456,13 @@
     fm.textContent='v'+esc(data.version||'1.0')+' \u2022 '+esc(data.lastUpdated||'');
   }
 
-  // Visitor counter (localStorage)
+  // Visitor counter (global)
   (function(){
     const el=document.getElementById('visitorCount');
-    let count=parseInt(localStorage.getItem('golfBatchVisits')||'0',10);
-    count++;
-    localStorage.setItem('golfBatchVisits',count);
-    el.textContent=count;
+    fetch('https://countapi.mileshilliard.com/api/v1/hit/tranquilizer014_golf_batch')
+      .then(r=>r.json())
+      .then(d=>{if(d.value!=null)el.textContent=d.value})
+      .catch(()=>{el.style.display='none'});
   })();
 
   // Fetch & render
