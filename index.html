@@ -456,13 +456,21 @@
     fm.textContent='v'+esc(data.version||'1.0')+' \u2022 '+esc(data.lastUpdated||'');
   }
 
-  // Visitor counter (global)
+  // Visitor counter (unique per browser)
   (function(){
     const el=document.getElementById('visitorCount');
-    fetch('https://countapi.mileshilliard.com/api/v1/hit/tranquilizer014_golf_batch')
-      .then(r=>r.json())
-      .then(d=>{if(d.value!=null)el.textContent=d.value})
-      .catch(()=>{el.style.display='none'});
+    if(!localStorage.getItem('golfBatchCounted')){
+      fetch('https://countapi.mileshilliard.com/api/v1/hit/tranquilizer014_golf_batch')
+        .then(r=>r.json())
+        .then(d=>{if(d.value!=null)el.textContent=d.value})
+        .catch(()=>{el.style.display='none'});
+      localStorage.setItem('golfBatchCounted','1');
+    }else{
+      fetch('https://countapi.mileshilliard.com/api/v1/get/tranquilizer014_golf_batch')
+        .then(r=>r.json())
+        .then(d=>{if(d.value!=null)el.textContent=d.value})
+        .catch(()=>{el.style.display='none'});
+    }
   })();
 
   // Fetch & render
