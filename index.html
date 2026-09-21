@@ -310,18 +310,20 @@
 
   // Share button
   document.getElementById('shareBtn').addEventListener('click',function(){
-    const html='<!DOCTYPE html>'+document.documentElement.outerHTML;
-    const file=new File([html],document.title+'.html',{type:'text/html'});
-    if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
-      navigator.share({title:document.title,files:[file]}).catch(()=>{})
-    }else{
-      const blob=new Blob([html],{type:'text/html'});
-      const a=document.createElement('a');
-      a.href=URL.createObjectURL(blob);
-      a.download=document.title+'.html';
-      a.click();
-      URL.revokeObjectURL(a.href);
-    }
+    fetch(DATA_URL).then(r=>r.json()).then(data=>{
+      const fullHtml='<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>'+document.title+'</title>\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">\n<style>'+document.querySelector('style').textContent+'</style>\n</head>\n<body>\n<script>var EMBEDDED_DATA='+JSON.stringify(data)+';var DATA_URL=null;<\/script>\n'+document.querySelector('script').outerHTML+'\n</body>\n</html>';
+      const file=new File([fullHtml],document.title+'.html',{type:'text/html'});
+      if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
+        navigator.share({title:document.title,files:[file]}).catch(()=>{})
+      }else{
+        const blob=new Blob([fullHtml],{type:'text/html'});
+        const a=document.createElement('a');
+        a.href=URL.createObjectURL(blob);
+        a.download=document.title+'.html';
+        a.click();
+        URL.revokeObjectURL(a.href);
+      }
+    }).catch(()=>{});
   });
 
   // Progress (user's watched lectures)
@@ -492,9 +494,10 @@
   })();
 
   // Fetch & render
-  fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('Data file not found');return r.json()})
+  if(typeof EMBEDDED_DATA!=='undefined'&&EMBEDDED_DATA){render(EMBEDDED_DATA);renderFooter(EMBEDDED_DATA);window._lastData=EMBEDDED_DATA}
+  else{fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('Data file not found');return r.json()})
     .then(d=>{render(d);renderFooter(d);window._lastData=d})
-    .catch(e=>{subjectsContainer.innerHTML='<div class="error-box"><strong>Could not load course data</strong><br>'+esc(e.message)+'</div>'});
+    .catch(e=>{subjectsContainer.innerHTML='<div class="error-box"><strong>Could not load course data</strong><br>'+esc(e.message)+'</div>'})};
 })();
 </script>
 </body>
