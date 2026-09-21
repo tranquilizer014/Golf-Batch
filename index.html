@@ -195,7 +195,7 @@
     <button class="tg-skip" id="tgSkip">Skip — just show me the content</button>
   </div>
 </div>
-<div class="visitor-counter" id="visitorCount">...</div>
+<div class="visitor-counter"><span data-vc="true" data-vc-page="golf-batch"></span></div>
 <div class="widget" id="app">
   <div class="widget-header">
     <a class="home-link" id="homeLink" href="#" target="_blank" rel="noopener">
@@ -428,11 +428,8 @@
     fm.textContent='v'+esc(data.version||'1.0')+' \u2022 '+esc(data.lastUpdated||'');
   }
 
-  // Visitor counter
-  fetch('https://api.countapi.xyz/get/tranquilizer014/golf-batch')
-    .then(r=>r.json())
-    .then(d=>{if(d.value!=null)document.getElementById('visitorCount').textContent=d.value})
-    .catch(()=>{document.getElementById('visitorCount').style.display='none'});
+  // Visitor counter (Vercount)
+  // loads automatically via script tag below
 
   // Fetch & render
   fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('Data file not found');return r.json()})
@@ -440,5 +437,6 @@
     .catch(e=>{subjectsContainer.innerHTML='<div class="error-box"><strong>Could not load course data</strong><br>'+esc(e.message)+'</div>'});
 })();
 </script>
+<script async src="https://vercount.one/js"></script>
 </body>
 </html>
