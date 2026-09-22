@@ -32,7 +32,9 @@
     { "name": "Ancient History", "completed": false, "lectures": [] },
     { "name": "Medieval History", "completed": false, "lectures": [] },
     { "name": "Modern History", "completed": false, "lectures": [] },
-    { "name": "Physical Geography", "completed": false, "lectures": [] },
+    { "name": "Physical Geography", "completed": false, "lectures": [
+      { "title": "Plate tectonics", "link": "LINK" }
+    ]},
     { "name": "Indian Geography", "completed": false, "lectures": [] },
     { "name": "Economics", "completed": false, "lectures": [] },
     { "name": "English Breakfast", "completed": false, "lectures": [] },
