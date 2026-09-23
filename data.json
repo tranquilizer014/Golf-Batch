@@ -27,7 +27,17 @@
       { "title": "Kingdoms", "link": "https://streamtape.com/v/8X6JpdxdMgcoPGb/13._Kingdoms.mp4" }
     ] },
     { "name": "Maths", "completed": false, "lectures": [] },
-    { "name": "Chemistry", "completed": false, "lectures": [] },
+    { "name": "Chemistry", "completed": true, "lectures": [
+      { "title": "Chemical Reaction And Basics", "link": "https://streamtape.com/v/M0jrVymdaLFmXBD/1._Chemical_Reaction_And_Basics.mp4" },
+      { "title": "Acid, Bases and Salt", "link": "https://streamtape.com/v/xXaK2Jjy4dIorP/2._Acid%2C_Bases_and_Salt.mp4" },
+      { "title": "Metals and Non- Metals", "link": "https://streamtape.com/v/aRe04JDjGxTxrke/3._Metals_and_Non-_Metals.mp4" },
+      { "title": "Mixture", "link": "https://streamtape.com/v/zwQaDQBaeQfYPBQ/4._Mixture.mp4" },
+      { "title": "Atom and Molecules", "link": "https://streamtape.com/v/k0JJmQYB9ZtOOk1/5._Atom_and_Molecules.mp4" },
+      { "title": "Atoms And Molecules Class 2", "link": "https://streamtape.com/v/1jx1r8eeDXieAvw/6._Atoms_And_Molecules_Class_2.mp4" },
+      { "title": "Carbon Compound Class 01", "link": "https://streamtape.com/v/y7ZrklvWyGh1bgP/7._Carbon_Compound_Class_01.mp4" },
+      { "title": "Chemical Properties Of Carbon", "link": "https://streamtape.com/v/MqL07QAPBRtmaqq/8._Chemical_Properties_Of_Carbon.mp4" },
+      { "title": "Soap Detergents", "link": "https://streamtape.com/v/OWBPG98MQMuzKk/9._Soap_Detergents.mp4" }
+    ]},
     { "name": "Physics", "completed": false, "lectures": [] },
     { "name": "Ancient History", "completed": false, "lectures": [] },
     { "name": "Medieval History", "completed": false, "lectures": [] },
