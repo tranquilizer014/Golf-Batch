@@ -32,7 +32,7 @@
     { "name": "Ancient History", "completed": false, "lectures": [] },
     { "name": "Medieval History", "completed": false, "lectures": [] },
     { "name": "Modern History", "completed": false, "lectures": [] },
-    { "name": "Physical Geography", "completed": false, "lectures": [
+    { "name": "Physical Geography", "completed": true, "lectures": [
       { "title": "Climatology Class 1", "link": "https://streamtape.com/v/1WJK4JqY9Vip4e/1._Climatology_Class_1.mp4" },
       { "title": "Climatology Class 2", "link": "https://streamtape.com/v/B46q3JBMW9cyo8Y/2._Climatology_Class_2.mp4" },
       { "title": "Climatology Class 3", "link": "https://streamtape.com/v/02BDgVj3WvHbj6m/3._Climatology_Class_3_%281%29.mp4" },
@@ -52,7 +52,7 @@
       { "title": "Earthquake", "link": "https://streamtape.com/v/lwarl3GyKwh7Rvd/17._Earthquake.mp4" },
       { "title": "Interior Of Earth Very Imp", "link": "https://streamtape.com/v/Xq2LqRK6XbTDjD6/18._Interior_Of_Earth_Very_Imp.mp4" },
       { "title": "Volcanoes", "link": "https://streamtape.com/v/BjrLW222aQHyq8w/19._Volcanoes_.mp4" },
-      { "title": "Plate tectonics", "link": "LINK" },
+      { "title": "Plate tectonics", "link": "https://streamtape.com/v/j7R83LMOBjCmqM/20._Plate_Techtonics.mp4" },
       { "title": "Rocks And Minerals", "link": "https://streamtape.com/v/l2m8kykD0Di7yXr/21._Rocks_And_Minerals.mp4" },
       { "title": "Universe Solar System", "link": "https://streamtape.com/v/wGBA31JvQrIJbKr/22._Universe_Solar_System.mp4" },
       { "title": "Time International Dateline", "link": "https://streamtape.com/v/RgpRxLeWpBCdPVQ/23._Time_International_Dateline.mp4" }
