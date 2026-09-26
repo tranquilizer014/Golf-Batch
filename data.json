@@ -38,7 +38,20 @@
       { "title": "Chemical Properties Of Carbon", "link": "https://streamtape.com/v/MqL07QAPBRtmaqq/8._Chemical_Properties_Of_Carbon.mp4" },
       { "title": "Soap Detergents", "link": "https://streamtape.com/v/OWBPG98MQMuzKk/9._Soap_Detergents.mp4" }
     ]},
-    { "name": "Physics", "completed": false, "lectures": [] },
+    { "name": "Physics", "completed": true, "lectures": [
+      { "title": "Physics class basics", "link": "https://streamtape.com/v/4vDy8VQ6wRuKeOX/1._Physics_class_basics.mp4" },
+      { "title": "Force and Momentum", "link": "https://streamtape.com/v/kbmDAlkQddsO7X2/2.Force_and_Momentum.mp4" },
+      { "title": "Motion Traps for exam", "link": "https://streamtape.com/v/ZJKmz82MpruqqQb/3._Motion_Traps_for_exam.mp4" },
+      { "title": "Impulse and Conversation of momentum", "link": "https://streamtape.com/v/b1rg1yWxOlUP83X/4._Impulse_and_Conversation_of_momentum.mp4" },
+      { "title": "Work Energy Power Numericals", "link": "https://streamtape.com/v/6m7KrJOdMMslq1/5._Work_Energy_Power_Numericals.mp4" },
+      { "title": "Waves", "link": "https://streamtape.com/v/PjGMv3DpjrTG9k/6.Waves.mp4" },
+      { "title": "Sound Waves", "link": "https://streamtape.com/v/XoKGyzmxbXIWj0/7._Sound_Waves.mp4" },
+      { "title": "Satelite and L Point", "link": "https://streamtape.com/v/lw1qVAWePrC7k3B/8._Satelite_and_L_Point.mp4" },
+      { "title": "Gravity and Lift", "link": "https://streamtape.com/v/lw1qVAWePrC7k3B/9._Gravity_and_Lift.mp4" },
+      { "title": "Electricity", "link": "https://streamtape.com/v/Ry69yaKj2pSdgrK/10._Electricity.mp4" },
+      { "title": "Complete Optics", "link": "https://streamtape.com/v/pz7zALegRyTrMjl/11._Complete_Optics.mp4" },
+      { "title": "Magnetism", "link": "https://streamtape.com/v/meyQlAjGGGtbAx6/12._Magnetism.mp4" }
+    ]},
     { "name": "Ancient History", "completed": false, "lectures": [] },
     { "name": "Medieval History", "completed": false, "lectures": [] },
     { "name": "Modern History", "completed": false, "lectures": [] },
