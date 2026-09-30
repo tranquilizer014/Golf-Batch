@@ -1,250 +1,1594 @@
 {
   "courseName": "Golf Batch",
   "version": "1.0.0",
-  "lastUpdated": "Sep 2026",
+  "lastUpdated": "Oct 2026",
   "homeUrl": "https://tranquilizer014.github.io/Tranquilizer_work/",
   "coursePdfs": "https://u.pcloud.link/publink/show?code=kZUrrRJZaVBbTQRFcE7LKXwTs6H0lQAT1e9y",
   "courseTests": "https://drive.google.com/drive/folders/1LCLm5B5NE_RyoEDL18aFPxB3idRDlOwO",
   "socials": [
-    { "platform": "Reddit", "url": "https://www.reddit.com/u/tranquilizer014" },
-    { "platform": "Telegram", "url": "https://t.me/tranquilizer014" },
-    { "platform": "All Work", "url": "https://tranquilizer014.github.io/Tranquilizer_work/" }
+    {
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/u/tranquilizer014"
+    },
+    {
+      "platform": "Telegram",
+      "url": "https://t.me/tranquilizer014"
+    },
+    {
+      "platform": "All Work",
+      "url": "https://tranquilizer014.github.io/Tranquilizer_work/"
+    }
   ],
   "subjects": [
-    { "name": "Biology", "completed": true, "lectures": [
-      { "title": "Cell Basics", "link": "https://streamtape.com/v/Od2j10g3zgTZJ7e/1._Cell_Basics.mp4" },
-      { "title": "Cell Final Class", "link": "https://streamtape.com/v/VmkJrPkA03uKrRw/2._Cell_Final_Class.mp4" },
-      { "title": "Tissue", "link": "https://streamtape.com/v/0dOeqQleeZtbJjL/3._Tissue.mp4" },
-      { "title": "Diseases", "link": "https://streamtape.com/v/KJrD7Z3bkvF0QOd/4._Diseases.mp4" },
-      { "title": "Digestion", "link": "https://streamtape.com/v/ZkxrBk8Lm7FqezJ/5._Digestion.mp4" },
-      { "title": "Excretion", "link": "https://streamtape.com/v/jAmaMaww3pCQVx/6._Excretion.mp4" },
-      { "title": "Heart - Blood - Respiration", "link": "https://streamtape.com/v/DaBv2K98e3uLdr/7._Heart_-_Blood_-_Respiration.mp4" },
-      { "title": "Reproduction", "link": "https://streamtape.com/v/w6Q4gRQoxyFJve3/8._Reproduction.mp4" },
-      { "title": "Reproduction Class 2", "link": "https://streamtape.com/v/xXZlAojVvatkpeZ/9._Reproduction_Class_2.mp4" },
-      { "title": "Ecological Classification Of Plants", "link": "https://streamtape.com/v/O13v0xz9PQhZVea/10._Ecological_Classification_Of_Plants.mp4" },
-      { "title": "Hormones", "link": "https://streamtape.com/v/rxW7mZDQd6fbQav/11._Hormones.mp4" },
-      { "title": "Diversity In Living Organisms", "link": "https://streamtape.com/v/7pAmJyrwjrIA6mw/12._Diversity_In_Living_Organisms.mp4" },
-      { "title": "Kingdoms", "link": "https://streamtape.com/v/8X6JpdxdMgcoPGb/13._Kingdoms.mp4" }
-    ] },
-    { "name": "Maths", "completed": true, "lectures": [
-      { "title": "Ratio Class 1", "link": "https://streamtape.com/v/wx9W3wvpzzsJMj6/1._Ratio_Class_1.mp4" },
-      { "title": "Ratio Class 2", "link": "https://streamtape.com/v/lDpARwklKVT70m1/2._Ratio_Class_2.mp4" },
-      { "title": "Ratio Class 3", "link": "https://streamtape.com/v/96jzPb32rpsaGaV/3._Ratio_Class_3.mp4" },
-      { "title": "Ratio Class 4", "link": "https://streamtape.com/v/xovpJXQM82TkWRA/4._Ratio_Class_4.mp4" },
-      { "title": "Ratio Class 5", "link": "https://streamtape.com/v/Y8z0DVDp07Hv9lW/5._Ratio_Class_5.mp4" },
-      { "title": "Ratio Last Class and Average Class 1", "link": "https://streamtape.com/v/Zyr3dw1ArDTPYJ/6.Ratio_Last_Class_and_Average_Class_1.mp4" },
-      { "title": "Average Class 2", "link": "https://streamtape.com/v/a1JmKz0ZYJCxvlm/7.Average_Class_2.mp4" },
-      { "title": "Average Class 3", "link": "https://streamtape.com/v/9jGgvzK0KWs1WP/8._Average_Class_3.mp4" },
-      { "title": "Time and Work Class 1", "link": "https://streamtape.com/v/AKWMBwQgpDHbVZ/9._Time_and_Work_Class_1.mp4" },
-      { "title": "Time and Work Class 2", "link": "https://streamtape.com/v/r0lGM72memI8qj/10._Time_and_Work_Class_2.mp4" },
-      { "title": "Time and Work Class 3", "link": "https://streamtape.com/v/pL0DBm1v20TrQya/11._Time_and_Work_Class_3.mp4" },
-      { "title": "Time and Work Class 4", "link": "https://streamtape.com/v/3GvWDK3OXmId7VQ/12._Time_and_Work_Class_4.mp4" },
-      { "title": "Time And Distance Class 1", "link": "https://streamtape.com/v/39LPYOXoqRFdOdp/13._Time_And_Distance_Class_1.mp4" },
-      { "title": "Time and distance class 2", "link": "https://streamtape.com/v/vWXOXL9B1PFwpe/14._Time_and_distance_class_2.mp4" },
-      { "title": "Time and distance class 3", "link": "https://streamtape.com/v/92rryyW4kKUabGX/15._Time_and_distance_class_3.mp4" },
-      { "title": "Time and distance Class 4", "link": "https://streamtape.com/v/o2pBe9W4pYSJ22O/16._Time_and_distance_Class_4.mp4" },
-      { "title": "Time and distance class 5", "link": "https://streamtape.com/v/VGoBGDeDGYiKGx6/17._Time_and_distance_class_5.mp4" },
-      { "title": "Time and distance Class 6", "link": "https://streamtape.com/v/ZkokJ9D6P8uBBP/18._Time_and_distance_Class_6.mp4" },
-      { "title": "Percentage Class 1", "link": "https://streamtape.com/v/1aG0BLwyWyuelKJ/19._Percentage_Class_1.mp4" },
-      { "title": "Percentage Class 2", "link": "https://streamtape.com/v/qZzjZp1g7gIzxJM/20._Percentage_Class_2.mp4" },
-      { "title": "Percentage Class 3", "link": "https://streamtape.com/v/ZKYg0ZJjGgHqeQK/21._Percentage_Class_3.mp4" },
-      { "title": "Percentage Last Class", "link": "https://streamtape.com/v/WyAOvqMzyJIbKAX/22._Percentage_Last_Class.mp4" },
-      { "title": "Profit and Loss Class 1", "link": "https://streamtape.com/v/49GY6W96R0hKekz/23._Profit_and_Loss_Class_1.mp4" },
-      { "title": "Profit and Loss Class 2", "link": "https://streamtape.com/v/9yeBexmdAxsaxp3/24._Profit_and_Loss_Class_2.mp4" },
-      { "title": "Profit And Loss Class 3", "link": "https://streamtape.com/v/PkB86GJ7alh0wmm/25._Profit_And_Loss_Class_3.mp4" },
-      { "title": "Profit and Loss Class 4", "link": "https://streamtape.com/v/dkVWAzX6vLukvL7/26._Profit_and_Loss_Class_4.mp4" },
-      { "title": "Interest Class 1", "link": "https://streamtape.com/v/Zb1oPD3qALIqLGR/27._Interest_Class_1.mp4" },
-      { "title": "Interest Class 2", "link": "https://streamtape.com/v/xmlYw9xPykCk27R/28._Interest_Class_2.mp4" },
-      { "title": "Interest Class 3", "link": "https://streamtape.com/v/17D1mqOBO0uelDZ/29._Interest_Class_3.mp4" },
-      { "title": "Interest Class 4", "link": "https://streamtape.com/v/koXdJGKWOkfOA8W/30._Interest_Class_4.mp4" },
-      { "title": "Number System Class 1", "link": "https://streamtape.com/v/ZqKDopYGpeFq68A/31._Number_System_Class_1.mp4" },
-      { "title": "Number System Class 2", "link": "https://streamtape.com/v/g0G76703w1tvV7/32._Number_System_Class_2.mp4" },
-      { "title": "Number System Class 3", "link": "https://streamtape.com/v/ApDWJDQ4dAHXALz/33._Number_System_Class_3.mp4" },
-      { "title": "Number System Class 4", "link": "https://streamtape.com/v/X2arz4geAPUDDWz/34._Number_System_Class_4.mp4" },
-      { "title": "Number System Class 5 Part 1", "link": "https://streamtape.com/v/0Wl72BWbPocbdXo/35._Number_System_Class_5_Part_1.mp4" },
-      { "title": "Number System Class 5 Part 2", "link": "https://streamtape.com/v/Jkqm7qq8gQSjBw0/36._Number_System_Class_5_Part_2.mp4" },
-      { "title": "Number System Class 6", "link": "https://streamtape.com/v/0D2r7VVZbZtbGrr/37._Number_System_Class_6.mp4" },
-      { "title": "Number System Part 7", "link": "https://streamtape.com/v/xbKx1DMK7qikBJX/38._Number_System_Part_7.mp4" },
-      { "title": "Number System Part 8", "link": "https://streamtape.com/v/YK8YJZM6RGh6J0/39._Number_System_Part_8.mp4" },
-      { "title": "Simplification", "link": "https://streamtape.com/v/A16Wl3DbaXUXP0g/40._Simplification.mp4" },
-      { "title": "Simplification Class 2", "link": "https://streamtape.com/v/bQyQY2kP0JidKZ/41._Simplification_Class_2.mp4" },
-      { "title": "LCM & HCF", "link": "https://streamtape.com/v/eaoOKex8aLSYlR7/42._LCM_%26_HCF.mp4" },
-      { "title": "LCM & HCF Class 2", "link": "https://streamtape.com/v/A6W2vG1Q7LuXMLP/43._LCM_%26_HCF_Class_2.mp4" },
-      { "title": "Equation Class 1", "link": "https://streamtape.com/v/dRBZJ90OopHZ6R/44._Equation_Class_1.mp4" },
-      { "title": "Equation Class 02", "link": "https://streamtape.com/v/8dlxv1dWlvH6Do/45._Equation_Class_02.mp4" },
-      { "title": "Equation Class 03", "link": "https://streamtape.com/v/abZOdvaZqOixL7b/46._Equation_Class_03.mp4" },
-      { "title": "Equation Class 04", "link": "https://streamtape.com/v/l0QmdLpBoMhZ9w/47._Equation_Class_04.mp4" },
-      { "title": "Equation Class 05", "link": "https://streamtape.com/v/3PABqgAlRrCdQaL/48._Equation_Class_05.mp4" },
-      { "title": "Algebra", "link": "https://streamtape.com/v/kZZzOV86wyhOqVM/49._Algebra.mp4" },
-      { "title": "Algebra Class 2", "link": "https://streamtape.com/v/vwaaAZ7WWVc4qAK/50._Algebra_Class_2.mp4" },
-      { "title": "Algebra Class 3", "link": "https://streamtape.com/v/BzjB604g9DUyJ1G/51._Algebra_Class_3.mp4" },
-      { "title": "Algebra Class 4", "link": "https://streamtape.com/v/k03d6kqZYPuraA/52._Algebra_Class_4.mp4" },
-      { "title": "Algebra Class 5", "link": "https://streamtape.com/v/KZZzyWmxV7H0GJM/53._Algebra_Class_5.mp4" },
-      { "title": "LCM HCF Of Algebraic Factors", "link": "https://streamtape.com/v/2aqJ0279lBFZY70/54._LCM_HCF_Of_Algebraic_Factors.mp4" },
-      { "title": "Logarithm", "link": "https://streamtape.com/v/dA1ez4YJBdFkvdg/55._Logarithm.mp4" },
-      { "title": "Logarithm 2", "link": "https://streamtape.com/v/AQ9AekVkKltv2j/56._Logarithm_2.mp4" },
-      { "title": "Sets", "link": "https://streamtape.com/v/kWRLy28VMAfOqA0/57._Sets.mp4" },
-      { "title": "Sets 2", "link": "https://streamtape.com/v/02pqLK7WvPsbqGk/58._Sets_2.mp4" },
-      { "title": "Geometry 2D Mensuration", "link": "https://streamtape.com/v/4xDZX8WmGyTZxL/59._Geometry_2D_Mensuration.mp4" },
-      { "title": "Geometry 2D Mensuration 2", "link": "https://streamtape.com/v/8WGX279w0xTooDq/60._Geometry_2D_Mensuration_2.mp4" },
-      { "title": "Geometry 2D Mensuration 3", "link": "https://streamtape.com/v/gdjb0AJkWgSqrM3/61._Geometry_2D_Mensuration_3.mp4" },
-      { "title": "Geometry 2D Mensuration 4", "link": "https://streamtape.com/v/vK9wLz4DdeS4Vz3/62._Geometry_2D_Mensuration_4.mp4" },
-      { "title": "Geometry 2D Mensuration 5", "link": "https://streamtape.com/v/QeBw0lBDvpU0Zky" },
-      { "title": "Geometry 2D Mensuration 6", "link": "https://streamtape.com/v/d7lRwReAdxF1OV/64._Geometry_2D_Mensuration_6.mp4" },
-      { "title": "Geometry 2D Mensuration 7", "link": "https://streamtape.com/v/KPk2BkyPejU0kZY/65._Geometry_2D_Mensuration_7.mp4" },
-      { "title": "Geometry 2D Mensuration 8", "link": "https://streamtape.com/v/Q2GGdgeDeVhR7X/66._Geometry_2D_Mensuration_8.mp4" },
-      { "title": "Geometry 2D Mensuration 9", "link": "https://streamtape.com/v/AXp2DDQl4AtX64M/67._Geometry_2D_Mensuration_9.mp4" },
-      { "title": "Geometry 2D Mensuration 10", "link": "https://streamtape.com/v/ldoro7Qgq7T7k28/68._Geometry_2D_Mensuration_10.mp4" },
-      { "title": "Geometry 2D Mensuration 11", "link": "https://streamtape.com/v/zMOBPpYWoQTpma/69._Geometry_2D_Mensuration_11.mp4" },
-      { "title": "Geometry 2D Mensuration 12", "link": "https://streamtape.com/v/VWk4xQjqj6hKWAM/70.Geometry_2D_Mensuration_12.mp4" },
-      { "title": "Geometry 2D Mensuration 13", "link": "https://streamtape.com/v/PrwRmZWKMVS0pbp/71._Geometry_2D_Mensuration_13.mp4" },
-      { "title": "Geometry 2D Mensuration 14", "link": "https://streamtape.com/v/9y3m7wvVRKiaabd/72._Geometry_2D_Mensuration_14.mp4" },
-      { "title": "Geometry 2D Mensuration 15", "link": "https://streamtape.com/v/q9ylRL9qqyCz01R/73._Geometry_2D_Mensuration_15.mp4" },
-      { "title": "Geometry 2D Mensuration 16", "link": "https://streamtape.com/v/L1MBaJBvZzIRp9M/74._Geometry_2D_Mensuration_16.mp4" },
-      { "title": "Mensuration 3D Class 1", "link": "https://streamtape.com/v/1LGPW3dd6oceZo7/75._Mensuration_3D_Class_1.mp4" },
-      { "title": "Mensuration 3D Class 2", "link": "https://streamtape.com/v/Wr1lK104Z8sblJb/76._Mensuration_3D_Class_2.mp4" },
-      { "title": "Mensuration 3D Class 3", "link": "https://streamtape.com/v/yxP1d1GXr1H1XlG/77._Mensuration_3D_Class_3.mp4" },
-      { "title": "Mensuration 3D Class 4", "link": "https://streamtape.com/v/Oq4b1B3OqQtZbD7/78._Mensuration_3D_Class_4.mp4" },
-      { "title": "Mensuration 3D Class 5", "link": "https://streamtape.com/v/ZKVrgMp3DefqDqK/79._Mensuration_3D_Class_5.mp4" },
-      { "title": "Mensuration 3D Class 6", "link": "https://streamtape.com/v/D9zZJbZBPdhkplD/80._Mensuration_3D_Class_6.mp4" },
-      { "title": "Mensuration 3D Class 7", "link": "https://streamtape.com/v/8ddg6g262Yhormo/81._Mensuration_3D_Class_7.mp4" },
-      { "title": "Trigonometry Class 02", "link": "https://streamtape.com/v/YB8AlBQqpOHvXKo/82._Trigonometry_Class_02.mp4" },
-      { "title": "Trigonometry Class 3", "link": "https://streamtape.com/v/962kdbX4G7Uazwq/83._Trigonometry_Class_3.mp4" },
-      { "title": "Trigonometry Class 4", "link": "https://streamtape.com/v/2DaM0g8qDMTVql/84._Trigonometry_Class_4.mp4" },
-      { "title": "Trigonometry Class 5", "link": "https://streamtape.com/v/lwaaWje3AAFvJo/85._Trigonometry_Class_5.mp4" },
-      { "title": "Trigonometry Class 06", "link": "https://streamtape.com/v/RDApP0JyJqidA2Y/86._Trigonometry_Class_06.mp4" },
-      { "title": "Trigonometry Class 07", "link": "https://streamtape.com/v/myLjJ04MY1cXDl/87._Trigonometry_Class_07.mp4" },
-      { "title": "Height And Distance Class 1", "link": "https://streamtape.com/v/rlMe07BL7wUbrvO/88._Height_And_Distance_Class_1.mp4" },
-      { "title": "Height And Distance Class 2", "link": "https://streamtape.com/v/dLwGe6jpB7sPzY/89._Height_And_Distance_Class_2.mp4" },
-      { "title": "Statistics Class 01", "link": "https://streamtape.com/v/qg1lP1kvrqIzJZM/90._Statistics_Class_01.mp4" },
-      { "title": "Statistics Class 2", "link": "https://streamtape.com/v/D0qxD3m9Pqu6YX/91._Statistics_Class_2.mp4" },
-      { "title": "Statistics Class 3", "link": "https://streamtape.com/v/XBe6QLevRKUDbx9/92._Statistics_Class_3.mp4" },
-      { "title": "Statistics Class 4", "link": "https://streamtape.com/v/MeGq8Y29WXUwJd/93._Statistics_Class_4.mp4" }
-    ]},
-    { "name": "Chemistry", "completed": true, "lectures": [
-      { "title": "Chemical Reaction And Basics", "link": "https://streamtape.com/v/M0jrVymdaLFmXBD/1._Chemical_Reaction_And_Basics.mp4" },
-      { "title": "Acid, Bases and Salt", "link": "https://streamtape.com/v/xXaK2Jjy4dIorP/2._Acid%2C_Bases_and_Salt.mp4" },
-      { "title": "Metals and Non- Metals", "link": "https://streamtape.com/v/aRe04JDjGxTxrke/3._Metals_and_Non-_Metals.mp4" },
-      { "title": "Mixture", "link": "https://streamtape.com/v/zwQaDQBaeQfYPBQ/4._Mixture.mp4" },
-      { "title": "Atom and Molecules", "link": "https://streamtape.com/v/k0JJmQYB9ZtOOk1/5._Atom_and_Molecules.mp4" },
-      { "title": "Atoms And Molecules Class 2", "link": "https://streamtape.com/v/1jx1r8eeDXieAvw/6._Atoms_And_Molecules_Class_2.mp4" },
-      { "title": "Carbon Compound Class 01", "link": "https://streamtape.com/v/y7ZrklvWyGh1bgP/7._Carbon_Compound_Class_01.mp4" },
-      { "title": "Chemical Properties Of Carbon", "link": "https://streamtape.com/v/MqL07QAPBRtmaqq/8._Chemical_Properties_Of_Carbon.mp4" },
-      { "title": "Soap Detergents", "link": "https://streamtape.com/v/OWBPG98MQMuzKk/9._Soap_Detergents.mp4" },
-      { "title": "High Level Chemistry Class", "link": "https://streamtape.com/v/0VRARa3alAcbGZg/10._High_Level_Chemistry_Class.mp4" }
-    ]},
-    { "name": "Physics", "completed": true, "lectures": [
-      { "title": "Physics class basics", "link": "https://streamtape.com/v/4vDy8VQ6wRuKeOX/1._Physics_class_basics.mp4" },
-      { "title": "Force and Momentum", "link": "https://streamtape.com/v/kbmDAlkQddsO7X2/2.Force_and_Momentum.mp4" },
-      { "title": "Motion Traps for exam", "link": "https://streamtape.com/v/ZJKmz82MpruqqQb/3._Motion_Traps_for_exam.mp4" },
-      { "title": "Impulse and Conversation of momentum", "link": "https://streamtape.com/v/b1rg1yWxOlUP83X/4._Impulse_and_Conversation_of_momentum.mp4" },
-      { "title": "Work Energy Power Numericals", "link": "https://streamtape.com/v/6m7KrJOdMMslq1/5._Work_Energy_Power_Numericals.mp4" },
-      { "title": "Waves", "link": "https://streamtape.com/v/PjGMv3DpjrTG9k/6.Waves.mp4" },
-      { "title": "Sound Waves", "link": "https://streamtape.com/v/XoKGyzmxbXIWj0/7._Sound_Waves.mp4" },
-      { "title": "Satelite and L Point", "link": "https://streamtape.com/v/lw1qVAWePrC7k3B/8._Satelite_and_L_Point.mp4" },
-      { "title": "Gravity and Lift", "link": "https://streamtape.com/v/lw1qVAWePrC7k3B/9._Gravity_and_Lift.mp4" },
-      { "title": "Electricity", "link": "https://streamtape.com/v/Ry69yaKj2pSdgrK/10._Electricity.mp4" },
-      { "title": "Complete Optics", "link": "https://streamtape.com/v/pz7zALegRyTrMjl/11._Complete_Optics.mp4" },
-      { "title": "Magnetism", "link": "https://streamtape.com/v/meyQlAjGGGtbAx6/12._Magnetism.mp4" }
-    ]},
-    { "name": "Ancient History", "completed": false, "lectures": [] },
-    { "name": "Medieval History", "completed": false, "lectures": [] },
-    { "name": "Modern History", "completed": false, "lectures": [] },
-    { "name": "Physical Geography", "completed": true, "lectures": [
-      { "title": "Climatology Class 1", "link": "https://streamtape.com/v/1WJK4JqY9Vip4e/1._Climatology_Class_1.mp4" },
-      { "title": "Climatology Class 2", "link": "https://streamtape.com/v/B46q3JBMW9cyo8Y/2._Climatology_Class_2.mp4" },
-      { "title": "Climatology Class 3", "link": "https://streamtape.com/v/02BDgVj3WvHbj6m/3._Climatology_Class_3_%281%29.mp4" },
-      { "title": "Climatology Class 4", "link": "https://streamtape.com/v/VyaJXJ6AMDcKeLe/4._Climatology_Class_4.mp4" },
-      { "title": "Climatology Class 5", "link": "https://streamtape.com/v/YBa8lgZOPgFvmoe/5._Climatology_Class_5.mp4" },
-      { "title": "Climatology - Fronts", "link": "https://streamtape.com/v/dj3j3jLQVpikrGp/6._Climatology_-_Fronts.mp4" },
-      { "title": "Oceanography 1", "link": "https://streamtape.com/v/QezD4XJPKeck78/7._Oceanography_1.mp4" },
-      { "title": "Oceanography 2", "link": "https://streamtape.com/v/gY10KRrqqdTvw6/8._Oceanography_2.mp4" },
-      { "title": "Oceanography 3", "link": "https://streamtape.com/v/3PMXr4XdpBsdkmO/9._Oceanography_3.mp4" },
-      { "title": "Geomorphic Process 1", "link": "https://streamtape.com/v/6avZvradrASlq1/10._Geomorphic_Process_1.mp4" },
-      { "title": "Geomorphic Process 2", "link": "https://streamtape.com/v/m9K0XgywGotQo6/11._Geomorphic_Process_2.mp4" },
-      { "title": "Landform By Running Water", "link": "https://streamtape.com/v/ZDoqvyAdMmiqalv/12._Landform_By_Running_Water.mp4" },
-      { "title": "Landform By Ground Water", "link": "https://streamtape.com/v/gjbQzlKV76cq7XR/13._Landform_By_Ground_Water.mp4" },
-      { "title": "Landform By Glaciers", "link": "https://streamtape.com/v/JXYq6W8ZPWujjJg/14._Landform_By_Glaciers.mp4" },
-      { "title": "Landform By Sea Waves", "link": "https://streamtape.com/v/4BBR91RpmPsKo37/15._Landform_By_Sea_Waves.mp4" },
-      { "title": "Landform By Wind", "link": "https://streamtape.com/v/BJoZMlqMXQUydgq/16._Landform_By_Wind.mp4" },
-      { "title": "Earthquake", "link": "https://streamtape.com/v/lwarl3GyKwh7Rvd/17._Earthquake.mp4" },
-      { "title": "Interior Of Earth Very Imp", "link": "https://streamtape.com/v/Xq2LqRK6XbTDjD6/18._Interior_Of_Earth_Very_Imp.mp4" },
-      { "title": "Volcanoes", "link": "https://streamtape.com/v/BjrLW222aQHyq8w/19._Volcanoes_.mp4" },
-      { "title": "Plate tectonics", "link": "https://streamtape.com/v/j7R83LMOBjCmqM/20._Plate_Techtonics.mp4" },
-      { "title": "Rocks And Minerals", "link": "https://streamtape.com/v/l2m8kykD0Di7yXr/21._Rocks_And_Minerals.mp4" },
-      { "title": "Universe Solar System", "link": "https://streamtape.com/v/wGBA31JvQrIJbKr/22._Universe_Solar_System.mp4" },
-      { "title": "Time International Dateline", "link": "https://streamtape.com/v/RgpRxLeWpBCdPVQ/23._Time_International_Dateline.mp4" }
-    ]},
-    { "name": "Indian Geography", "completed": false, "lectures": [] },
-    { "name": "Economics", "completed": false, "lectures": [] },
-    { "name": "English Breakfast", "completed": false, "lectures": [] },
-    { "name": "English Grammar", "completed": true, "lectures": [
-      { "title": "Tense", "link": "https://streamtape.com/v/BzG1OkjArDCyB9V" },
-      { "title": "Tense Completed", "link": "https://streamtape.com/v/9jjL8XwYllIawWl" },
-      { "title": "Part of speech", "link": "https://streamtape.com/v/G29JxvQ29Yi1kzb" },
-      { "title": "Part of Speech Class 2", "link": "https://streamtape.com/v/4ByJldVoX8iKPw4" },
-      { "title": "Part of speech class 3 part 1", "link": "https://streamtape.com/v/j4DaLJzpOZSgPx" },
-      { "title": "Part of speech class 3 part 2", "link": "https://streamtape.com/v/6bx8q8x664I4bZ" },
-      { "title": "Part of speech complete", "link": "https://streamtape.com/v/8RoPgXy4kVFoxgL" },
-      { "title": "Noun Class 1", "link": "https://streamtape.com/v/W6gaDRYjwKUbzbY" },
-      { "title": "Noun Completed", "link": "https://streamtape.com/v/G9erK6bQGGh17yK" },
-      { "title": "Pronoun Class 1", "link": "https://streamtape.com/v/K4rOdqAPL8u01dZ" },
-      { "title": "Pronoun Class 2", "link": "https://streamtape.com/v/vl7ZXdrDbJI4Rj1" },
-      { "title": "Verb Class 1", "link": "https://streamtape.com/v/d8zaZ3oL2gFkR0M" },
-      { "title": "Verb Class 2", "link": "https://streamtape.com/v/yGeYBaeDDOtwMA" },
-      { "title": "S1-S2", "link": "https://streamtape.com/v/6jdaVllm1PIZV0" },
-      { "title": "Verb Class 3", "link": "https://streamtape.com/v/6BdaPDRXmBS9yo3" },
-      { "title": "Preposition Class 1", "link": "https://streamtape.com/v/2kga7exXemIABm" },
-      { "title": "Preposition Class 2", "link": "https://streamtape.com/v/rbRq6ep26qUxlB" },
-      { "title": "Preposition Class 3", "link": "https://streamtape.com/v/eYqQae1b9bT2Yo" },
-      { "title": "Conjunction", "link": "https://streamtape.com/v/7mJKQm2ep8sA61r" },
-      { "title": "Voice Complete", "link": "https://streamtape.com/v/4xzb0AKP68uKo18" },
-      { "title": "Discourse Marker", "link": "https://streamtape.com/v/AJxPOyK0y1HXMx8" },
-      { "title": "Narration Class 1", "link": "https://streamtape.com/v/e3D0r19M7Mukrg" },
-      { "title": "Narration Complete", "link": "https://streamtape.com/v/vo4JXlLYwJH4p16" },
-      { "title": "Fixed Preposition Class 01", "link": "https://streamtape.com/v/xXQaqDMgMOIk3ky" },
-      { "title": "Fixed Preposition Class 02", "link": "https://streamtape.com/v/BavgDQm2BoTy4ql" }
-    ]},
-    { "name": "English Vocabulary", "completed": true, "lectures": [
-      { "title": "Root Words Class 1", "link": "https://streamtape.com/v/Oql3rlrqbKHkBM/1_Root_Words_Class_1.mp4" },
-      { "title": "Root Words Class 2", "link": "https://streamtape.com/v/266Bobg80VIZwez/2_Root_Words_Class_2.mp4" },
-      { "title": "A - Words", "link": "https://streamtape.com/v/zkgpk6Bzp2HvMZ/3_A_-_Words.mp4" },
-      { "title": "B - Words", "link": "https://streamtape.com/v/r8mLbkmGv4haMG/4_B_-_Words.mp4" },
-      { "title": "C - Words", "link": "https://streamtape.com/v/k0JJmQYB9ZtOOk1/5_C_-_Words.mp4" },
-      { "title": "Vocab PYQ Class 01", "link": "https://streamtape.com/v/v20Dk0Kda0Faj4/6_Vocab_PYQ_Class_01.mp4" },
-      { "title": "Vocab PYQ Class 02", "link": "https://streamtape.com/v/AQ9OR8P9OluXoRr/7_Vocab_PYQ_Class_02.mp4" },
-      { "title": "Vocab PYQ Class 03", "link": "https://streamtape.com/v/964jbpXXO6Cakmv/8_Vocab_PYQ_Class_03.mp4" },
-      { "title": "D - Words", "link": "https://streamtape.com/v/D00eMLjd9KIkK0d/9_D_-_Words.mp4" },
-      { "title": "Vocab PYQs Complete", "link": "https://streamtape.com/v/4yg3DvL91Rh29l/10_Vocab_PYQs_Complete.mp4" },
-      { "title": "E - Words", "link": "https://streamtape.com/v/elaqkdxO4mu2eB/11_E_-_Words.mp4" },
-      { "title": "F - Words", "link": "https://streamtape.com/v/PrVGY0r6wBS0dDg/12_F_-_Words.mp4" },
-      { "title": "Homonyms Class 01", "link": "https://streamtape.com/v/aPPGXA8GMaTMBq/13_Homonyms_Class_01.mp4" },
-      { "title": "G - Words", "link": "https://streamtape.com/v/ZjrROlQbKdHqvZg/14_G_Words.mp4" },
-      { "title": "Homonyms Class 02", "link": "https://streamtape.com/v/qOKqQm8Br8tz9BV/15_Homonyms_Class_02.mp4" },
-      { "title": "Homonyms Complete", "link": "https://streamtape.com/v/8JgJVmQVyLFoVdP/16_Homonyms_Complete.mp4" },
-      { "title": "Homonyms Pyqs", "link": "https://streamtape.com/v/wZdDP8A717FJOMb/17_Homonyms_Pyqs.mp4" },
-      { "title": "H - Words", "link": "https://streamtape.com/v/Kzv97xymxAI0MPP/18_H_-_Words.mp4" },
-      { "title": "I - Words", "link": "https://streamtape.com/v/1DBxdKdg1LIejo0/19_I_-_Words.mp4" },
-      { "title": "J - Words", "link": "https://streamtape.com/v/xkVKgKYq6ySk2Pg/20_J_-_Words.mp4" },
-      { "title": "RRB Vocabulary Class 1", "link": "https://streamtape.com/v/wYvv8zzovjUJXGY/21_RRB_Vocabulary_Class_1.mp4" },
-      { "title": "RRB Vocabulary Class 2", "link": "https://streamtape.com/v/ZybBd34AeQuq8WG/22_RRB_Vocabulary_Class_2.mp4" },
-      { "title": "RRB Vocabulary Class 3", "link": "https://streamtape.com/v/gqjLwXyBADIqDkD/23_RRB_Vocabulary_Class_3.mp4" },
-      { "title": "RRB Vocabulary Class 4", "link": "https://streamtape.com/v/1ba4JPVbwltegLr/24_RRB_Vocabulary_Class_4.mp4" },
-      { "title": "RRB Vocabulary Class 5", "link": "https://streamtape.com/v/pzy6g8MJ1qsrQq8/25_RRB_Vocabulary_Class_5.mp4" }
-    ]},
-    { "name": "English Practice", "completed": false, "lectures": [] },
-    { "name": "GFORM Explanation", "completed": false, "lectures": [] },
-    { "name": "GS Muster Class", "completed": false, "lectures": [] },
-    { "name": "One Pager", "completed": true, "lectures": [
-      { "title": "CBI", "link": "https://streamtape.com/v/yxB48ApM2pS1bPk/1.CBI.mp4" },
-      { "title": "Fertility Rate + Family Survey", "link": "https://streamtape.com/v/llRRPbD9VLu70dk/2._Fertility_Rate_%2B_Family_Survey.mp4" },
-      { "title": "Protein Deficiency", "link": "https://streamtape.com/v/0rP609o3oMcb9JL/3._Protein_Deficiency.mp4" },
-      { "title": "UNSC", "link": "https://streamtape.com/v/4AZgqGOYa3T2DR/4._UNSC.mp4" },
-      { "title": "Parliamentary Committees", "link": "https://streamtape.com/v/3doZ6K11pphdd4M/5._Parliamentary_Committees.mp4" },
-      { "title": "Attorney General Advocate General", "link": "https://streamtape.com/v/BjPxwRjD0dTyeRx/6._Attorney_general_Advocate_general.mp4" }
-    ] },
-    { "name": "Operation Surprise", "completed": false, "lectures": [] },
-    { "name": "Polity", "completed": false, "lectures": [] },
-    { "name": "Test Discussion", "completed": false, "lectures": [] }
+    {
+      "name": "Biology",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Cell Basics",
+          "link": "https://streamtape.com/v/Od2j10g3zgTZJ7e/1._Cell_Basics.mp4"
+        },
+        {
+          "title": "Cell Final Class",
+          "link": "https://streamtape.com/v/VmkJrPkA03uKrRw/2._Cell_Final_Class.mp4"
+        },
+        {
+          "title": "Tissue",
+          "link": "https://streamtape.com/v/0dOeqQleeZtbJjL/3._Tissue.mp4"
+        },
+        {
+          "title": "Diseases",
+          "link": "https://streamtape.com/v/KJrD7Z3bkvF0QOd/4._Diseases.mp4"
+        },
+        {
+          "title": "Digestion",
+          "link": "https://streamtape.com/v/ZkxrBk8Lm7FqezJ/5._Digestion.mp4"
+        },
+        {
+          "title": "Excretion",
+          "link": "https://streamtape.com/v/jAmaMaww3pCQVx/6._Excretion.mp4"
+        },
+        {
+          "title": "Heart - Blood - Respiration",
+          "link": "https://streamtape.com/v/DaBv2K98e3uLdr/7._Heart_-_Blood_-_Respiration.mp4"
+        },
+        {
+          "title": "Reproduction",
+          "link": "https://streamtape.com/v/w6Q4gRQoxyFJve3/8._Reproduction.mp4"
+        },
+        {
+          "title": "Reproduction Class 2",
+          "link": "https://streamtape.com/v/xXZlAojVvatkpeZ/9._Reproduction_Class_2.mp4"
+        },
+        {
+          "title": "Ecological Classification Of Plants",
+          "link": "https://streamtape.com/v/O13v0xz9PQhZVea/10._Ecological_Classification_Of_Plants.mp4"
+        },
+        {
+          "title": "Hormones",
+          "link": "https://streamtape.com/v/rxW7mZDQd6fbQav/11._Hormones.mp4"
+        },
+        {
+          "title": "Diversity In Living Organisms",
+          "link": "https://streamtape.com/v/7pAmJyrwjrIA6mw/12._Diversity_In_Living_Organisms.mp4"
+        },
+        {
+          "title": "Kingdoms",
+          "link": "https://streamtape.com/v/8X6JpdxdMgcoPGb/13._Kingdoms.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Chemical Reaction And Basics",
+          "link": "https://streamtape.com/v/M0jrVymdaLFmXBD/1._Chemical_Reaction_And_Basics.mp4"
+        },
+        {
+          "title": "Acid, Bases and Salt",
+          "link": "https://streamtape.com/v/xXaK2Jjy4dIorP/2._Acid%2C_Bases_and_Salt.mp4"
+        },
+        {
+          "title": "Metals and Non- Metals",
+          "link": "https://streamtape.com/v/aRe04JDjGxTxrke/3._Metals_and_Non-_Metals.mp4"
+        },
+        {
+          "title": "Mixture",
+          "link": "https://streamtape.com/v/zwQaDQBaeQfYPBQ/4._Mixture.mp4"
+        },
+        {
+          "title": "Atom and Molecules",
+          "link": "https://streamtape.com/v/k0JJmQYB9ZtOOk1/5._Atom_and_Molecules.mp4"
+        },
+        {
+          "title": "Atoms And Molecules Class 2",
+          "link": "https://streamtape.com/v/1jx1r8eeDXieAvw/6._Atoms_And_Molecules_Class_2.mp4"
+        },
+        {
+          "title": "Carbon Compound Class 01",
+          "link": "https://streamtape.com/v/y7ZrklvWyGh1bgP/7._Carbon_Compound_Class_01.mp4"
+        },
+        {
+          "title": "Chemical Properties Of Carbon",
+          "link": "https://streamtape.com/v/MqL07QAPBRtmaqq/8._Chemical_Properties_Of_Carbon.mp4"
+        },
+        {
+          "title": "Soap Detergents",
+          "link": "https://streamtape.com/v/OWBPG98MQMuzKk/9._Soap_Detergents.mp4"
+        },
+        {
+          "title": "High Level Chemistry Class",
+          "link": "https://streamtape.com/v/0VRARa3alAcbGZg/10._High_Level_Chemistry_Class.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Physics class basics",
+          "link": "https://streamtape.com/v/4vDy8VQ6wRuKeOX/1._Physics_class_basics.mp4"
+        },
+        {
+          "title": "Force and Momentum",
+          "link": "https://streamtape.com/v/kbmDAlkQddsO7X2/2.Force_and_Momentum.mp4"
+        },
+        {
+          "title": "Motion Traps for exam",
+          "link": "https://streamtape.com/v/ZJKmz82MpruqqQb/3._Motion_Traps_for_exam.mp4"
+        },
+        {
+          "title": "Impulse and Conversation of momentum",
+          "link": "https://streamtape.com/v/b1rg1yWxOlUP83X/4._Impulse_and_Conversation_of_momentum.mp4"
+        },
+        {
+          "title": "Work Energy Power Numericals",
+          "link": "https://streamtape.com/v/6m7KrJOdMMslq1/5._Work_Energy_Power_Numericals.mp4"
+        },
+        {
+          "title": "Waves",
+          "link": "https://streamtape.com/v/PjGMv3DpjrTG9k/6.Waves.mp4"
+        },
+        {
+          "title": "Sound Waves",
+          "link": "https://streamtape.com/v/XoKGyzmxbXIWj0/7._Sound_Waves.mp4"
+        },
+        {
+          "title": "Satelite and L Point",
+          "link": "https://streamtape.com/v/86pPzL2D4GHozVd/8._Satelite_and_L_Point.mp4"
+        },
+        {
+          "title": "Gravity and Lift",
+          "link": "https://streamtape.com/v/lw1qVAWePrC7k3B/9._Gravity_and_Lift.mp4"
+        },
+        {
+          "title": "Electricity",
+          "link": "https://streamtape.com/v/Ry69yaKj2pSdgrK/10._Electricity.mp4"
+        },
+        {
+          "title": "Complete Optics",
+          "link": "https://streamtape.com/v/pz7zALegRyTrMjl/11._Complete_Optics.mp4"
+        },
+        {
+          "title": "Magnetism",
+          "link": "https://streamtape.com/v/meyQlAjGGGtbAx6/12._Magnetism.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Maths",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Ratio Class 1",
+          "link": "https://streamtape.com/v/wx9W3wvpzzsJMj6/1._Ratio_Class_1.mp4"
+        },
+        {
+          "title": "Ratio Class 2",
+          "link": "https://streamtape.com/v/lDpARwklKVT70m1/2._Ratio_Class_2.mp4"
+        },
+        {
+          "title": "Ratio Class 3",
+          "link": "https://streamtape.com/v/96jzPb32rpsaGaV/3._Ratio_Class_3.mp4"
+        },
+        {
+          "title": "Ratio Class 4",
+          "link": "https://streamtape.com/v/xovpJXQM82TkWRA/4._Ratio_Class_4.mp4"
+        },
+        {
+          "title": "Ratio Class 5",
+          "link": "https://streamtape.com/v/Y8z0DVDp07Hv9lW/5._Ratio_Class_5.mp4"
+        },
+        {
+          "title": "Ratio Last Class and Average Class 1",
+          "link": "https://streamtape.com/v/Zyr3dw1ArDTPYJ/6.Ratio_Last_Class_and_Average_Class_1.mp4"
+        },
+        {
+          "title": "Average Class 2",
+          "link": "https://streamtape.com/v/a1JmKz0ZYJCxvlm/7.Average_Class_2.mp4"
+        },
+        {
+          "title": "Average Class 3",
+          "link": "https://streamtape.com/v/9jGgvzK0KWs1WP/8._Average_Class_3.mp4"
+        },
+        {
+          "title": "Time and Work Class 1",
+          "link": "https://streamtape.com/v/AKWMBwQgpDHbVZ/9._Time_and_Work_Class_1.mp4"
+        },
+        {
+          "title": "Time and Work Class 2",
+          "link": "https://streamtape.com/v/r0lGM72memI8qj/10._Time_and_Work_Class_2.mp4"
+        },
+        {
+          "title": "Time and Work Class 3",
+          "link": "https://streamtape.com/v/pL0DBm1v20TrQya/11._Time_and_Work_Class_3.mp4"
+        },
+        {
+          "title": "Time and Work Class 4",
+          "link": "https://streamtape.com/v/3GvWDK3OXmId7VQ/12._Time_and_Work_Class_4.mp4"
+        },
+        {
+          "title": "Time And Distance Class 1",
+          "link": "https://streamtape.com/v/39LPYOXoqRFdOdp/13._Time_And_Distance_Class_1.mp4"
+        },
+        {
+          "title": "Time and distance class 2",
+          "link": "https://streamtape.com/v/vWXOXL9B1PFwpe/14._Time_and_distance_class_2.mp4"
+        },
+        {
+          "title": "Time and distance class 3",
+          "link": "https://streamtape.com/v/92rryyW4kKUabGX/15._Time_and_distance_class_3.mp4"
+        },
+        {
+          "title": "Time and distance Class 4",
+          "link": "https://streamtape.com/v/o2pBe9W4pYSJ22O/16._Time_and_distance_Class_4.mp4"
+        },
+        {
+          "title": "Time and distance class 5",
+          "link": "https://streamtape.com/v/VGoBGDeDGYiKGx6/17._Time_and_distance_class_5.mp4"
+        },
+        {
+          "title": "Time and distance Class 6",
+          "link": "https://streamtape.com/v/ZkokJ9D6P8uBBP/18._Time_and_distance_Class_6.mp4"
+        },
+        {
+          "title": "Percentage Class 1",
+          "link": "https://streamtape.com/v/1aG0BLwyWyuelKJ/19._Percentage_Class_1.mp4"
+        },
+        {
+          "title": "Percentage Class 2",
+          "link": "https://streamtape.com/v/qZzjZp1g7gIzxJM/20._Percentage_Class_2.mp4"
+        },
+        {
+          "title": "Percentage Class 3",
+          "link": "https://streamtape.com/v/ZKYg0ZJjGgHqeQK/21._Percentage_Class_3.mp4"
+        },
+        {
+          "title": "Percentage Last Class",
+          "link": "https://streamtape.com/v/WyAOvqMzyJIbKAX/22._Percentage_Last_Class.mp4"
+        },
+        {
+          "title": "Profit and Loss Class 1",
+          "link": "https://streamtape.com/v/49GY6W96R0hKekz/23._Profit_and_Loss_Class_1.mp4"
+        },
+        {
+          "title": "Profit and Loss Class 2",
+          "link": "https://streamtape.com/v/9yeBexmdAxsaxp3/24._Profit_and_Loss_Class_2.mp4"
+        },
+        {
+          "title": "Profit And Loss Class 3",
+          "link": "https://streamtape.com/v/PkB86GJ7alh0wmm/25._Profit_And_Loss_Class_3.mp4"
+        },
+        {
+          "title": "Profit and Loss Class 4",
+          "link": "https://streamtape.com/v/dkVWAzX6vLukvL7/26._Profit_and_Loss_Class_4.mp4"
+        },
+        {
+          "title": "Interest Class 1",
+          "link": "https://streamtape.com/v/Zb1oPD3qALIqLGR/27._Interest_Class_1.mp4"
+        },
+        {
+          "title": "Interest Class 2",
+          "link": "https://streamtape.com/v/xmlYw9xPykCk27R/28._Interest_Class_2.mp4"
+        },
+        {
+          "title": "Interest Class 3",
+          "link": "https://streamtape.com/v/17D1mqOBO0uelDZ/29._Interest_Class_3.mp4"
+        },
+        {
+          "title": "Interest Class 4",
+          "link": "https://streamtape.com/v/koXdJGKWOkfOA8W/30._Interest_Class_4.mp4"
+        },
+        {
+          "title": "Number System Class 1",
+          "link": "https://streamtape.com/v/ZqKDopYGpeFq68A/31._Number_System_Class_1.mp4"
+        },
+        {
+          "title": "Number System Class 2",
+          "link": "https://streamtape.com/v/g0G76703w1tvV7/32._Number_System_Class_2.mp4"
+        },
+        {
+          "title": "Number System Class 3",
+          "link": "https://streamtape.com/v/ApDWJDQ4dAHXALz/33._Number_System_Class_3.mp4"
+        },
+        {
+          "title": "Number System Class 4",
+          "link": "https://streamtape.com/v/X2arz4geAPUDDWz/34._Number_System_Class_4.mp4"
+        },
+        {
+          "title": "Number System Class 5 Part 1",
+          "link": "https://streamtape.com/v/0Wl72BWbPocbdXo/35._Number_System_Class_5_Part_1.mp4"
+        },
+        {
+          "title": "Number System Class 5 Part 2",
+          "link": "https://streamtape.com/v/Jkqm7qq8gQSjBw0/36._Number_System_Class_5_Part_2.mp4"
+        },
+        {
+          "title": "Number System Class 6",
+          "link": "https://streamtape.com/v/0D2r7VVZbZtbGrr/37._Number_System_Class_6.mp4"
+        },
+        {
+          "title": "Number System Part 7",
+          "link": "https://streamtape.com/v/xbKx1DMK7qikBJX/38._Number_System_Part_7.mp4"
+        },
+        {
+          "title": "Number System Part 8",
+          "link": "https://streamtape.com/v/YK8YJZM6RGh6J0/39._Number_System_Part_8.mp4"
+        },
+        {
+          "title": "Simplification",
+          "link": "https://streamtape.com/v/A16Wl3DbaXUXP0g/40._Simplification.mp4"
+        },
+        {
+          "title": "Simplification Class 2",
+          "link": "https://streamtape.com/v/bQyQY2kP0JidKZ/41._Simplification_Class_2.mp4"
+        },
+        {
+          "title": "LCM & HCF",
+          "link": "https://streamtape.com/v/eaoOKex8aLSYlR7/42._LCM_%26_HCF.mp4"
+        },
+        {
+          "title": "LCM & HCF Class 2",
+          "link": "https://streamtape.com/v/A6W2vG1Q7LuXMLP/43._LCM_%26_HCF_Class_2.mp4"
+        },
+        {
+          "title": "Equation Class 1",
+          "link": "https://streamtape.com/v/dRBZJ90OopHZ6R/44._Equation_Class_1.mp4"
+        },
+        {
+          "title": "Equation Class 02",
+          "link": "https://streamtape.com/v/8dlxv1dWlvH6Do/45._Equation_Class_02.mp4"
+        },
+        {
+          "title": "Equation Class 03",
+          "link": "https://streamtape.com/v/abZOdvaZqOixL7b/46._Equation_Class_03.mp4"
+        },
+        {
+          "title": "Equation Class 04",
+          "link": "https://streamtape.com/v/l0QmdLpBoMhZ9w/47._Equation_Class_04.mp4"
+        },
+        {
+          "title": "Equation Class 05",
+          "link": "https://streamtape.com/v/3PABqgAlRrCdQaL/48._Equation_Class_05.mp4"
+        },
+        {
+          "title": "Algebra",
+          "link": "https://streamtape.com/v/kZZzOV86wyhOqVM/49._Algebra.mp4"
+        },
+        {
+          "title": "Algebra Class 2",
+          "link": "https://streamtape.com/v/vwaaAZ7WWVc4qAK/50._Algebra_Class_2.mp4"
+        },
+        {
+          "title": "Algebra Class 3",
+          "link": "https://streamtape.com/v/BzjB604g9DUyJ1G/51._Algebra_Class_3.mp4"
+        },
+        {
+          "title": "Algebra Class 4",
+          "link": "https://streamtape.com/v/k03d6kqZYPuraA/52._Algebra_Class_4.mp4"
+        },
+        {
+          "title": "Algebra Class 5",
+          "link": "https://streamtape.com/v/KZZzyWmxV7H0GJM/53._Algebra_Class_5.mp4"
+        },
+        {
+          "title": "LCM HCF Of Algebraic Factors",
+          "link": "https://streamtape.com/v/2aqJ0279lBFZY70/54._LCM_HCF_Of_Algebraic_Factors.mp4"
+        },
+        {
+          "title": "Logarithm",
+          "link": "https://streamtape.com/v/dA1ez4YJBdFkvdg/55._Logarithm.mp4"
+        },
+        {
+          "title": "Logarithm 2",
+          "link": "https://streamtape.com/v/AQ9AekVkKltv2j/56._Logarithm_2.mp4"
+        },
+        {
+          "title": "Sets",
+          "link": "https://streamtape.com/v/kWRLy28VMAfOqA0/57._Sets.mp4"
+        },
+        {
+          "title": "Sets 2",
+          "link": "https://streamtape.com/v/02pqLK7WvPsbqGk/58._Sets_2.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration",
+          "link": "https://streamtape.com/v/4xDZX8WmGyTZxL/59._Geometry_2D_Mensuration.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 2",
+          "link": "https://streamtape.com/v/8WGX279w0xTooDq/60._Geometry_2D_Mensuration_2.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 3",
+          "link": "https://streamtape.com/v/gdjb0AJkWgSqrM3/61._Geometry_2D_Mensuration_3.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 4",
+          "link": "https://streamtape.com/v/vK9wLz4DdeS4Vz3/62._Geometry_2D_Mensuration_4.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 5",
+          "link": "https://streamtape.com/v/QeBw0lBDvpU0Zky/63._Geometry_2D_Mensuration_5.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 6",
+          "link": "https://streamtape.com/v/d7lRwReAdxF1OV/64._Geometry_2D_Mensuration_6.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 7",
+          "link": "https://streamtape.com/v/KPk2BkyPejU0kZY/65._Geometry_2D_Mensuration_7.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 8",
+          "link": "https://streamtape.com/v/Q2GGdgeDeVhR7X/66._Geometry_2D_Mensuration_8.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 9",
+          "link": "https://streamtape.com/v/AXp2DDQl4AtX64M/67._Geometry_2D_Mensuration_9.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 10",
+          "link": "https://streamtape.com/v/ldoro7Qgq7T7k28/68._Geometry_2D_Mensuration_10.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 11",
+          "link": "https://streamtape.com/v/zMOBPpYWoQTpma/69._Geometry_2D_Mensuration_11.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 12",
+          "link": "https://streamtape.com/v/VWk4xQjqj6hKWAM/70.Geometry_2D_Mensuration_12.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 13",
+          "link": "https://streamtape.com/v/PrwRmZWKMVS0pbp/71._Geometry_2D_Mensuration_13.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 14",
+          "link": "https://streamtape.com/v/9y3m7wvVRKiaabd/72._Geometry_2D_Mensuration_14.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 15",
+          "link": "https://streamtape.com/v/q9ylRL9qqyCz01R/73._Geometry_2D_Mensuration_15.mp4"
+        },
+        {
+          "title": "Geometry 2D Mensuration 16",
+          "link": "https://streamtape.com/v/L1MBaJBvZzIRp9M/74._Geometry_2D_Mensuration_16.mp4"
+        },
+        {
+          "title": "Mensuration 3D Class 1",
+          "link": "https://streamtape.com/v/1LGPW3dd6oceZo7/75._Mensuration_3D_Class_1.mp4"
+        },
+        {
+          "title": "Mensuration 3D Class 2",
+          "link": "https://streamtape.com/v/Wr1lK104Z8sblJb/76._Mensuration_3D_Class_2.mp4"
+        },
+        {
+          "title": "Mensuration 3D Class 3",
+          "link": "https://streamtape.com/v/yxP1d1GXr1H1XlG/77._Mensuration_3D_Class_3.mp4"
+        },
+        {
+          "title": "Mensuration 3D Class 4",
+          "link": "https://streamtape.com/v/Oq4b1B3OqQtZbD7/78._Mensuration_3D_Class_4.mp4"
+        },
+        {
+          "title": "Mensuration 3D Class 5",
+          "link": "https://streamtape.com/v/ZKVrgMp3DefqDqK/79._Mensuration_3D_Class_5.mp4"
+        },
+        {
+          "title": "Mensuration 3D Class 6",
+          "link": "https://streamtape.com/v/D9zZJbZBPdhkplD/80._Mensuration_3D_Class_6.mp4"
+        },
+        {
+          "title": "Mensuration 3D Class 7",
+          "link": "https://streamtape.com/v/8ddg6g262Yhormo/81._Mensuration_3D_Class_7.mp4"
+        },
+        {
+          "title": "Trigonometry Class 02",
+          "link": "https://streamtape.com/v/YB8AlBQqpOHvXKo/82._Trigonometry_Class_02.mp4"
+        },
+        {
+          "title": "Trigonometry Class 3",
+          "link": "https://streamtape.com/v/962kdbX4G7Uazwq/83._Trigonometry_Class_3.mp4"
+        },
+        {
+          "title": "Trigonometry Class 4",
+          "link": "https://streamtape.com/v/2DaM0g8qDMTVql/84._Trigonometry_Class_4.mp4"
+        },
+        {
+          "title": "Trigonometry Class 5",
+          "link": "https://streamtape.com/v/lwaaWje3AAFvJo/85._Trigonometry_Class_5.mp4"
+        },
+        {
+          "title": "Trigonometry Class 06",
+          "link": "https://streamtape.com/v/RDApP0JyJqidA2Y/86._Trigonometry_Class_06.mp4"
+        },
+        {
+          "title": "Trigonometry Class 07",
+          "link": "https://streamtape.com/v/myLjJ04MY1cXDl/87._Trigonometry_Class_07.mp4"
+        },
+        {
+          "title": "Height And Distance Class 1",
+          "link": "https://streamtape.com/v/rlMe07BL7wUbrvO/88._Height_And_Distance_Class_1.mp4"
+        },
+        {
+          "title": "Height And Distance Class 2",
+          "link": "https://streamtape.com/v/dLwGe6jpB7sPzY/89._Height_And_Distance_Class_2.mp4"
+        },
+        {
+          "title": "Statistics Class 01",
+          "link": "https://streamtape.com/v/qg1lP1kvrqIzJZM/90._Statistics_Class_01.mp4"
+        },
+        {
+          "title": "Statistics Class 2",
+          "link": "https://streamtape.com/v/D0qxD3m9Pqu6YX/91._Statistics_Class_2.mp4"
+        },
+        {
+          "title": "Statistics Class 3",
+          "link": "https://streamtape.com/v/XBe6QLevRKUDbx9/92._Statistics_Class_3.mp4"
+        },
+        {
+          "title": "Statistics Class 4",
+          "link": "https://streamtape.com/v/MeGq8Y29WXUwJd/93._Statistics_Class_4.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Ancient History",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Pre History",
+          "link": "https://streamtape.com/v/VPWD4YwRmbiKDZw/1._Pre_History.mp4"
+        },
+        {
+          "title": "Pre History Class 2",
+          "link": "https://streamtape.com/v/BzReo7rYWdFykYr/2._Pre_History_Class_2.mp4"
+        },
+        {
+          "title": "Pre History Class 3",
+          "link": "https://streamtape.com/v/LXeb0B9ybefRXO4/3._Pre_History_Class_3.mp4"
+        },
+        {
+          "title": "Indus Valley Civilization",
+          "link": "https://streamtape.com/v/0DKyxbLw6AhbJK0/4._Indus_Valley_Civilization.mp4"
+        },
+        {
+          "title": "Indus Valley Civilization 2",
+          "link": "https://streamtape.com/v/G3plw6gBkkC11lw/5._Indus_Valley_Civilization_2.mp4"
+        },
+        {
+          "title": "Indus Valley Civilization 3",
+          "link": "https://streamtape.com/v/arZOvdbomGSxrqM/6._Indus_Valley_Civilization_3.mp4"
+        },
+        {
+          "title": "Vedic Age",
+          "link": "https://streamtape.com/v/d7Ao4BwwaRtPBZ/7._Vedic_Age.mp4"
+        },
+        {
+          "title": "Vedic Age 2",
+          "link": "https://streamtape.com/v/9W239W9DWRHYwM/8._Vedic_Age_2.mp4"
+        },
+        {
+          "title": "Vedic Age 3",
+          "link": "https://streamtape.com/v/R7jKJVxY22SxA4/9._Vedic_Age_3.mp4"
+        },
+        {
+          "title": "Vedic Age 4",
+          "link": "https://streamtape.com/v/kvdkDovmQ4IO1jW/10._Vedic_Age_4.mp4"
+        },
+        {
+          "title": "Vedic Age 5",
+          "link": "https://streamtape.com/v/m1VpMqPL0PTGmr/11._Vedic_Age_5.mp4"
+        },
+        {
+          "title": "Mahajanpads",
+          "link": "https://streamtape.com/v/bpq0WpMRo7iRv6/12._Mahajanpads.mp4"
+        },
+        {
+          "title": "Magadha Dynasty",
+          "link": "https://streamtape.com/v/84XdPX8rRJFMy9/13._Magadha_Dynasty.mp4"
+        },
+        {
+          "title": "Indian Darshan",
+          "link": "https://streamtape.com/v/Ldx84AvdYYi6J8/14._Indian_Darshan.mp4"
+        },
+        {
+          "title": "Buddhism",
+          "link": "https://streamtape.com/v/94gW8llzjlsaxY6/15._Buddhism.mp4"
+        },
+        {
+          "title": "Buddhism 2",
+          "link": "https://streamtape.com/v/YwYYPdl9qzF298/16._Buddhism_2.mp4"
+        },
+        {
+          "title": "Jainism",
+          "link": "https://streamtape.com/v/8qv912XZ1QSomGa/17._Jainism.mp4"
+        },
+        {
+          "title": "Vedic Age PYQ Jainism",
+          "link": "https://streamtape.com/v/o6d70yapLQtxxa/18._Vedic_Age_PYQ_Jainism.mp4"
+        },
+        {
+          "title": "Mauryan Empire",
+          "link": "https://streamtape.com/v/yx8aqwrlPzFe68/19._Mauryan_Empire.mp4"
+        },
+        {
+          "title": "Mauryan Empire 2",
+          "link": "https://streamtape.com/v/78GPR182B4UAZML/20._Mauryan_Empire_2.mp4"
+        },
+        {
+          "title": "Mauryan Empire 3",
+          "link": "https://streamtape.com/v/3VQeJpvOZeTdqzr/21._Mauryan_Empire_3.mp4"
+        },
+        {
+          "title": "Mauryan Empire 4",
+          "link": "https://streamtape.com/v/PjGR06oGq9t0208/22._Mauryan_Empire_4.mp4"
+        },
+        {
+          "title": "Post Mauryan Period",
+          "link": "https://streamtape.com/v/2o2aMdyrgDFZrp8/23._Post_Mauryan_Period.mp4"
+        },
+        {
+          "title": "Post Mauryan Period 2",
+          "link": "https://streamtape.com/v/dA37KW2PB7Ik8Ab/24._Post_Mauryan_Period_2.mp4"
+        },
+        {
+          "title": "Sangam Age",
+          "link": "https://streamtape.com/v/Gwzqo3Okrds16ed/25._Sangam_Age.mp4"
+        },
+        {
+          "title": "Gupta Period",
+          "link": "https://streamtape.com/v/R6pX4Xp1P6tLAx/26._Gupta_Period.mp4"
+        },
+        {
+          "title": "Gupta Period 2",
+          "link": "https://streamtape.com/v/Zqv0g2B8v1fq62k/27._Gupta_Period_2.mp4"
+        },
+        {
+          "title": "Post Gupta Period",
+          "link": "https://streamtape.com/v/brwY93v8gdCP8VA/28._Post_Gupta_Period.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Medieval History",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Tripartite Struggle",
+          "link": "https://streamtape.com/v/JXqxPXK2g2ugGd/1.Tripartite_Struggle.mp4"
+        },
+        {
+          "title": "Cholas",
+          "link": "https://streamtape.com/v/jWpqMlyZ7mCaXM/2._Cholas.mp4"
+        },
+        {
+          "title": "Turkish Invasion",
+          "link": "https://streamtape.com/v/xrpzG9rglbukKDB/3._Turkish_Invasion.mp4"
+        },
+        {
+          "title": "Bhakti Movement",
+          "link": "https://streamtape.com/v/aZX4bvDbRgsxjyX/4._Bhakti_Movement.mp4"
+        },
+        {
+          "title": "Sufi Movement",
+          "link": "https://streamtape.com/v/P9qogBaGzVigwv/5._Sufi_Movement.mp4"
+        },
+        {
+          "title": "Sufi Movement Foreign Travellers",
+          "link": "https://streamtape.com/v/4PZpR2ZxOQiGBa/6._Sufi_Movement_Foreign_Travellers.mp4"
+        },
+        {
+          "title": "Vijaynagar Empire",
+          "link": "https://streamtape.com/v/lQJjpYzmdoHoAm/7._Vijaynagar_Empire.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Modern History",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Intro Estado Da India",
+          "link": "https://streamtape.com/v/D4JBbKyyQ2uw8e/1._Intro_Estado_Da_India.mp4"
+        },
+        {
+          "title": "Estado Da India",
+          "link": "https://streamtape.com/v/1jl7lkRY9rcJY8/2._Estado_Da_India.mp4"
+        },
+        {
+          "title": "Dutch VOC",
+          "link": "https://streamtape.com/v/VVAVZl33LZH9K8/3._Dutch_VOC.mp4"
+        },
+        {
+          "title": "British French East India Company",
+          "link": "https://streamtape.com/v/aqBOrJzpp1fbjj/4._British_French_East_India_Company.mp4"
+        },
+        {
+          "title": "Carnatic War",
+          "link": "https://streamtape.com/v/walRbjDoYKtJXey/5._Carnatic_War.mp4"
+        },
+        {
+          "title": "Bengal",
+          "link": "https://streamtape.com/v/6PDlA1Wbk9U9zPW/6._Bengal.mp4"
+        },
+        {
+          "title": "Rise of Regional States",
+          "link": "https://streamtape.com/v/y03zx1O8K2i1DWx/7._Rise_of_Regional_States.mp4"
+        },
+        {
+          "title": "Anglo - Mysore War",
+          "link": "https://streamtape.com/v/bqZDao881mULGr/8._Anglo_-_Mysore_War.mp4"
+        },
+        {
+          "title": "Anglo- Maratha War",
+          "link": "https://streamtape.com/v/jq8xPwJPK1hz3Vr/9._Anglo-_Maratha_War.mp4"
+        },
+        {
+          "title": "Phase 1 1757 - 1813",
+          "link": "https://streamtape.com/v/GjY0XqO3BXs1pDp/10._Phase_1_1757_-_1813.mp4"
+        },
+        {
+          "title": "Phase Of Industrial Capitalism",
+          "link": "https://streamtape.com/v/x3xwyX64dDFqYZ/11._Phase_Of_Industrial_Capitalism.mp4"
+        },
+        {
+          "title": "Annexation Of Punjab And Sindh",
+          "link": "https://streamtape.com/v/4dKKMDyBkDHKjkA/12._Annexation_Of_Punjab_And_Sindh.mp4"
+        },
+        {
+          "title": "Charter Act",
+          "link": "https://streamtape.com/v/kZZa4Rbb4BfOoyQ/13._Charter_Act.mp4"
+        },
+        {
+          "title": "The Revolt Of 1857",
+          "link": "https://streamtape.com/v/q9b0JWG4pYuz38D/14._The_Revolt_Of_1857.mp4"
+        },
+        {
+          "title": "Peasant Trible Revolts",
+          "link": "https://streamtape.com/v/7bj8bl7QLJSAZXd/15._Peasant_Trible_Revolts.mp4"
+        },
+        {
+          "title": "Socio - Religious Reform Movement",
+          "link": "https://streamtape.com/v/1jp4MvB1YzieglD/16._Socio_-_Religious_Reform_Movement.mp4"
+        },
+        {
+          "title": "Muslim And Sikh Reform Movement",
+          "link": "https://streamtape.com/v/XqlbJBzJ7gfDq0w/17._Muslim_And_Sikh_Reform_Movement.mp4"
+        },
+        {
+          "title": "Association Before Congress",
+          "link": "https://streamtape.com/v/zb2vja487zTYLdR/18._Association_Before_Congress.mp4"
+        },
+        {
+          "title": "Formation Of Congress",
+          "link": "https://streamtape.com/v/gVR1b7oZaYuqy8X/19._Formation_Of_Congress.mp4"
+        },
+        {
+          "title": "Extremist",
+          "link": "https://streamtape.com/v/XjVpBrrWZrt0Kx/20._Extremist.mp4"
+        },
+        {
+          "title": "Surat Split",
+          "link": "https://streamtape.com/v/lQvQbBRwKBt7qa9/21._Surat_Split.mp4"
+        },
+        {
+          "title": "Lucknow Pact Arrival Of Mahatma Gandhi",
+          "link": "https://streamtape.com/v/JWPl2gbK8DijBv2/22._Lucknow_Pact_Arrival_Of_Mahatma_Gandhi.mp4"
+        },
+        {
+          "title": "Rowlatt Satyagraha",
+          "link": "https://streamtape.com/v/zLr4aqx3GjugMX/23._Rowlatt_Satyagraha.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Physical Geography",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Climatology Class 1",
+          "link": "https://streamtape.com/v/1WJK4JqY9Vip4e/1._Climatology_Class_1.mp4"
+        },
+        {
+          "title": "Climatology Class 2",
+          "link": "https://streamtape.com/v/B46q3JBMW9cyo8Y/2._Climatology_Class_2.mp4"
+        },
+        {
+          "title": "Climatology Class 3 (1)",
+          "link": "https://streamtape.com/v/02BDgVj3WvHbj6m/3._Climatology_Class_3_%281%29.mp4"
+        },
+        {
+          "title": "Climatology Class 4",
+          "link": "https://streamtape.com/v/VyaJXJ6AMDcKeLe/4._Climatology_Class_4.mp4"
+        },
+        {
+          "title": "Climatology Class 5",
+          "link": "https://streamtape.com/v/YBa8lgZOPgFvmoe/5._Climatology_Class_5.mp4"
+        },
+        {
+          "title": "Climatology - Fronts",
+          "link": "https://streamtape.com/v/dj3j3jLQVpikrGp/6._Climatology_-_Fronts.mp4"
+        },
+        {
+          "title": "Oceanography 1",
+          "link": "https://streamtape.com/v/QezD4XJPKeck78/7._Oceanography_1.mp4"
+        },
+        {
+          "title": "Oceanography 2",
+          "link": "https://streamtape.com/v/gY10KRrqqdTvw6/8._Oceanography_2.mp4"
+        },
+        {
+          "title": "Oceanography 3",
+          "link": "https://streamtape.com/v/3PMXr4XdpBsdkmO/9._Oceanography_3.mp4"
+        },
+        {
+          "title": "Geomorphic Process 1",
+          "link": "https://streamtape.com/v/6avZvradrASlq1/10._Geomorphic_Process_1.mp4"
+        },
+        {
+          "title": "Geomorphic Process 2",
+          "link": "https://streamtape.com/v/m9K0XgywGotQo6/11._Geomorphic_Process_2.mp4"
+        },
+        {
+          "title": "Landform By Running Water",
+          "link": "https://streamtape.com/v/ZDoqvyAdMmiqalv/12._Landform_By_Running_Water.mp4"
+        },
+        {
+          "title": "Landform By Ground Water",
+          "link": "https://streamtape.com/v/gjbQzlKV76cq7XR/13._Landform_By_Ground_Water.mp4"
+        },
+        {
+          "title": "Landform By Glaciers",
+          "link": "https://streamtape.com/v/JXYq6W8ZPWujjJg/14._Landform_By_Glaciers.mp4"
+        },
+        {
+          "title": "Landform By Sea Waves",
+          "link": "https://streamtape.com/v/4BBR91RpmPsKo37/15._Landform_By_Sea_Waves.mp4"
+        },
+        {
+          "title": "Landform By Wind",
+          "link": "https://streamtape.com/v/BJoZMlqMXQUydgq/16._Landform_By_Wind.mp4"
+        },
+        {
+          "title": "Earthquake",
+          "link": "https://streamtape.com/v/lwarl3GyKwh7Rvd/17._Earthquake.mp4"
+        },
+        {
+          "title": "Interior Of Earth Very Imp",
+          "link": "https://streamtape.com/v/Xq2LqRK6XbTDjD6/18._Interior_Of_Earth_Very_Imp.mp4"
+        },
+        {
+          "title": "Volcanoes",
+          "link": "https://streamtape.com/v/BjrLW222aQHyq8w/19._Volcanoes_.mp4"
+        },
+        {
+          "title": "Plate Techtonics",
+          "link": "https://streamtape.com/v/j7R83LMOBjCmqM/20._Plate_Techtonics.mp4"
+        },
+        {
+          "title": "Rocks And Minerals",
+          "link": "https://streamtape.com/v/l2m8kykD0Di7yXr/21._Rocks_And_Minerals.mp4"
+        },
+        {
+          "title": "Universe Solar System",
+          "link": "https://streamtape.com/v/wGBA31JvQrIJbKr/22._Universe_Solar_System.mp4"
+        },
+        {
+          "title": "Time International Dateline",
+          "link": "https://streamtape.com/v/RgpRxLeWpBCdPVQ/23._Time_International_Dateline.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Indian Geography",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Indian Geography Basic Class",
+          "link": "https://streamtape.com/v/OgjR3wXe0kheqY/1._Indian_Geography_Basic_Class.mp4"
+        },
+        {
+          "title": "Himalayas Plain",
+          "link": "https://streamtape.com/v/9kMmQrQzKyha2MW/2._Himalayas_Plain.mp4"
+        },
+        {
+          "title": "Peninsular Plateau",
+          "link": "https://streamtape.com/v/WGDrxJ4r92Hg96/3._Peninsular_Plateau.mp4"
+        },
+        {
+          "title": "Coastal Area Islands",
+          "link": "https://streamtape.com/v/pkqLOyj7LkUrZJV/4._Coastal_Area_Islands.mp4"
+        },
+        {
+          "title": "Rivers",
+          "link": "https://streamtape.com/v/xoqvlmXejYUk6ye/5._Rivers.mp4"
+        },
+        {
+          "title": "All Rivers",
+          "link": "https://streamtape.com/v/Q3Va36jpb0S04P7/6._All_Rivers.mp4"
+        },
+        {
+          "title": "Soil In India",
+          "link": "https://streamtape.com/v/Jo26VZLW2zcjjkW/7._Soil_In_India.mp4"
+        },
+        {
+          "title": "Vegetation In India",
+          "link": "https://streamtape.com/v/7DJ8xWP0AWSA0pV/8._Vegetation_In_India.mp4"
+        },
+        {
+          "title": "Lakes",
+          "link": "https://streamtape.com/v/Pk1dlDGgPGUBXD/9._Lakes.mp4"
+        },
+        {
+          "title": "Indian Ports",
+          "link": "https://streamtape.com/v/OPRkXa4j88FZP6M/10._Indian_Ports.mp4"
+        },
+        {
+          "title": "Indian Highway Railway Roadway Waterway",
+          "link": "https://streamtape.com/v/9o9gJLpawyf9wr/11._Indian_Highway_Railway_Roadway_Waterway.mp4"
+        },
+        {
+          "title": "Industries Minerals",
+          "link": "https://streamtape.com/v/xvlP2ozy8gskaVq/12._Industries_Minerals.mp4"
+        },
+        {
+          "title": "USDA Soil Taxonomy Through Tricks",
+          "link": "https://streamtape.com/v/pY8GBvK8kQhr6wR/13._USDA_Soil_Taxonomy_Through_Tricks.mp4"
+        },
+        {
+          "title": "India State Of Forest Report 2023",
+          "link": "https://streamtape.com/v/eAKWbXm7QjSYY2e/14._India_State_Of_Forest_Report_2023.mp4"
+        },
+        {
+          "title": "Indian Climate - Elnino Lanina",
+          "link": "https://streamtape.com/v/bwMB6q0eoOCPe7X/15._Indian_Climate_-_Elnino_Lanina.mp4"
+        },
+        {
+          "title": "Indian Climate Khtam",
+          "link": "https://streamtape.com/v/1BdvlBeKLacejP4/16._Indian_Climate_Khtam.mp4"
+        },
+        {
+          "title": "Jet Stream Western Disturbance",
+          "link": "https://streamtape.com/v/LMa8p4LwjzSRdPY/17._Jet_Stream_Western_Disturbance.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Economics",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "National Income + core industry",
+          "link": "https://streamtape.com/v/lqpxVvJaM6h7Mkq/1._National_Income_%2B_core_industry.mp4"
+        },
+        {
+          "title": "Money",
+          "link": "https://streamtape.com/v/1zkAWdzBX4idGg/2._Money.mp4"
+        },
+        {
+          "title": "Monetary Policy",
+          "link": "https://streamtape.com/v/WGMGJGKoo8Tb9vM/3._Monetary_Policy.mp4"
+        },
+        {
+          "title": "BOP and Budget with PYQ",
+          "link": "https://streamtape.com/v/2aW3VK3bMkFzRL/4._BOP_and_Budget_with_PYQ.mp4"
+        },
+        {
+          "title": "Unemployment Inflation Poverty",
+          "link": "https://streamtape.com/v/69lYwB0933F4Q6/5._Unemployment_Inflation_Poverty.mp4"
+        },
+        {
+          "title": "Market Demand Curve Goods PYQs",
+          "link": "https://streamtape.com/v/eVgvlKrKldIYBJj/6._Market_Demand_Curve_Goods_PYQs.mp4"
+        }
+      ]
+    },
+    {
+      "name": "English Breakfast",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Breakfast 01 (Parts of speech)",
+          "link": "https://streamtape.com/v/AMpww1zwKrCXA6K/1._Breakfast_01_%28Parts_of_speech_%29.mp4"
+        },
+        {
+          "title": "BF 02 ERRORS FILL UPS AK EXPLANATION",
+          "link": "https://streamtape.com/v/w6XD81z6mQfo6x/2._BF_02_ERRORS_FILL_UPS_AK_EXPLANATION.mp4"
+        },
+        {
+          "title": "BF 03 Fill ups AK Explanation",
+          "link": "https://streamtape.com/v/g3azZLKvPztqW88/3._BF_03_Fill_ups_AK_Explanation.mp4"
+        },
+        {
+          "title": "BF 04 1-25Q S1 - S6",
+          "link": "https://streamtape.com/v/dOm0eB3X8qSk6vJ/4._BF_04_1-25Q_S1_-_S6.mp4"
+        },
+        {
+          "title": "BF 06 Explanation Part 1",
+          "link": "https://streamtape.com/v/G6vgploWmKH114k/5._BF_06_Explanation_Part_1.mp4"
+        },
+        {
+          "title": "BF 06 sentence completion completed",
+          "link": "https://streamtape.com/v/V7m41XO3XKcKwDO/6._BF_06_sentence_completion_completed.mp4"
+        },
+        {
+          "title": "Bf 05 (s1-s2) explanation",
+          "link": "https://streamtape.com/v/kvRblwbXvzcO1QZ/7._Bf_05_%28s1-s2%29_explanation.mp4"
+        },
+        {
+          "title": "Bf O7 Explanation Part 01",
+          "link": "https://streamtape.com/v/m6O8jZW6GYcbbO6/8._Bf_O7_Explanation_Part_01.mp4"
+        },
+        {
+          "title": "Breakfast 07 1-50 ques",
+          "link": "https://streamtape.com/v/wxeDYv8RkaUJr90/9._Breakfast_07_1-50_ques.mp4"
+        },
+        {
+          "title": "BF 09 Error POS",
+          "link": "https://streamtape.com/v/JwMlOgddYWCj462/10._BF_09_Error_POS.mp4"
+        },
+        {
+          "title": "Breakfast 08 Completed",
+          "link": "https://streamtape.com/v/Wr1W3vrrXwsb7qQ/11._Breakfast_08_Completed.mp4"
+        },
+        {
+          "title": "Breakfast 08 Explanation",
+          "link": "https://streamtape.com/v/WqyZ16Ok1lTgzg/12._Breakfast_08_Explanation.mp4"
+        },
+        {
+          "title": "Breakfast 10 Explanation",
+          "link": "https://streamtape.com/v/ReX7Ax9v43idVpD/13._Breakfast_10_Explanation.mp4"
+        },
+        {
+          "title": "Breakfast 11 Homonyms Explanation",
+          "link": "https://streamtape.com/v/BJpAWx4reAuGB0/14._Breakfast_11_Homonyms_Explanation.mp4"
+        },
+        {
+          "title": "BF 11 Homonyms Complete",
+          "link": "https://streamtape.com/v/3rGYYe8yKLtDjd/15._BF_11_Homonyms_Complete.mp4"
+        },
+        {
+          "title": "BF 13 Fill ups Explanation",
+          "link": "https://streamtape.com/v/m30aBrKGmXIbwLa/16._BF_13_Fill_ups_Explanation.mp4"
+        },
+        {
+          "title": "BF 14 Error",
+          "link": "https://streamtape.com/v/0dV804wdKDCbb20/17._BF_14_Error.mp4"
+        },
+        {
+          "title": "BF 15 Uses of Vocabulary",
+          "link": "https://streamtape.com/v/ZobO0P2oeJfqpz0/18._BF_15_Uses_of_Vocabulary.mp4"
+        },
+        {
+          "title": "BF 19 S1 and S2",
+          "link": "https://streamtape.com/v/kWL741mV42Ty9O/19.BF_19_S1_and_S2.mp4"
+        }
+      ]
+    },
+    {
+      "name": "English Grammar",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Tense",
+          "link": "https://streamtape.com/v/BzG1OkjArDCyB9V/1._Tense_.mp4"
+        },
+        {
+          "title": "Tense Completed",
+          "link": "https://streamtape.com/v/9jjL8XwYllIawWl/2._Tense_Completed.mp4"
+        },
+        {
+          "title": "Part of speech",
+          "link": "https://streamtape.com/v/G29JxvQ29Yi1kzb/3._Part_of_speech.mp4"
+        },
+        {
+          "title": "Part of Speech Class 2",
+          "link": "https://streamtape.com/v/4ByJldVoX8iKPw4/4._Part_of_Speech_Class_2.mp4"
+        },
+        {
+          "title": "Part of speech class 3 part 1",
+          "link": "https://streamtape.com/v/j4DaLJzpOZSgPx/5.Part_of_speech_class_3_part_1.mp4"
+        },
+        {
+          "title": "Part of speech class 3 part 2",
+          "link": "https://streamtape.com/v/6bx8q8x664I4bZ/6._Part_of_speech_class_3_part_2.mp4"
+        },
+        {
+          "title": "Part of speech complete",
+          "link": "https://streamtape.com/v/8RoPgXy4kVFoxgL/7._Part_of_speech_complete.mp4"
+        },
+        {
+          "title": "Noun Class 1",
+          "link": "https://streamtape.com/v/W6gaDRYjwKUbzbY/8._Noun_Class_1.mp4"
+        },
+        {
+          "title": "Noun Completed",
+          "link": "https://streamtape.com/v/G9erK6bQGGh17yK/9._Noun_Completed.mp4"
+        },
+        {
+          "title": "Pronoun Class 1",
+          "link": "https://streamtape.com/v/K4rOdqAPL8u01dZ/10._Pronoun_Class_1.mp4"
+        },
+        {
+          "title": "Pronoun Class 2",
+          "link": "https://streamtape.com/v/vl7ZXdrDbJI4Rj1/11._Pronoun_Class_2.mp4"
+        },
+        {
+          "title": "Verb Class 1",
+          "link": "https://streamtape.com/v/d8zaZ3oL2gFkR0M/12._Verb_Class_1.mp4"
+        },
+        {
+          "title": "Verb Class 2",
+          "link": "https://streamtape.com/v/yGeYBaeDDOtwMA/13._Verb_Class_2.mp4"
+        },
+        {
+          "title": "S1-S2",
+          "link": "https://streamtape.com/v/6jdaVllm1PIZV0/14._S1-S2.mp4"
+        },
+        {
+          "title": "Verb Class 3",
+          "link": "https://streamtape.com/v/6BdaPDRXmBS9yo3/15._Verb_Class_3.mp4"
+        },
+        {
+          "title": "Preposition Class 1",
+          "link": "https://streamtape.com/v/2kga7exXemIABm/16._Preposition_Class_1.mp4"
+        },
+        {
+          "title": "Preposition Class 2",
+          "link": "https://streamtape.com/v/rbRq6ep26qUxlB/17._Preposition_Class_2.mp4"
+        },
+        {
+          "title": "Preposition Class 3",
+          "link": "https://streamtape.com/v/eYqQae1b9bT2Yo/18._Preposition_Class_3.mp4"
+        },
+        {
+          "title": "Conjunction",
+          "link": "https://streamtape.com/v/7mJKQm2ep8sA61r/19._Conjunction.mp4"
+        },
+        {
+          "title": "Voice Complete",
+          "link": "https://streamtape.com/v/4xzb0AKP68uKo18/20._Voice_Complete.mp4"
+        },
+        {
+          "title": "Discourse Marker",
+          "link": "https://streamtape.com/v/AJxPOyK0y1HXMx8/21._Discourse_Marker.mp4"
+        },
+        {
+          "title": "Narration Class 1",
+          "link": "https://streamtape.com/v/e3D0r19M7Mukrg/22._Narration_Class_1.mp4"
+        },
+        {
+          "title": "Narration Complete",
+          "link": "https://streamtape.com/v/vo4JXlLYwJH4p16/23._Narration_Complete.mp4"
+        },
+        {
+          "title": "Fixed Preposition Class 01",
+          "link": "https://streamtape.com/v/xXQaqDMgMOIk3ky/24._Fixed_Preposition_Class_01.mp4"
+        },
+        {
+          "title": "Fixed Preposition Class 02",
+          "link": "https://streamtape.com/v/BavgDQm2BoTy4ql/25._Fixed_Preposition_Class_02.mp4"
+        }
+      ]
+    },
+    {
+      "name": "English Vocabulary",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Root Words Class 1",
+          "link": "https://streamtape.com/v/Oql3rlrqbKHkBM/1_Root_Words_Class_1.mp4"
+        },
+        {
+          "title": "Root Words Class 2-004",
+          "link": "https://streamtape.com/v/q9DLMJlKzVszr1O/2%29_Root_Words_Class_2-004.mp4"
+        },
+        {
+          "title": "A - Words",
+          "link": "https://streamtape.com/v/zkgpk6Bzp2HvMZ/3_A_-_Words.mp4"
+        },
+        {
+          "title": "B - Words",
+          "link": "https://streamtape.com/v/D00eMLjd9KIkK0d/4_B_-_Words.mp4"
+        },
+        {
+          "title": "C - Words",
+          "link": "https://streamtape.com/v/r8mLbkmGv4haMG/5_C_-_Words.mp4"
+        },
+        {
+          "title": "Vocab PYQ Class 01",
+          "link": "https://streamtape.com/v/v20Dk0Kda0Faj4/6_Vocab_PYQ_Class_01.mp4"
+        },
+        {
+          "title": "Vocab PYQ Class 02",
+          "link": "https://streamtape.com/v/AQ9OR8P9OluXoRr/7_Vocab_PYQ_Class_02.mp4"
+        },
+        {
+          "title": "Vocab PYQ Class 03",
+          "link": "https://streamtape.com/v/964jbpXXO6Cakmv/8._Vocab_PYQ_Class_03.mp4"
+        },
+        {
+          "title": "D - Words",
+          "link": "https://streamtape.com/v/PjA8djDJ8AS0PWR/9._D_-_Words.mp4"
+        },
+        {
+          "title": "Vocab PYQs Complete",
+          "link": "https://streamtape.com/v/4yg3DvL91Rh29l/10_Vocab_PYQs_Complete.mp4"
+        },
+        {
+          "title": "E - Words",
+          "link": "https://streamtape.com/v/elaqkdxO4mu2eB/11_E_-_Words.mp4"
+        },
+        {
+          "title": "F - Words",
+          "link": "https://streamtape.com/v/PrVGY0r6wBS0dDg/12_F_-_Words.mp4"
+        },
+        {
+          "title": "Homonyms Class 01",
+          "link": "https://streamtape.com/v/aPPGXA8GMaTMBq/13_Homonyms_Class_01.mp4"
+        },
+        {
+          "title": "G Words",
+          "link": "https://streamtape.com/v/ZjrROlQbKdHqvZg/14._G_Words.mp4"
+        },
+        {
+          "title": "Homonyms Class 02",
+          "link": "https://streamtape.com/v/qOKqQm8Br8tz9BV/15._Homonyms_Class_02.mp4"
+        },
+        {
+          "title": "Homonyms Complete",
+          "link": "https://streamtape.com/v/8JgJVmQVyLFoVdP/16._Homonyms_Complete.mp4"
+        },
+        {
+          "title": "Homonyms Pyqs",
+          "link": "https://streamtape.com/v/wZdDP8A717FJOMb/17._Homonyms_Pyqs.mp4"
+        },
+        {
+          "title": "H - Words",
+          "link": "https://streamtape.com/v/Kzv97xymxAI0MPP/18._H_-_Words.mp4"
+        },
+        {
+          "title": "I - Words",
+          "link": "https://streamtape.com/v/1DBxdKdg1LIejo0/19._I_-_Words.mp4"
+        },
+        {
+          "title": "J - Words",
+          "link": "https://streamtape.com/v/xkVKgKYq6ySk2Pg/20._J_-_Words.mp4"
+        },
+        {
+          "title": "RRB Vocabulary Class 1",
+          "link": "https://streamtape.com/v/wYvv8zzovjUJXGY/21._RRB_Vocabulary_Class_1.mp4"
+        },
+        {
+          "title": "RRB Vocabulary Class 2",
+          "link": "https://streamtape.com/v/ZybBd34AeQuq8WG/22._RRB_Vocabulary_Class_2.mp4"
+        },
+        {
+          "title": "RRB Vocabulary Class 3",
+          "link": "https://streamtape.com/v/gqjLwXyBADIqDkD/23._RRB_Vocabulary_Class_3.mp4"
+        },
+        {
+          "title": "RRB Vocabulary Class 4",
+          "link": "https://streamtape.com/v/1ba4JPVbwltegLr/24._RRB_Vocabulary_Class_4.mp4"
+        },
+        {
+          "title": "RRB Vocabulary Class 5",
+          "link": "https://streamtape.com/v/pzy6g8MJ1qsrQq8/25._RRB_Vocabulary_Class_5.mp4"
+        }
+      ]
+    },
+    {
+      "name": "English Practice",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Tense Practice Class",
+          "link": "https://streamtape.com/v/lxYjWpqr61u7qqb/1._Tense_Practice_Class.mp4"
+        },
+        {
+          "title": "Full Mock 01 Explanation",
+          "link": "https://streamtape.com/v/oxLrg9XzMzhJadX/2._Full_Mock_01_Explanation.mp4"
+        },
+        {
+          "title": "Full Mock 02 Explanation Part 1",
+          "link": "https://streamtape.com/v/GjzAvpjM2vhWdl/3._Full_Mock_02_Explanation_Part_1.mp4"
+        },
+        {
+          "title": "Full Mock 02 Explanation Part 2",
+          "link": "https://streamtape.com/v/pLdy4v0BeMFrZzl/4._Full_Mock_02_Explanation_Part_2.mp4"
+        },
+        {
+          "title": "English Mock 3 Explanation",
+          "link": "https://streamtape.com/v/DzgbpygkLeIkPyR/5._English_Mock_3_Explanation_.mp4"
+        },
+        {
+          "title": "S1 and S2 Practice",
+          "link": "https://streamtape.com/v/rbdPp9yMagSMQQ/6._S1_and_S2_Practice_.mp4"
+        },
+        {
+          "title": "Verb Practice",
+          "link": "https://streamtape.com/v/o6qyXXQRyLTJ4dy/7._Verb_Practice.mp4"
+        },
+        {
+          "title": "Full Mock 05 Explanation",
+          "link": "https://streamtape.com/v/qKW3186AOWSzPre/8._Full_Mock_05_Explanation.mp4"
+        },
+        {
+          "title": "Full Mock 6",
+          "link": "https://streamtape.com/v/bgR1al3P4oTP9dO/9._Full_Mock_6.mp4"
+        },
+        {
+          "title": "Full Mock 7 Part 1",
+          "link": "https://streamtape.com/v/2zvlaazDjdHZlZW/10._Full_Mock_7_Part_1.mp4"
+        },
+        {
+          "title": "English Full Mock 07 Part 02",
+          "link": "https://streamtape.com/v/JvgZPR6j1Ms6OG/11._English_Full_Mock_07_Part_02.mp4"
+        },
+        {
+          "title": "Full Mock 08 explanation",
+          "link": "https://streamtape.com/v/reaemWVv3asbDwj/12._Full_Mock_08_explanation.mp4"
+        },
+        {
+          "title": "Full mock 9 explanation",
+          "link": "https://streamtape.com/v/BYmwdxyA87CVpA/13._Full_mock_9_explanation.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Polity",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Article 368 + Majorities + Preamble",
+          "link": "https://streamtape.com/v/o6xpvdMzgVtJq40/1._Article_368_%2B_Majorities_%2B_Preamble.mp4"
+        },
+        {
+          "title": "Dada Ji 1",
+          "link": "https://streamtape.com/v/QWJ3do0BGdh0OGV/2._Dada_Ji_1.mp4"
+        },
+        {
+          "title": "President + Governer",
+          "link": "https://streamtape.com/v/q3DxXOR7roIzldx/3._President_%2B_Governer.mp4"
+        },
+        {
+          "title": "Vice President + CM + PM + COM",
+          "link": "https://streamtape.com/v/Lpl39XAYV4ieGq/4._Vice_President_%2B_CM_%2B_PM_%2B_COM.mp4"
+        },
+        {
+          "title": "Parliament Ka 1st Session",
+          "link": "https://streamtape.com/v/B46AZ1R2WRfyA7w/5._Parliament_Ka_1st_Session.mp4"
+        },
+        {
+          "title": "Parliament 2nd Session",
+          "link": "https://streamtape.com/v/VWzVZY8ZyQsKpRz/6._Parliament_2nd_Session.mp4"
+        },
+        {
+          "title": "Parliament 3rd Session",
+          "link": "https://streamtape.com/v/G6mdWxw47Ph1JLw/7._Parliament_3rd_Session.mp4"
+        },
+        {
+          "title": "Parliament 4th Session",
+          "link": "https://streamtape.com/v/gd4bmelo3vCqrwM/8._Parliament_4th_Session.mp4"
+        },
+        {
+          "title": "Parliament Dissolved",
+          "link": "https://streamtape.com/v/JywKo6DwLRcjBLo/9._Parliament_Dissolved.mp4"
+        },
+        {
+          "title": "State Legislature + Toss",
+          "link": "https://streamtape.com/v/qM8zkoVDWKizVV2/10._State_Legislature_%2B_Toss.mp4"
+        },
+        {
+          "title": "Federal Features",
+          "link": "https://streamtape.com/v/vgkzp3WpVkf4GAg/11._Federal_Features.mp4"
+        },
+        {
+          "title": "Centre State Relation",
+          "link": "https://streamtape.com/v/r3oqj1QWbKcY0V/12._Centre_State_Relation.mp4"
+        },
+        {
+          "title": "Finance Commission + GST Council",
+          "link": "https://streamtape.com/v/bre4Lg6BMvhPzzv/13._Finance_Commission_%2B_GST_Council.mp4"
+        },
+        {
+          "title": "Zonal Council + UT + Art 371 + Traps",
+          "link": "https://streamtape.com/v/WgBpmlX86BHb2oL/14._Zonal_Council_%2B_UT_%2B_Art_371_%2B_Traps.mp4"
+        },
+        {
+          "title": "Emergency",
+          "link": "https://streamtape.com/v/qOwLmY6q6OSzdaY/15._Emergency.mp4"
+        },
+        {
+          "title": "Making Of Constitution",
+          "link": "https://streamtape.com/v/r3b9zBOv3XtbLam/16._Making_Of_Constitution.mp4"
+        },
+        {
+          "title": "Parliamentary Committees",
+          "link": "https://streamtape.com/v/RQWmRa8pxxfdvdb/17.Parliamentary_Committees.mp4"
+        },
+        {
+          "title": "Attorney general Advocate general",
+          "link": "https://streamtape.com/v/7B1LPaw3OkFAzJ9/18._Attorney_general_Advocate_general.mp4"
+        },
+        {
+          "title": "Fundamental Rights",
+          "link": "https://streamtape.com/v/a02j38Ae9WHx4Kq/19._Fundamental_Rights.mp4"
+        },
+        {
+          "title": "DPSP Fundamental Duties",
+          "link": "https://streamtape.com/v/GK0k8bOr13i1XL7/20._DPSP_Fundamental_Duties.mp4"
+        }
+      ]
+    },
+    {
+      "name": "One Pager",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "CBI",
+          "link": "https://streamtape.com/v/yxB48ApM2pS1bPk/1.CBI.mp4"
+        },
+        {
+          "title": "Fertility Rate + Family Survey",
+          "link": "https://streamtape.com/v/llRRPbD9VLu70dk/2._Fertility_Rate_%2B_Family_Survey.mp4"
+        },
+        {
+          "title": "Protein Deficiency",
+          "link": "https://streamtape.com/v/0rP609o3oMcb9JL/3._Protein_Deficiency.mp4"
+        },
+        {
+          "title": "UNSC",
+          "link": "https://streamtape.com/v/4AZgqGOYa3T2DR/4._UNSC.mp4"
+        },
+        {
+          "title": "Parliamentary Committees",
+          "link": "https://streamtape.com/v/3doZ6K11pphdd4M/5._Parliamentary_Committees.mp4"
+        },
+        {
+          "title": "Attorney General Advocate General",
+          "link": "https://streamtape.com/v/BjPxwRjD0dTyeRx/6._Attorney_general_Advocate_general.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Operation Surprise",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Op Surprise Class 1",
+          "link": "https://streamtape.com/v/7GVelGDlqwtAey8/1_Op_Surprise_Class_1.mp4"
+        },
+        {
+          "title": "Op Surprise Class 2",
+          "link": "https://streamtape.com/v/8Zg1kM71xmUob2p/2._Op_Surprise_Class_2.mp4"
+        },
+        {
+          "title": "Op Surprise Class 3",
+          "link": "https://streamtape.com/v/2P6B0dzdYOuZYD1/3._Op_Surprise_Class_3.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Test Discussion",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "GS MOCK EXPLANATION",
+          "link": "https://streamtape.com/v/GaYwYl1l6ks1LMG/1._GS_MOCK_EXPLANATION.mp4"
+        },
+        {
+          "title": "GS Mock Explanation",
+          "link": "https://streamtape.com/v/1jV8evdbamieKMk/2._GS_Mock_Explanation.mp4"
+        },
+        {
+          "title": "GS Mock Explanation 12 July",
+          "link": "https://streamtape.com/v/0Zz9w4RZVXIbG6d/3._GS_Mock_Explanation_12_July.mp4"
+        },
+        {
+          "title": "GS Full mock explanation 26th july",
+          "link": "https://streamtape.com/v/12KPA7VbaGFek4R/4._GS_Full_mock_explanation_26th_july.mp4"
+        },
+        {
+          "title": "GS full mock explanation 2nd Aug",
+          "link": "https://streamtape.com/v/ZX4LzlBQVyUyjP/5._GS_full_mock_explanation_2nd_Aug.mp4"
+        }
+      ]
+    },
+    {
+      "name": "GFORM Explanation",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "1-10th May G form explanation",
+          "link": "https://streamtape.com/v/9610BXAe3bf9v3/1-10th_May_G_form_explanation.mp4"
+        },
+        {
+          "title": "16 - 21 May G Form Explanation",
+          "link": "https://streamtape.com/v/kZZjB7KekAcOk01/2._16_-_21_May_G_Form_Explanation.mp4"
+        }
+      ]
+    },
+    {
+      "name": "GS Muster Class",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "GS Muster Class 1",
+          "link": "https://streamtape.com/v/vrYgvZZAwAF4Vlz/1._GS_Muster_Class_1.mp4"
+        },
+        {
+          "title": "GS Muster Class 2",
+          "link": "https://streamtape.com/v/Aw67VLOko3CX69k/2._GS_Muster_Class_2.mp4"
+        },
+        {
+          "title": "GS Muster Class 3",
+          "link": "https://streamtape.com/v/G3k9zB7w4Kt1p0b/3._GS_Muster_Class_3.mp4"
+        },
+        {
+          "title": "GS Muster Class 4",
+          "link": "https://streamtape.com/v/1LgXO8RVk0Heaz4/4._GS_Muster_Class_4.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Mentor Session",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "REVISION PART 1",
+          "link": "https://streamtape.com/v/7PbY9lzYwjHAeq8/REVISION_PART_1.mp4"
+        },
+        {
+          "title": "REVISION PART 2",
+          "link": "https://streamtape.com/v/J3gRgymblaFj3rw/REVISION_PART_2.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Batcheet",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Last Push Meeting",
+          "link": "https://streamtape.com/v/vKg11owgqXU4qPj/1._Last_Push_Meeting.mp4"
+        }
+      ]
+    },
+    {
+      "name": "SSB",
+      "completed": true,
+      "lectures": [
+        {
+          "title": "Right Approach to SSB Interviews",
+          "link": "https://streamtape.com/v/7wMyJlW1ODHAABY/1._Right_Approach_to_SSB_Interviews.mp4"
+        }
+      ]
+    }
   ]
 }
