@@ -1579,6 +1579,20 @@
         }
       ],
       "completed": true
+    },
+    {
+      "name": "KILO BATCH CDS 1 2027",
+      "lectures": [
+        {
+          "title": "A - Words",
+          "link": "https://streamtape.com/v/9X4J7kAzqyIaQ8x/2._A_-_Words.mp4"
+        },
+        {
+          "title": "Breathing And Respiration",
+          "link": "https://streamtape.com/v/Xgpdqr9z86iD7q4/2._Breathing_And_Respiration.mp4"
+        }
+      ],
+      "completed": true
     }
   ]
 }
