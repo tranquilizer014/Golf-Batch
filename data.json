@@ -1383,26 +1383,6 @@
       "completed": true,
       "lectures": [
         {
-          "title": "CBI",
-          "link": "https://streamtape.com/v/yxB48ApM2pS1bPk/1.CBI.mp4"
-        },
-        {
-          "title": "Fertility Rate + Family Survey",
-          "link": "https://streamtape.com/v/llRRPbD9VLu70dk/2._Fertility_Rate_%2B_Family_Survey.mp4"
-        },
-        {
-          "title": "Protein Deficiency",
-          "link": "https://streamtape.com/v/0rP609o3oMcb9JL/3._Protein_Deficiency.mp4"
-        },
-        {
-          "title": "UNSC",
-          "link": "https://streamtape.com/v/4AZgqGOYa3T2DR/4._UNSC.mp4"
-        },
-        {
-          "title": "Parliamentary Committees",
-          "link": "https://streamtape.com/v/3doZ6K11pphdd4M/5._Parliamentary_Committees.mp4"
-        },
-        {
           "title": "Attorney General Advocate General",
           "link": "https://streamtape.com/v/BjPxwRjD0dTyeRx/6._Attorney_general_Advocate_general.mp4"
         }
@@ -1582,6 +1562,26 @@
         {
           "title": "Landform By Wind",
           "link": "https://streamtape.com/v/zrqxPbLaOLcY0yA/16._Landform_By_Wind.mp4"
+        },
+        {
+          "title": "CBI",
+          "link": "https://streamtape.com/v/2qwzRJWLmKiZ48q/1.CBI.mp4"
+        },
+        {
+          "title": "Fertility Rate + Family Survey",
+          "link": "https://streamtape.com/v/3rBoO0jDPmFdkdM/2._Fertility_Rate_%2B_Family_Survey.mp4"
+        },
+        {
+          "title": "Protein Deficiency",
+          "link": "https://streamtape.com/v/w6Q1rB04Q1uJdXW/3._Protein_Deficiency.mp4"
+        },
+        {
+          "title": "UNSC",
+          "link": "https://streamtape.com/v/jPXx962wglHDJB/4._UNSC.mp4"
+        },
+        {
+          "title": "Parliamentary Committees",
+          "link": "https://streamtape.com/v/bGp0ggDeQAfP09w/5._Parliamentary_Committees.mp4"
         }
       ],
       "completed": true
